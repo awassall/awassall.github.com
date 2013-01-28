@@ -1,8 +1,5 @@
-.profile_pic {
-	height: 10px;
-	width: 10px;
-}
-
-#test {
+p {
 	font-size: 50px;
+	font-family: arial;
+	color: red;
 }
