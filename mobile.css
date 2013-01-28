@@ -1,19 +1,19 @@
 img {
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
 }
 
 a {
 	text-decoration: underline;
-	color: blue;
+	color: purple;
 }
 
 h1 {
-	font-family: Verdana;
+	font-family: Arial;
 }
 
 h4 {
-	font-family: Verdana;
+	font-family: Arial;
 }
 
 li ul li {
