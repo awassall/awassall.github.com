@@ -1,0 +1,21 @@
+img {
+	height: 200px;
+	width: 200px;
+}
+
+a {
+	text-decoration: underline;
+	color: purple;
+}
+
+h1 {
+	font-family: Arial;
+}
+
+h4 {
+	font-family: Arial;
+}
+
+li ul li {
+	font-style: italic;
+}
