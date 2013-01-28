@@ -1,0 +1,13 @@
+img {
+	height: 250px;
+	width: 250px;
+}
+
+a {
+	text-decoration: underline;
+	color: blue;
+}
+
+h1 {
+	font-family: Arial;
+}
