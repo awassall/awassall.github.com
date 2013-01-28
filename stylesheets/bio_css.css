@@ -1,0 +1,20 @@
+body {
+	color: yellow;
+}
+
+a {
+	text-decoration: underline;
+	color: blue;
+}
+
+h1 {
+	font-family: cursive;
+}
+
+h4 {
+	font-family: cursive;
+}
+
+li {
+	font-family: Georgia;
+}

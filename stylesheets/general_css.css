@@ -1,0 +1,21 @@
+img {
+	height: 250px;
+	width: 250px;
+}
+
+a {
+	text-decoration: underline;
+	color: blue;
+}
+
+h1 {
+	font-family: Verdana;
+}
+
+h4 {
+	font-family: Verdana;
+}
+
+li ul li {
+	font-style: italic;
+}
