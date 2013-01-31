@@ -9,11 +9,13 @@ function password(var1)
 {
   var pass = "hairygary";
   var x = prompt("Enter password to download:","password");
-  if (x != pass) {
-    alert("That password is incorrect.");
-  }
-  else {
-    window.location = var1;
+  if ((x != '') && (x != null)) {
+    if (x != pass) {
+      alert("That password is incorrect.");
+    }
+    else {
+      window.location = var1;
+    }
   }
 }
 </script>
