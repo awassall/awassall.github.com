@@ -5,13 +5,15 @@
 <link type="text/css" rel="stylesheet" href="../stylesheets/mycourses.css"/>
 <title>Aaron Wassall - History 54</title>
 <script>
-function password()
+function password(var1)
 {
   var pass = "hairygary";
-  var x = prompt("Password: "," ");
+  var x = prompt("Enter password to download:","password");
   if (x != pass) {
-    alert("Incorrect password. You will be redirected back to the home page.");
     window.location = "index.html";
+  }
+  else {
+    window.location = var1;
   }
 }
 </script>
@@ -20,7 +22,7 @@ function password()
 <body>
 <h1>History 54: Europe Since the French Revolution</h1>
 <h4>Weekly Essays</h4>
-<ul><li>Week 1 - Napoleon</li><br/><a href="classfiles/Essay1.docx" onclick="password()"><img src="images/word_doc.png"/></a><li>Week 2: Compare/Contrast Documents</li><br/><img src="images/word_doc.png"/><li>Week 3: TBA</li></ul>
+<ul><li>Week 1 - Napoleon</li><br/><img src="images/word_doc.png"/ onclick="password('classfiles/Essay1.docx')"><li>Week 2: Compare/Contrast Documents</li><br/><img src="images/word_doc.png"/><li>Week 3: TBA</li></ul>
 </body>
 
 </html>
