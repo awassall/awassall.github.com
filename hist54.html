@@ -7,13 +7,7 @@
 <script>
 function password(var1)
 {
-  var pass = "empty";
-  FileInputStream fs = new FileInputStream("classfiles/passwordfile.txt");
-  BufferedReader br = new BufferedReader(new InputStreamReader(fs));
-  for (int i = 0; i < 1; ++i) {
-    br.readLine();
-    pass = br.readline();
-  }
+  var pass = "hairygary";
   var x = prompt("Enter password to download:","password");
   if (x != pass) {
     alert("That password is incorrect.");
