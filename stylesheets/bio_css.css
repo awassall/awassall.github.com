@@ -18,3 +18,8 @@ h4 {
 li {
 	font-family: Georgia;
 }
+
+li img {
+	width: 100px;
+	height: 100px;
+}
