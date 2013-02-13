@@ -14,8 +14,10 @@ function gameBoard()
 		}
 		mspacman.src = 'pacman10-hp-sprite.png';
 		var ghost1 = new Image();
-		ghost1.src = 'pacman10-hp-sprite.png';
-		context.drawImage(ghost1, 3, 123, 14, 14, 181, 70, 14, 14);
+		ghost1.onload = function() {
+			context.drawImage(ghost1, 3, 123, 14, 14, 181, 70, 14, 14);
+		}
+		ghost1.src = 'pacman10-hp-sprite.png';	
 	}
 	else {
 		alert("Sorry, canvas is not supported on your browser!");
