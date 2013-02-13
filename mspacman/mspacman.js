@@ -4,14 +4,20 @@ function gameBoard()
 	if (c.getContext) {
 		var context = c.getContext("2d");
 		var board = new Image();
+		board.onload = function() {
+			context.drawImage(board, 322, 2, 464, 136, 0, 0, 464, 136);
+		}
 		board.src = 'pacman10-hp-sprite.png';
-		context.drawImage(board, 322, 2, 464, 136, 0, 0, 464, 136);
 		var mspacman = new Image();
+		mspacman.onload = function() {
+			context.drawImage(mspacman, 322, 2, 464, 136, 0, 0, 464, 136);
+		}
 		mspacman.src = 'pacman10-hp-sprite.png';
-		context.drawImage(mspacman, 84, 3, 13, 14, 175, 29, 13, 14);
 		var ghost1 = new Image();
+		ghost1.onload = function() {
+			context.drawImage(ghost1, 322, 2, 464, 136, 0, 0, 464, 136);
+		}
 		ghost1.src = 'pacman10-hp-sprite.png';
-		context.drawImage(ghost1, 3, 123, 14, 14, 181, 70, 14, 14);
 	}
 	else {
 		alert("Sorry, canvas is not supported on your browser!");
