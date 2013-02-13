@@ -1,8 +1,3 @@
-function draw(ctx,img,a,b,c,d,e,f)
-{
-	ctx.drawImage(img, a, b, c, d, e, f, c, d);
-}
-
 function gameBoard()
 {
 	var c = document.getElementById("board");
@@ -11,11 +6,17 @@ function gameBoard()
 		var board = new Image();
 		var mspacman = new Image();
 		var ghost1 = new Image();
-		board.onload = draw(context, board, 322, 2, 464, 136, 0, 0, 464, 136);
+		board.onload = function() {
+			context.drawImage(board, 322, 2, 464, 136, 0, 0, 464, 136);
+		}
+		mspacman.onload = function() {
+			context.drawImage(mspacman, 322, 2, 464, 136, 0, 0, 464, 136);
+		}
+		ghost1.onload = function() {
+			context.drawImage(ghost1, 322, 2, 464, 136, 0, 0, 464, 136);
+		}
 		board.src = 'pacman10-hp-sprite.png';
-		mspacman.onload = draw(context, mspacman, 322, 2, 464, 136, 0, 0, 464, 136);
 		mspacman.src = 'pacman10-hp-sprite.png';
-		ghost1.onload = draw(context, ghost1, 322, 2, 464, 136, 0, 0, 464, 136);
 		ghost1.src = 'pacman10-hp-sprite.png';	
 	}
 	else {
