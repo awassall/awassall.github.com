@@ -5,7 +5,9 @@ function gameBoard()
 		var context = c.getContext("2d");
 		var board = new Image();
 		board.src = 'pacman10-hp-sprite.png';
-		context.drawImage(board, 322, 2, 464, 136, 0, 0, 464, 136);
+		board.onload = function () {
+			context.drawImage(board, 322, 2, 464, 136, 0, 0, 464, 136);
+		}
 		var mspacman = new Image();
 		mspacman.src = 'pacman10-hp-sprite.png';
 		context.drawImage(mspacman, 84, 3, 13, 14, 175, 29, 13, 14);
