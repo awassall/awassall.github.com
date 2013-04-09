@@ -1,0 +1,22 @@
+Refined Plan
+
+Retailer Object:
+
+1. Stores location of seller
+2. Stores availability of seller
+3. contact info
+4. type of vehicle aka capacity
+5. range of mobility
+6. price
+	a. establish different types of pricing, ie by the hour/ distance etc
+	
+Interface:
+
+Calendar, probably use google maps
+
+	-user input for starting and ending position
+
+	-select a day or range from map, will then query database for retailers available
+	during that time, will then use ajax to place retailers in list
+	
+	-We'll use the google maps api to calculate whether a user is within range
