@@ -30,3 +30,8 @@ h1 {
 	font-weight: bold;
 	color: purple;
 }
+
+#exercises {
+	list-style-type: upper-roman;
+	font-size: 20px;
+}
