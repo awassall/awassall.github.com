@@ -46,7 +46,7 @@ function connectDB() {
 						locsParsed = JSON.parse(locsRequest.responseText);
 						if (locsParsed.length > 0) {
 							console.log(locsParsed[0]);
-							return success();
+							return success(locsParsed[0]['lat'],locsParsed[0]['lng']);
 						}
 						return fail();
 					}
@@ -58,8 +58,8 @@ function connectDB() {
 	}
 }
 
-function success() {
-	alert("SUCCESS");
+function success(lastLat,lastLng) {
+	alert("SUCCESS\n\n" + lastLat + "\n" + lastLng);
 }
 
 function fail() {
