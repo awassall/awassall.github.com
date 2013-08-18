@@ -3,17 +3,30 @@
 <head>
 
 </head>
+<title>Find My Car</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="To help Mom find her car."/>
 <meta name="author" content="Aaron Wassall"/>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&libraries=geometry"></script>
 <script type="text/javascript">
+
+var myLat = 0;
+var myLng = 0;
+
+function init() {
+	document.write(");
+}
 
 function getLoc() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position) {
 			document.getElementById("lat").innerHTML = position.coords.latitude;
+			myLat = position.coords.latitude;
 			document.getElementById("long").innerHTML = position.coords.longitude;
+			myLng = position.coords.longitude;
+			renderMap();
 		});
 	}
 	else {
@@ -21,10 +34,26 @@ function getLoc() {
 	}
 }
 
+function renderMap() {
+	
+}
+
+</script>
+<script type="text/css">
+
+body
+{
+	background-color:#94FF94;
+	font-family: Georgia;
+	font-size: 14pt;
+}
+
 </script>
 
-<body onload="getLoc()">
-<p id="currentloc">Your current location is &#40<span id="lat"></span>&#44<span id="long"></span>&#41</p>
+<body>
+<div style="float:left;height:30%;margin-bottom:-125px"></div><div style="clear:both;position:relative;background-color:#C299EB;margin:0 auto;width:500px;height:270px;border:6px inset grey"><h1><center>Find My Car</center></h1>
+<!-- <center><form name="login" action="loggingin" method="post"><input type="text" name="luser" placeholder="username"><br/><input type="password" name="lpass" placeholder="password"><br/><input type="submit" value="login"></form><p style="color:red">' + inval + '</p>Not registered yet? <a href="/createaccount">Create a new account</a></center> -->
+</div>
 </body>
 
 </html>
