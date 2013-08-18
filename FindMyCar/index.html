@@ -10,6 +10,60 @@
 
 var myLat = 0;
 var myLng = 0;
+var locsRequest;
+var locsParsed = null;
+var locsLength;
+var parsed = null;
+var locsURL = "http://aw-highscores.herokuapp.com/getcarlocation.json";
+function connectDB() {
+	try {
+		locsRequest = new XMLHttpRequest();
+	}
+	catch (ms1) {
+		try {
+			locsRequest = new ActiveXObject("Msxml2.XMLHTTP");
+		}
+		catch (ms2) {
+			try {
+				locsRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch (ex) {
+				locsRequest = null;
+			}
+		}
+	}
+	
+	if (locsRequest == null) {
+		alert("Error retrieving mover information -- Ajax not supported?");
+	}
+	
+	else {
+		locsRequest.onreadystatechange = function () {
+			if (locsRequest.readyState==4) {
+				if (locsRequest.status==200) {
+					if (locsRequest.responseText) {
+						locsParsed = JSON.parse(locsRequest.responseText);
+						if (locsParsed.length > 0) {
+							console.log(locsParsed[0]);
+							return success();
+						}
+						return fail();
+					}
+				}
+			}
+		}
+		locsRequest.open("GET",locsURL,true);
+		locsRequest.send(null);
+	}
+}
+
+function success() {
+	alert("SUCCESS");
+}
+
+function fail() {
+	alert("FAILED");
+}
 
 function replaceWithLatLong() {
 	newpar = document.getElementById("lochasbeenset");
@@ -69,7 +123,7 @@ function findCar() {
 		error: function(xhr,b,c) {
 			x = JSON.parse(xhr.responseText);
 			alert("error");
-			console.log(xhr.statusText + "@@@" + x + "!!!" + xhr.status);
+			console.log(xhr.statusText + "@@@" + x[0] + "!!!" + xhr.status);
 			console.log(b);
 			console.log(c);
 		},
@@ -101,7 +155,7 @@ body
 		<span id="lochasbeenset" style="position:relative;top:-999px"></span>
 	</div>
 	<div style="position:relative;left:340px;top:-250px;width:150px;height:100px"><center>Find your<br/>car</center>
-		<button id="findcar" name="findcar" type="button" onclick="findCar()" style="position:relative;top:10px;left:46px;height:40px;width:60px">GO</button>
+		<button id="findcar" name="findcar" type="button" onclick="connectDB()" style="position:relative;top:10px;left:46px;height:40px;width:60px">GO</button>
 	</div>
 </div>
 </body>
