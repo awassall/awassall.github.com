@@ -48,9 +48,9 @@ function postLoc() {
 		type: 'POST',
 		crossDomain: true,
 		dataType: 'jsonp',
+		jsonp: 'callbackname',
 		success: function() { alert("Success"); },
-		error: function() { alert('Failed'); },
-		beforeSend: setHeader
+		error: function() { alert("Failed"); },
 	});
 }
 
@@ -60,8 +60,8 @@ function getLoc() {
 			myLat = position.coords.latitude;
 			myLng = position.coords.longitude;
 			replaceWithLatLong();
-			//postLoc();
-			dataPersist();
+			postLoc();
+			//dataPersist();
 			//alert("Your car's location has been set to your current lat/lng coordinates.");
 			//renderMap();
 		});
