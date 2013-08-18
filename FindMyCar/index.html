@@ -41,7 +41,7 @@ function postLoc() {
 		"lat": myLat,
 		"lng": myLng,
 		"when": new Date()
-	}
+	};
 	$.ajax({
 		url: 'http://aw-highscores.herokuapp.com/setcarlocation.json',
 		data: myData,
