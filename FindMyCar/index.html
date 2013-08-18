@@ -47,8 +47,7 @@ function postLoc() {
 		data: myData,
 		type: 'POST',
 		crossDomain: true,
-		dataType: 'jsonp',
-		jsonp: 'callback',
+		dataType: 'json',
 		success: function() { alert("Success"); },
 		error: function() { alert("Failed"); },
 	});
