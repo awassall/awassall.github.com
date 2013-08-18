@@ -51,17 +51,26 @@ function getLoc() {
 }
 
 function findCar() {
+
+	$.get("http://aw-highscores.herokuapp.com/getcarlocation.json", function(data) {
+		console.log("Data loaded");
+		console.log(data);
+	});
+/*
 	$.ajax({
 		url: 'http://aw-highscores.herokuapp.com/getcarlocation.json',
 		type: 'GET',
 		crossDomain: true,
-		dataType: 'json',
+		dataType: 'jsonp',
 		success: function(data) { console.log(data); },
 		error: function(data) {
 			alert("error");
 			console.log(data);
 		},
 	});
+
+*/
+
 }
 
 </script>
