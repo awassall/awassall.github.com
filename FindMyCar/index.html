@@ -55,7 +55,7 @@ function findCar() {
 		url: 'http://aw-highscores.herokuapp.com/getcarlocation.json',
 		type: 'GET',
 		crossDomain: true,
-		dataType: 'jsonp',
+		dataType: 'json',
 		success: function(data) { console.log(data); },
 		error: function(data) {
 			alert("error");
