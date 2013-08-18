@@ -18,7 +18,7 @@ var myLng = 0;
 function replaceWithLatLong() {
 	newpar = document.getElementById("lochasbeenset");
 	document.getElementById("setlocbutton").style.top = "-999px";
-	newpar.style.top = "-20px";
+	newpar.style.top = "-25px";
 	newpar.innerHTML = "<center>Lat: " + Math.round(myLat*1000000)/1000000 + "<br/>Long: " + Math.round(myLng*1000000)/1000000 + "</center>";
 	newpar.style.color = "red";
 }
@@ -29,7 +29,7 @@ function getLoc() {
 			myLat = position.coords.latitude;
 			myLng = position.coords.longitude;
 			replaceWithLatLong();
-			alert("Last location set to current coordinates.");
+			alert("Your car's location has been set to your current lat/lng coordinates.");
 			//renderMap();
 		});
 	}
