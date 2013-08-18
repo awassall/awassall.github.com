@@ -36,12 +36,31 @@ function dataPersist() {
 	});
 }
 
+function postLoc() {
+	var myData = {
+		"lat": myLat,
+		"lng": myLng,
+		"when": new Date()
+	}
+	$.ajax({
+		url: 'http://aw-highscores.herokuapp.com/setcarlocation.json',
+		data: myData,
+		type: 'POST',
+		crossDomain: true,
+		dataType: 'jsonp',
+		success: function() { alert("Success"); },
+		error: function() { alert('Failed'); },
+		beforeSend: setHeader
+	});
+}
+
 function getLoc() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position) {
 			myLat = position.coords.latitude;
 			myLng = position.coords.longitude;
 			replaceWithLatLong();
+			//postLoc();
 			dataPersist();
 			//alert("Your car's location has been set to your current lat/lng coordinates.");
 			//renderMap();
