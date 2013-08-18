@@ -19,19 +19,6 @@ function replaceWithLatLong() {
 	newpar.style.color = "red";
 }
 
-function dataPersist() {
-	$.post("http://aw-highscores.herokuapp.com/setcarlocation.json",
-	{
-		lat: myLat,
-		lng: myLng,
-		when: new Date()
-	},
-	function(data,status) {
-		alert(status + ": " + data);
-		//alert("Your car's location has been set to your current lat/lng coordinates.");
-	});
-}
-
 function postLoc() {
 	var myData = {
 		"lat": myLat,
@@ -56,9 +43,6 @@ function getLoc() {
 			myLng = position.coords.longitude;
 			replaceWithLatLong();
 			postLoc();
-			//dataPersist();
-			//alert("Your car's location has been set to your current lat/lng coordinates.");
-			//renderMap();
 		});
 	}
 	else {
@@ -67,7 +51,14 @@ function getLoc() {
 }
 
 function findCar() {
-	alert("Trying to find car.");
+	$.ajax({
+		url: 'http://aw-highscores.herokuapp.com/getcarlocation.json',
+		type: 'GET',
+		crossDomain: true,
+		dataType: 'jsonp',
+		success: function(data) { console.log(data); },
+		error: function() { alert("ERROR"); },
+	});
 }
 
 </script>
