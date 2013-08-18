@@ -23,13 +23,27 @@ function replaceWithLatLong() {
 	newpar.style.color = "red";
 }
 
+function dataPersist() {
+	$.post("http://aw-highscores.herokuapp.com/setcarlocation.json",
+	{
+		lat: myLat,
+		lng: myLng,
+		when: new Date()
+	},
+	function(data,status) {
+		alert(status + ": " + data);
+		//alert("Your car's location has been set to your current lat/lng coordinates.");
+	});
+}
+
 function getLoc() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position) {
 			myLat = position.coords.latitude;
 			myLng = position.coords.longitude;
 			replaceWithLatLong();
-			alert("Your car's location has been set to your current lat/lng coordinates.");
+			dataPersist();
+			//alert("Your car's location has been set to your current lat/lng coordinates.");
 			//renderMap();
 		});
 	}
