@@ -63,7 +63,7 @@ function success() {
 }
 
 function fail() {
-	alert("FAILED");
+	alert("Failed to retrieve last location from server.\n\nPlease try again.");
 }
 
 function replaceWithLatLong() {
@@ -87,7 +87,7 @@ function postLoc() {
 		crossDomain: true,
 		dataType: 'json',
 		success: function() { alert("Your car's location has been set to your current location:\n\nLat: " + myLat + "\nLng: " + myLng); },
-		error: function() { alert("Your car's location has been set to your current location:\n\nLat: " + myLat + "\nLng: " + myLng); },
+		error: function() { alert("An error occurred.\n\nPlease try again."); },
 	});
 }
 
