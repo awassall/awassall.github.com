@@ -57,7 +57,10 @@ function findCar() {
 		crossDomain: true,
 		dataType: 'jsonp',
 		success: function(data) { console.log(data); },
-		error: function() { alert("ERROR"); },
+		error: function(data) {
+			alert("error");
+			console.log(data);
+		},
 	});
 }
 
