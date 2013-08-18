@@ -64,7 +64,7 @@ function findCar() {
 	$.ajax({
 		url: 'http://aw-highscores.herokuapp.com/getcarlocation.json',
 		type: 'GET',
-		dataType: "json",
+		dataType: "jsonp",
 		success: function(data) { console.log(data); },
 		error: function(xhr,b,c) {
 			alert("error");
