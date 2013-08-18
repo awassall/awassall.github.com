@@ -15,6 +15,7 @@ var locsParsed = null;
 var locsLength;
 var parsed = null;
 var locsURL = "http://aw-highscores.herokuapp.com/getcarlocation.json";
+
 function connectDB() {
 	try {
 		locsRequest = new XMLHttpRequest();
@@ -102,32 +103,6 @@ function getLoc() {
 	else {
 		alert("Geolocation is not supported by your web browser.");
 	}
-}
-
-function findCar() {
-
-/*
-
-	$.get("http://aw-highscores.herokuapp.com/getcarlocation.json", function(data) {
-		console.log("Data loaded");
-		console.log(data);
-	});
-
-*/
-
-	$.ajax({
-		url: 'http://aw-highscores.herokuapp.com/getcarlocation.json',
-		type: 'GET',
-		dataType: "jsonp",
-		success: function(data) { console.log(data); },
-		error: function(xhr,b,c) {
-			x = JSON.parse(xhr.responseText);
-			alert("error");
-			console.log(xhr.statusText + "@@@" + x[0] + "!!!" + xhr.status);
-			console.log(b);
-			console.log(c);
-		},
-	});
 }
 
 </script>
