@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<title>Find My Car</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="To help Mom find her car."/>
+<meta name="author" content="Aaron Wassall"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&libraries=geometry"></script>
+<script type="text/javascript">
+
+var myLat = 0;
+var myLng = 0;
+
+function getLoc() {
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+			myLat = position.coords.latitude;
+			myLng = position.coords.longitude;
+			alert("Last location set to current coordinates.");
+			//renderMap();
+		});
+	}
+	else {
+		alert("Geolocation is not supported by your web browser.");
+	}
+}
+
+function renderMap() {
+	
+}
+
+</script>
+<style>
+
+body
+{
+	background-color: rgb(148,255,148);
+	font-family: Georgia, Arial;
+	font-size: 14pt;
+}
+
+</style>
+
+<body>
+<div style="float:left;width:1px">&nbsp &nbsp &nbsp</div>
+<div style="clear:both;position:relative;background-color:#C299EB;margin:0 auto;width:500px;height:270px;border:6px inset grey">
+	<h1><center>Car Finder [1.0]</center></h1>
+	<div style="position:relative;left:50px;background-color:orange;width:50px;height:50px;border-radius:100%;border:1px solid black"><center><span style="position:relative;top:10px">1</span></center></div>
+	<div style="position:relative;left:395px;top:-52px;background-color:orange;width:50px;height:50px;border-radius:100%;border:1px solid black"><center><span style="position:relative;top:10px">2</span></center></div>
+	<center><img src="parkingsign.png" alt="sign" width="20%" height="40%" style="position:relative;top:-100px"/></center>
+	<div style="position:relative;left:0px;top:-200px;width:150px;height:100px"><center>Set your<br/>location</center>
+		<button name="setloc" type="button" onclick="getLoc()" style="position:relative;top:10px;left:45px;height:40px;width:60px">GO</button>
+	</div>
+	<div style="position:relative;left:340px;top:-300px;width:150px;height:100px"><center>Find your<br/>car</center></div>
+
+</div>
+</body>
+
+</html>
