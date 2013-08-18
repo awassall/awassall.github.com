@@ -52,25 +52,28 @@ function getLoc() {
 
 function findCar() {
 
+/*
+
 	$.get("http://aw-highscores.herokuapp.com/getcarlocation.json", function(data) {
 		console.log("Data loaded");
 		console.log(data);
 	});
-/*
+
+*/
+
 	$.ajax({
 		url: 'http://aw-highscores.herokuapp.com/getcarlocation.json',
 		type: 'GET',
 		crossDomain: true,
 		dataType: 'jsonp',
 		success: function(data) { console.log(data); },
-		error: function(data) {
+		error: function(a,b,c) {
 			alert("error");
-			console.log(data);
+			console.log(a);
+			console.log(b);
+			console.log(c);
 		},
 	});
-
-*/
-
 }
 
 </script>
