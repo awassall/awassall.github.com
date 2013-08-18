@@ -66,8 +66,8 @@ function getLoc() {
 	}
 }
 
-function renderMap() {
-	
+function findCar() {
+	alert("Trying to find car.");
 }
 
 </script>
@@ -94,8 +94,9 @@ body
 		<button id="setlocbutton" name="setloc" type="button" onclick="getLoc()" style="position:relative;top:10px;left:45px;height:40px;width:60px">GO</button>
 		<span id="lochasbeenset" style="position:relative;top:-999px"></span>
 	</div>
-	<div style="position:relative;left:340px;top:-250px;width:150px;height:100px"><center>Find your<br/>car</center></div>
-
+	<div style="position:relative;left:340px;top:-250px;width:150px;height:100px"><center>Find your<br/>car</center>
+		<button id="findcar" name="findcar" type="button" onclick="findCar()" style="position:relative;top:10px;left:46px;height:40px;width:60px">GO</button>
+	</div>
 </div>
 </body>
 
