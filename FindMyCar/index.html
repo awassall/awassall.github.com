@@ -15,11 +15,20 @@
 var myLat = 0;
 var myLng = 0;
 
+function replaceWithLatLong() {
+	newpar = document.getElementById("lochasbeenset");
+	document.getElementById("setlocbutton").style.top = "-999px";
+	newpar.style.top = "-20px";
+	newpar.innerHTML = "<center>Lat: " + myLat + "<br/>Long: " + myLng + "</center>";
+	newpar.style.color = "red";
+}
+
 function getLoc() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position) {
 			myLat = position.coords.latitude;
 			myLng = position.coords.longitude;
+			replaceWithLatLong();
 			alert("Last location set to current coordinates.");
 			//renderMap();
 		});
@@ -53,7 +62,8 @@ body
 	<div style="position:relative;left:395px;top:-52px;background-color:orange;width:50px;height:50px;border-radius:100%;border:1px solid black"><center><span style="position:relative;top:10px">2</span></center></div>
 	<center><img src="parkingsign.png" alt="sign" width="20%" height="40%" style="position:relative;top:-100px"/></center>
 	<div style="position:relative;left:0px;top:-200px;width:150px;height:100px"><center>Set your<br/>location</center>
-		<button name="setloc" type="button" onclick="getLoc()" style="position:relative;top:10px;left:45px;height:40px;width:60px">GO</button>
+		<button id="setlocbutton" name="setloc" type="button" onclick="getLoc()" style="position:relative;top:10px;left:45px;height:40px;width:60px">GO</button>
+		<span id="lochasbeenset" style="position:relative;top:-999px"></span>
 	</div>
 	<div style="position:relative;left:340px;top:-300px;width:150px;height:100px"><center>Find your<br/>car</center></div>
 
