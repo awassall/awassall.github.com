@@ -67,8 +67,9 @@ function findCar() {
 		dataType: "jsonp",
 		success: function(data) { console.log(data); },
 		error: function(xhr,b,c) {
+			x = JSON.parse(xhr.responseText);
 			alert("error");
-			console.log(xhr.statusText + "@@@" + xhr.responseText + "!!!" + xhr.status);
+			console.log(xhr.statusText + "@@@" + x + "!!!" + xhr.status);
 			console.log(b);
 			console.log(c);
 		},
