@@ -6,12 +6,16 @@
 <link rel="stylesheet" href="desktop.css" media="(min-device-width: 1137px)"/>
 <link rel="stylesheet" href="mobile.css" media="(max-device-width: 1136px)"/>
 <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
-<script src="javascript/mycode.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/mycode.js"></script>
 <title>Red Line Tracker</title>
 </head>
 
 <body>
 <h1 id="test" onclick="clickMe()">This is the title.</h1>
+<button id="Alewife" onclick="populateStopData(this.id)">Click for Alewife info</button>
+<button id="Davis" onclick="populateStopData(this.id)">Click for Davis info</button>
+<p id="output">Empty paragraph.</p>
 </body>
 
 </html>
