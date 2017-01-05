@@ -1,10 +1,6 @@
 //GLOBAL VARIABLES
 var apiKey = "wX9NwuHnZU2ToO7GmGR9uw";
 
-function clickMe() {
-    alert("You clicked me!");
-}
-
 function stopDisplayToLogical(stop_display_name) {
     var stop_logical_name = "";
     if (stop_display_name == "Davis") {
@@ -27,8 +23,22 @@ function fetchSubwayByStop(stop_display_name) {
     });
     return "Success";
 }
+ 
+function getStopListByRouteId(route_id_from_id) {
+    var route_id = route_id_from_id.split("_")[1];
+    $.ajax({
+        http://realtime.mbta.com/developer/api/v2/routes?api_key=wX9NwuHnZU2ToO7GmGR9uw&format=json
+        url: "http://realtime.mbta.com/developer/api/v2/routes?api_key=" + apiKey + "&format=json",
+        dataType: "jsonp",
+    }).done(function(data) {
+        document.getElementById("output").innerHTML = data;
+    }).fail(function() {
+        alert("ERROR: Failed to look up the list of stops for the route with id " + route_id + ".");
+    });
+}
 
 function populateStopData(stop_display_name) {
-    document.getElementById("output").innerHTML = "Test";
+    document.getElementById("output").innerHTML = "test";
+    //implement later
     //document.getElementById("output").innerHTML = fetchSubwayByStop(stop_display_name);
 }
