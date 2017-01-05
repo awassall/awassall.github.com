@@ -29,5 +29,6 @@ function fetchSubwayByStop(stop_display_name) {
 }
 
 function populateStopData(stop_display_name) {
-    document.getElementById("output").innerHTML = fetchSubwayByStop(stop_display_name);
+    document.getElementById("output").innerHTML = "Test";
+    //document.getElementById("output").innerHTML = fetchSubwayByStop(stop_display_name);
 }
