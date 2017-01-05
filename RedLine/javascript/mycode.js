@@ -26,17 +26,21 @@ function fetchSubwayByStop(stop_display_name) {
  
 function fetchStopListByRouteId(route_id) {
     var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=" + apiKey + "&route=" + route_id + "&format=json";
-    var i;
+    var i = 0;
+    var results = [];
+    var dir = "";
     var jqxhr = $.getJSON(url).done(function(data) {
         console.log(data);
-        /*
-        var obj = jQuery.parseJSON(JSON.stringify(data));
-        console.log(obj.direction);
-        */
         $.each(data, function(k1,v1) {
             if (k1 == "direction") {
                 for (i = 0; i < (v1.length); i++) {
                     console.log(v1[i]);
+                    $.each(v1[i], function(k2,v2) {
+                        if (k2 == "direction_name") {
+                            dir = v2;
+                            console.log(dir);
+                        }
+                    });
                 }
                 /*
                 $.each(v1, function(k2,v2) {
