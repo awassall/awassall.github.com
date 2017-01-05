@@ -33,7 +33,6 @@ function fetchStopListByRouteId(route_id) {
     var stop_name = "";
     var parent_station = "";
     var station = [];
-    var dir = "";
     var jqxhr = $.getJSON(url).done(function(data) {
         $.each(data, function(k1,v1) {
             if (k1 == "direction") {
@@ -41,7 +40,6 @@ function fetchStopListByRouteId(route_id) {
                     $.each(v1[i], function(k2,v2) {
                         if (k2 == "direction_name") {
                             resSize = results.push([v2,[]]);
-                            console.log(results);
                         }
                         if (k2 == "stop") {
                             for (j = 0; j < (v2.length); j++) {
@@ -76,6 +74,7 @@ function fetchStopListByRouteId(route_id) {
                 */
             }
         });
+        console.log(results);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     }).always(function() {
