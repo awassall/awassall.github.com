@@ -28,8 +28,7 @@ function getStopListByRouteId(route_id_from_id) {
     var route_id = route_id_from_id.split("_")[1];
     var url = "http://realtime.mbta.com/developer/api/v2/routes?api_key=" + apiKey + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
-        console.log("done");
-        document.getElementById("output").innerHTML = data;
+        console.log(data);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for getStopListByRouteId().");
     }).always(function() {
