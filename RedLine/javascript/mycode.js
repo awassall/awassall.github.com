@@ -27,7 +27,6 @@ function fetchSubwayByStop(stop_display_name) {
 function getStopListByRouteId(route_id_from_id) {
     var route_id = route_id_from_id.split("_")[1];
     $.ajax({
-        http://realtime.mbta.com/developer/api/v2/routes?api_key=wX9NwuHnZU2ToO7GmGR9uw&format=json
         url: "http://realtime.mbta.com/developer/api/v2/routes?api_key=" + apiKey + "&format=json",
         dataType: "jsonp",
     }).done(function(data) {
