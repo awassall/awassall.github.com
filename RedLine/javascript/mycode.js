@@ -26,6 +26,10 @@ function fetchSubwayByStop(stop_display_name) {
  
 function getStopListByRouteId(route_id_from_id) {
     var route_id = route_id_from_id.split("_")[1];
+    var url = "http://realtime.mbta.com/developer/api/v2/routes?api_key=" + apiKey + "&format=json";
+    var jqxhr = $.getJSON(url);
+    console.log("here");
+    /*
     $.ajax({
         url: "http://realtime.mbta.com/developer/api/v2/routes?api_key=" + apiKey + "&format=json",
         dataType: "jsonp",
@@ -34,6 +38,7 @@ function getStopListByRouteId(route_id_from_id) {
     }).fail(function() {
         alert("ERROR: Failed to look up the list of stops for the route with id " + route_id + ".");
     });
+    */
 }
 
 function populateStopData(stop_display_name) {
