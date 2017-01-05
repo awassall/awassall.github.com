@@ -33,11 +33,12 @@ function fetchStopListByRouteId(route_id) {
         console.log(obj.direction);
         */
         $.each(data, function(k1,v1) {
-            console.log(k1);
             if (k1 == "direction") {
+                console.log(k1);
                 console.log(v1);
                 $.each(v1, function(k2,v2) {
                     console.log(k2);
+                    console.log(v2);
                     if (k2 == "direction_name") {
                         /*
                         if (v2 == "Northbound") {
