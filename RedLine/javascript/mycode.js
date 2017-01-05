@@ -33,7 +33,7 @@ function fetchStopListByRouteId(route_id) {
         console.log(obj.direction);
         */
         $.each(data, function(index,obj) {
-            if (index == "stop_name") {
+            if (index == "direction") {
                 console.log(obj);
             }
         });
