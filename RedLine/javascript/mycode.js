@@ -32,9 +32,18 @@ function fetchStopListByRouteId(route_id) {
         var obj = jQuery.parseJSON(JSON.stringify(data));
         console.log(obj.direction);
         */
-        $.each(data, function(index,obj) {
-            if (index == "direction") {
-                console.log(obj);
+        $.each(data, function(idx1,obj1) {
+            if (idx1 == "direction") {
+                $.each(obj1, function(idx2,obj2) {
+                    if (idx2 == "direction_name") {
+                        /*
+                        if (obj2 == "Northbound") {
+                        } else if (obj2 == "Southbound") {
+                        }
+                        */
+                        console.log(obj2);
+                    }
+                });
             }
         });
     }).fail(function() {
