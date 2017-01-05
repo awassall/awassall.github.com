@@ -30,7 +30,7 @@ function fetchStopListByRouteId(route_id) {
     var j = 0;
     var resSize = 0;
     var results = [];
-    var stop_name = "";
+    var parent_station_name = "";
     var parent_station = "";
     var station = [];
     var jqxhr = $.getJSON(url).done(function(data) {
@@ -44,46 +44,35 @@ function fetchStopListByRouteId(route_id) {
                         if (k2 == "stop") {
                             for (j = 0; j < (v2.length); j++) {
                                 station = [];
-                                stop_name = "";
+                                parent_station_name = "";
                                 parent_station = "";
                                 $.each(v2[j], function(k3,v3) {
-                                    if (k3 == "stop_name") {
-                                        stop_name = v3;
+                                    if (k3 == "parent_station_name") {
+                                        parent_station_name = v3;
                                     }
                                     if (k3 == "parent_station") {
                                         parent_station = v3;
                                     }
                                 });
-                                station.push([stop_name,parent_station]);
+                                station.push([parent_station_name,parent_station]);
                                 results[resSize-1][1].push(station);
                             }
                         }
                     });
                 }
-                /*
-                $.each(v1, function(k2,v2) {
-                    console.log(k2);
-                    console.log(v2);
-                    if (k2 == "direction_name") {
-                        if (v2 == "Northbound") {
-                        } else if (v2 == "Southbound") {
-                        }
-                        //console.log(v2);
-                    }
-                });
-                */
             }
         });
-        console.log(results);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
-    }).always(function() {
-        console.log("always");
     });
-    console.log("here");
+    return results;
 }
 
 function populateStopData(element_id) {
+    var i = 0;
     var route_id = element_id.split("_")[1];
-    fetchStopListByRouteId(route_id);
+    var stopList = fetchStopListByRouteId(route_id);
+    for (i = 0; i < (stopList.length); i++) {
+        console.log(stopList[i]);
+    }
 }
