@@ -28,8 +28,15 @@ function fetchStopListByRouteId(route_id) {
     var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=" + apiKey + "&route=" + route_id + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
         console.log(data);
+        /*
         var obj = jQuery.parseJSON(JSON.stringify(data));
         console.log(obj.direction);
+        */
+        $.each(data, function(index,obj) {
+            if (index == "stop_name") {
+                console.log(obj);
+            }
+        });
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     }).always(function() {
