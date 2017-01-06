@@ -96,7 +96,7 @@ function populateStopData(element_id) {
 }
 
 function drawPage() {
-    console.log("here");
+    console.log("drawPage called");
     var loaded = document.getElementById("loadStatus").innerHTML;
     if (loaded == "") { //not loaded yet
         var loadp = document.getElementById("loadp");
@@ -121,6 +121,7 @@ function drawPage() {
 }
 
 function loadData() {
+    console.log("loadData called");
     loadTimeout = setInterval(drawPage, 500);
     fetchStopListByRouteId("Red");
 }
