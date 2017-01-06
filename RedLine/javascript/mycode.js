@@ -82,11 +82,14 @@ function drawPage() {
     var loaded = document.getElementById("loadStatus").innerHTML;
     if (loaded == "") { //not loaded yet
         var loadp = document.getElementById("loadp");
+        loadp.innerHTML += ".";
+        /*
         if ((loadp.innerHTML).indexOf("...") > -1) {
             loadp.innerHTML = "Loading.";
         } else {
             loadp.innerHTML += ".";
         }
+        */
     } else { //loaded
         clearTimeout(loadTimeout);
     }
