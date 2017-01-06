@@ -77,6 +77,8 @@ function fetchStopListByRouteId(route_id) {
     console.log(obj);
     console.log(Object.keys(obj));
     var o = new Object();
+    parent_station_name = "name";
+    parent_station = "Asdsdf";
     o[parent_station_name] = parent_station;
     console.log(o);
     console.log(Object.keys(o));
