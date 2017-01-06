@@ -82,6 +82,7 @@ function populateStopData(element_id) {
     //page.innerHTML = JSON.stringify(stopList);
     //return
     console.log(stopList);
+    console.log(stopList.length);
     console.log("here");
     $.each(stopList, function(k,v) {
         console.log(k + " " + v);
