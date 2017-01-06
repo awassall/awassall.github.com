@@ -1,5 +1,6 @@
 //GLOBAL VARIABLES
 var apiKey = "wX9NwuHnZU2ToO7GmGR9uw";
+var results;
 
 function stopDisplayToLogical(stop_display_name) {
     var stop_logical_name = "";
@@ -29,7 +30,7 @@ function fetchStopListByRouteId(route_id) {
     var i = 0;
     var j = 0;
     //var dir = "";
-    var results = new Object();
+    results = new Object();
     results.displayNames = new Array();
     results.logicalNames = new Array();
     var parent_station_name = "";
@@ -76,21 +77,17 @@ function fetchStopListByRouteId(route_id) {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
     console.log(results);
-    return results;
+    return;
 }
 
 function populateStopData(element_id) {
     var i = 0;
-    //var displayName = 0;
-    //var logicalName = 1;
     var route_id = element_id.split("_")[1];
-    var stopList = fetchStopListByRouteId(route_id);
-    //console.log(stopList);
-    //console.log(Object.keys(stopList));
-    //var page = document.getElementById("output");
-    console.log(stopList.displayNames);
-    console.log(stopList.logicalNames);
+    //var stopList = fetchStopListByRouteId(route_id);
+    fetchStopListByRouteId(route_id); //output stored in results
+    console.log(results.displayNames);
+    console.log(results.logicalNames);
     for (i = 0; i < 5; i++) {
-        console.log(stopList.displayNames[i]);
+        console.log(results.displayNames[i]);
     }
 }
