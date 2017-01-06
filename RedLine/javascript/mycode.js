@@ -68,6 +68,7 @@ function populateStopData(element_id) {
     var logicalName;
     var route_id = element_id.split("_")[1];
     var output = document.getElementById("output");
+    /* THIS DOESNT WORK BECAUSE IN ORDER TO ENSURE SYNCHRONOUS I NEED TO PUT THIS LOGIC IN THE CALLBACK */
     fetchStopListByRouteId(route_id); //results in document.getElementById("hiddenOutput").innerHTML
     var stopList = document.getElementById("hiddenOutput").innerHTML.split(",");
     for (i = 0; i < (stopList.length); i++) {
