@@ -41,8 +41,7 @@ function drawDataToPage(res) {
 }
 
 function fetchStopListByRouteId(route_id) {
-    console.log("fetchStopListByRouteId called");
-    var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroutezzz?api_key=" + apiKey + "&route=" + route_id + "&format=json";
+    var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=" + apiKey + "&route=" + route_id + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
         var i = 0;
         var j = 0;
@@ -74,7 +73,6 @@ function fetchStopListByRouteId(route_id) {
         });
         drawDataToPage(results);
     }).fail(function() {
-        console.log("fail function called");
         failWithError("$.getJSON() failed for fetchStopListByRouteId().");
     });
 }
@@ -98,7 +96,6 @@ function populateStopData(element_id) {
 }
 
 function drawPage() {
-    console.log("drawPage called");
     var loaded = document.getElementById("loadStatus").innerHTML;
     if (loaded == "") { //not loaded yet
         var loadp = document.getElementById("loadp");
@@ -123,7 +120,6 @@ function drawPage() {
 }
 
 function loadData() {
-    console.log("loadData called");
     loadInterval = setInterval(drawPage, 500);
     fetchStopListByRouteId("Red");
 }
