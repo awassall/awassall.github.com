@@ -25,6 +25,13 @@ function fetchSubwayByStop(stop_display_name) {
     return "Success";
 }
  
+function drawDataToPage(res) {
+    var dc = document.getElementById("datacontainer");
+    dc.innerHTML = res;
+    console.log(res);
+    document.getElementById("loadStatus").innerHTML = "1";
+}
+
 function fetchStopListByRouteId(route_id) {
     var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=" + apiKey + "&route=" + route_id + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
@@ -56,8 +63,9 @@ function fetchStopListByRouteId(route_id) {
                 }
             }
         });
-        document.getElementById("hiddenOutput").innerHTML = results;
+        drawDataToPage(results);
     }).fail(function() {
+        clearInterval(loadInterval);
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
 }
@@ -67,15 +75,17 @@ function populateStopData(element_id) {
     var displayName;
     var logicalName;
     var route_id = element_id.split("_")[1];
-    var output = document.getElementById("output");
+    //var output = document.getElementById("output");
     /* THIS DOESNT WORK BECAUSE IN ORDER TO ENSURE SYNCHRONOUS I NEED TO PUT THIS LOGIC IN THE CALLBACK */
     fetchStopListByRouteId(route_id); //results in document.getElementById("hiddenOutput").innerHTML
+    /*
     var stopList = document.getElementById("hiddenOutput").innerHTML.split(",");
     for (i = 0; i < (stopList.length); i++) {
         displayName = stopList[i].split("*")[0];
         logicalName = stopList[i].split("*")[1];
         output.innerHTML += displayName + " " + logicalName + "<br/>";
     }
+    */
 }
 
 function drawPage() {
@@ -89,9 +99,14 @@ function drawPage() {
         }
     } else { //loaded
         clearInterval(loadInterval);
+        var dc = document.getElementById("datacontainer");
+        var lw = document.getElementById("loadwrapper");
+        lw.setAttribute("class","hideMe");
+        dc.setAttribute("class","showMe");
     }
 }
 
 function loadData() {
     loadTimeout = setInterval(drawPage, 500);
+    fetchStopListByRouteId("Red");
 }

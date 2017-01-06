@@ -46,6 +46,13 @@ html, body {
     color: white;
 }
 
+#datacontainer {
+    color: white;
+}
+
 .hideMe {
     display: none;
+}
+
+.showMe {
 }
