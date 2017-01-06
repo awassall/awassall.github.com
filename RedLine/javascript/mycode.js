@@ -80,7 +80,7 @@ function fetchStopListByRouteId(route_id) {
 }
 
 function populateStopData(element_id) {
-    //var i = 0;
+    var i = 0;
     //var displayName = 0;
     //var logicalName = 1;
     var route_id = element_id.split("_")[1];
@@ -90,9 +90,7 @@ function populateStopData(element_id) {
     //var page = document.getElementById("output");
     console.log(stopList.displayNames);
     console.log(stopList.logicalNames);
-    /*
-    for (i = 0; i < ((stopList.displayNames).length); i++) {
-        console.log("Display: " + stopList.displayNames[i] + ", Logical: " + stopList.logicalNames[i]);
+    for (i = 0; i < 5; i++) {
+        console.log(stopList.displayNames[i]);
     }
-    */
 }
