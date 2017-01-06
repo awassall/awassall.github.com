@@ -73,23 +73,16 @@ function fetchStopListByRouteId(route_id) {
     });
     //console.log(results);
     return results;
-    //return [1,2,3];
 }
 
 function populateStopData(element_id) {
+    var i = 0;
+    var displayName = 0;
+    var logicalName = 1;
     var route_id = element_id.split("_")[1];
     var stopList = fetchStopListByRouteId(route_id);
-    var page = document.getElementById("output");
-    //page.innerHTML = JSON.stringify(stopList);
-    //return
-    console.log(stopList);
-    return;
-    $.each(stopList, function(k,v) {
-        console.log(k + " " + v);
-        $.each(v, function(k1,v1) {
-            console.log(k1 + " " + v1);
-        });
-        console.log("here2");
-        //page.innerHTML += "Display: " + displayName + ", Logical: " + logicalName + "<br/>";
-    });
+    //var page = document.getElementById("output");
+    for (i = 0; i < (stopList.length); i++) {
+        console.log("Display: " + stopList[i][displayName] + ", Logical: " + stopList[i][logicalName]);
+    } 
 }
