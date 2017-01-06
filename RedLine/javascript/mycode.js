@@ -29,7 +29,7 @@ function fetchStopListByRouteId(route_id) {
     var i = 0;
     var j = 0;
     //var dir = "";
-    var results = new Object();
+    var results = new Array();
     var parent_station_name = "";
     var parent_station = "";
     //var station = [];
@@ -60,7 +60,7 @@ function fetchStopListByRouteId(route_id) {
                                     }
                                 });
                                 //station.push([parent_station_name,parent_station]);
-                                results[parent_station_name] = parent_station;
+                                results.push([parent_station_name,parent_station]);
                             }
                         }
                     });
@@ -72,8 +72,8 @@ function fetchStopListByRouteId(route_id) {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
     //console.log(results);
-    //return results;
-    return [1,2,3];
+    return results;
+    //return [1,2,3];
 }
 
 function populateStopData(element_id) {
