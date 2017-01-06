@@ -88,7 +88,11 @@ function populateStopData(element_id) {
     //console.log(stopList);
     //console.log(Object.keys(stopList));
     //var page = document.getElementById("output");
+    console.log(stopList.displayNames);
+    console.log(stopList.logicalNames);
+    /*
     for (i = 0; i < ((stopList.displayNames).length); i++) {
         console.log("Display: " + stopList.displayNames[i] + ", Logical: " + stopList.logicalNames[i]);
     }
+    */
 }
