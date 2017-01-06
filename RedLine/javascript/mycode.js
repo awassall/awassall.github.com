@@ -41,6 +41,7 @@ function drawDataToPage(res) {
 }
 
 function fetchStopListByRouteId(route_id) {
+    console.log("fetchStopListByRouteId called");
     var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroutezzz?api_key=" + apiKey + "&route=" + route_id + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
         var i = 0;
@@ -73,6 +74,7 @@ function fetchStopListByRouteId(route_id) {
         });
         drawDataToPage(results);
     }).fail(function() {
+        console.log("fail function called");
         failWithError("$.getJSON() failed for fetchStopListByRouteId().");
     });
 }
