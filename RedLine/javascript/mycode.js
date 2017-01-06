@@ -78,9 +78,16 @@ function populateStopData(element_id) {
     var route_id = element_id.split("_")[1];
     var stopList = fetchStopListByRouteId(route_id);
     var page = document.getElementById("output");
-    page.innerHTML = JSON.stringify(stopList);
-    return;
-    $.each(stopList, function(displayName,logicalName) {
-        page.innerHTML += "Display: " + displayName + ", Logical: " + logicalName + "<br/>";
+    //page.innerHTML = JSON.stringify(stopList);
+    //return
+    console.log(stopList);
+    console.log("here");
+    $.each(stopList, function(k,v) {
+        console.log(k + " " + v);
+        $.each(v, function(k1,v1) {
+            console.log(k1 + " " + v1);
+        });
+        console.log("here2");
+        //page.innerHTML += "Display: " + displayName + ", Logical: " + logicalName + "<br/>";
     });
 }
