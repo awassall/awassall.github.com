@@ -90,6 +90,7 @@ function drawPage() {
     } else { //loaded
         clearTimeout(loadTimeout);
     }
+    console.log("here");
 }
 
 function loadData() {
