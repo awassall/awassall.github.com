@@ -76,18 +76,6 @@ function fetchStopListByRouteId(route_id) {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
     console.log(results);
-    /*
-    console.log(Object.getOwnPropertyNames(results));
-    var obj = {key1: "value1", key2: "value2"};
-    console.log(obj);
-    console.log(Object.keys(obj));
-    var o = new Object();
-    parent_station_name = "name";
-    parent_station = "Asdsdf";
-    o[parent_station_name] = parent_station;
-    console.log(o);
-    console.log(Object.keys(o));
-    */
     return results;
 }
 
@@ -97,12 +85,10 @@ function populateStopData(element_id) {
     //var logicalName = 1;
     var route_id = element_id.split("_")[1];
     var stopList = fetchStopListByRouteId(route_id);
-    console.log(stopList);
-    console.log(Object.keys(stopList));
+    //console.log(stopList);
+    //console.log(Object.keys(stopList));
     //var page = document.getElementById("output");
-    /*
-    for (i = 0; i < (stopList.length); i++) {
-        console.log("Display: " + stopList[i][displayName] + ", Logical: " + stopList[i][logicalName]);
-    } 
-    */
+    for (i = 0; i < ((stopList.displayNames).length); i++) {
+        console.log("Display: " + stopList.displayNames[i] + ", Logical: " + stopList.logicalNames[i]);
+    }
 }
