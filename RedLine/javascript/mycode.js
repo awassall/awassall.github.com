@@ -1,6 +1,6 @@
 //GLOBAL VARIABLES
 var apiKey = "wX9NwuHnZU2ToO7GmGR9uw";
-var myGlobalVariable;
+var loadTimeout;
 
 function stopDisplayToLogical(stop_display_name) {
     var stop_logical_name = "";
@@ -76,4 +76,22 @@ function populateStopData(element_id) {
         logicalName = stopList[i].split("*")[1];
         output.innerHTML += displayName + " " + logicalName + "<br/>";
     }
+}
+
+function drawPage() {
+    var loaded = document.getElementById("loadStatus").innerHTML;
+    if (loaded == "") { //not loaded yet
+        var loadp = document.getElementById("loadp");
+        if ((loadp.innerHTML).indexOf("...") > -1) {
+            loadp.innerHTML = "Loading.";
+        } else {
+            loadp.innerHTML += ".";
+        }
+    } else { //loaded
+        clearTimeout(loadTimeout);
+    }
+}
+
+function loadData() {
+    loadTimeout = setTimeout(drawPage, 1000);
 }

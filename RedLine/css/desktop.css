@@ -32,7 +32,7 @@ html, body {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    font-size: 300%;
+    font-size: 400%;
     width: 100%;
     text-align: center;
     vertical-align: middle;
@@ -44,4 +44,8 @@ html, body {
 
 #hiddenOutput, #output {
     color: white;
+}
+
+.hideMe {
+    display: none;
 }
