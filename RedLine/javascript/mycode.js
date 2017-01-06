@@ -72,7 +72,7 @@ function fetchStopListByRouteId(route_id) {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
     console.log(results);
-    console.log(Object.keys(results));
+    console.log(Object.getOwnPropertyNames(results));
     var obj = {key1: "value1", key2: "value2"};
     console.log(obj);
     console.log(Object.keys(obj));
