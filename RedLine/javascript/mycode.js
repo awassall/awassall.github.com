@@ -2,6 +2,11 @@
 var apiKey = "wX9NwuHnZU2ToO7GmGR9uw";
 var loadInterval;
 
+function failWithError(error_text) {
+    document.getElementById("loadStatus").innerHTML = error_text;
+    //alert("ERROR: " + error_text);
+}
+
 function stopDisplayToLogical(stop_display_name) {
     var stop_logical_name = "";
     if (stop_display_name == "Davis") {
@@ -26,9 +31,12 @@ function fetchSubwayByStop(stop_display_name) {
 }
  
 function drawDataToPage(res) {
+    var i = 0;
+    for (i = 0; i < (res.length); i++) {
+        fetchStopData();
+    }
     var dc = document.getElementById("datacontainer");
     dc.innerHTML = res;
-    console.log(res);
     document.getElementById("loadStatus").innerHTML = "1";
 }
 
@@ -65,8 +73,7 @@ function fetchStopListByRouteId(route_id) {
         });
         drawDataToPage(results);
     }).fail(function() {
-        clearInterval(loadInterval);
-        alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
+        failWithError("$.getJSON() failed for fetchStopListByRouteId().");
     });
 }
 
@@ -97,12 +104,18 @@ function drawPage() {
         } else {
             loadp.innerHTML += ".";
         }
-    } else { //loaded
+    } else { //either loaded or errored
         clearInterval(loadInterval);
-        var dc = document.getElementById("datacontainer");
-        var lw = document.getElementById("loadwrapper");
-        lw.setAttribute("class","hideMe");
-        dc.setAttribute("class","showMe");
+        if (loaded.length > 1 ) { //error
+            var loadp = document.getElementById("loadp");
+            loadp.innerHTML = "Failed to load data.";
+            alert("ERROR: " + loaded);
+        } else { //loaded
+            var dc = document.getElementById("datacontainer");
+            var lw = document.getElementById("loadwrapper");
+            lw.setAttribute("class","hideMe");
+            dc.setAttribute("class","showMe");
+        } 
     }
 }
 
