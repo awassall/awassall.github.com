@@ -96,6 +96,7 @@ function populateStopData(element_id) {
 }
 
 function drawPage() {
+    console.log("here");
     var loaded = document.getElementById("loadStatus").innerHTML;
     if (loaded == "") { //not loaded yet
         var loadp = document.getElementById("loadp");
