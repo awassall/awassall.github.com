@@ -75,12 +75,9 @@ function fetchStopListByRouteId(route_id) {
 }
 
 function populateStopData(element_id) {
-    var i = 0;
     var route_id = element_id.split("_")[1];
     var stopList = fetchStopListByRouteId(route_id);
-    /*
-    for (i = 0; i < (stopList.length); i++) {
-        console.log(stopList[i]);
-    }
-    */
+    $.each(stopList, function(displayName,logicalName) {
+        console.log("Display: " + displayName + ", Logical: " + logicalName);
+    });
 }
