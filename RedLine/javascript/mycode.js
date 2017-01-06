@@ -1,6 +1,6 @@
 //GLOBAL VARIABLES
 var apiKey = "wX9NwuHnZU2ToO7GmGR9uw";
-var loadTimeout;
+var loadInterval;
 
 function stopDisplayToLogical(stop_display_name) {
     var stop_logical_name = "";
@@ -82,20 +82,17 @@ function drawPage() {
     var loaded = document.getElementById("loadStatus").innerHTML;
     if (loaded == "") { //not loaded yet
         var loadp = document.getElementById("loadp");
-        loadp.innerHTML += ".";
-        /*
         if ((loadp.innerHTML).indexOf("...") > -1) {
             loadp.innerHTML = "Loading.";
         } else {
             loadp.innerHTML += ".";
         }
-        */
     } else { //loaded
-        clearTimeout(loadTimeout);
+        clearInterval(loadInterval);
     }
     console.log("here");
 }
 
 function loadData() {
-    loadTimeout = setTimeout(drawPage, 1000);
+    loadTimeout = setInterval(drawPage, 1000);
 }
