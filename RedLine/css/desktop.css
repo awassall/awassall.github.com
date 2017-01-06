@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: black;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 #loadwrapper {
@@ -22,11 +23,15 @@ html, body {
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+#loadp {
     color: white;
+    display: inline-block;
     font-size: 300%;
     text-align: center;
     vertical-align: middle;
-    line-height: 100%;
+    line-height: normal;
 }
 
 #test {
