@@ -37,7 +37,7 @@ function fetchStopListByRouteId(route_id) {
         var parent_station = "";
         $.each(data, function(k1,v1) {
             if (k1 == "direction") {
-                for (i = 0; i < (v1.length); i++) {
+                for (i = 0; i < 1; i++) { //i<1 because we only need one direction
                     $.each(v1[i], function(k2,v2) {
                         if (k2 == "stop") {
                             for (j = 0; j < (v2.length); j++) {
@@ -58,7 +58,7 @@ function fetchStopListByRouteId(route_id) {
                         }
                     });
                 }
-                return false; //break the loop, only need to get stops in one direction
+                //return false; //break the loop, only need to get stops in one direction
             }
         });
         console.log(results);
