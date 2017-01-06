@@ -83,7 +83,7 @@ function drawPage() {
     if (loaded == "") { //not loaded yet
         var loadp = document.getElementById("loadp");
         if ((loadp.innerHTML).indexOf("...") > -1) {
-            loadp.innerHTML = "Loading.";
+            loadp.innerHTML = "Loading";
         } else {
             loadp.innerHTML += ".";
         }
@@ -93,5 +93,5 @@ function drawPage() {
 }
 
 function loadData() {
-    loadTimeout = setInterval(drawPage, 400);
+    loadTimeout = setInterval(drawPage, 500);
 }
