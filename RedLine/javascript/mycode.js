@@ -78,7 +78,7 @@ function populateStopData(element_id) {
     var route_id = element_id.split("_")[1];
     var stopList = fetchStopListByRouteId(route_id);
     var page = document.getElementById("output");
-    page.innerHTML = stopList;
+    page.innerHTML = JSON.stringify(stopList);
     return;
     $.each(stopList, function(displayName,logicalName) {
         page.innerHTML += "Display: " + displayName + ", Logical: " + logicalName + "<br/>";
