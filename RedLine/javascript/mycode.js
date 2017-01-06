@@ -29,7 +29,7 @@ function fetchStopListByRouteId(route_id) {
     var i = 0;
     var j = 0;
     //var dir = "";
-    results = new Object();
+    var results = new Object();
     var parent_station_name = "";
     var parent_station = "";
     //var station = [];
