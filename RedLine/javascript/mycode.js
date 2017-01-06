@@ -124,6 +124,6 @@ function drawPage() {
 
 function loadData() {
     console.log("loadData called");
-    loadTimeout = setInterval(drawPage, 500);
+    loadInterval = setInterval(drawPage, 500);
     fetchStopListByRouteId("Red");
 }
