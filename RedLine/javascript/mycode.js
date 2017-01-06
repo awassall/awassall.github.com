@@ -1,5 +1,6 @@
 //GLOBAL VARIABLES
 var apiKey = "wX9NwuHnZU2ToO7GmGR9uw";
+var myGlobalVariable;
 
 function stopDisplayToLogical(stop_display_name) {
     var stop_logical_name = "";
@@ -26,7 +27,6 @@ function fetchSubwayByStop(stop_display_name) {
  
 function fetchStopListByRouteId(route_id) {
     var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=" + apiKey + "&route=" + route_id + "&format=json";
-    var res = "asdf";
     var jqxhr = $.getJSON(url).done(function(data) {
         var i = 0;
         var j = 0;
@@ -51,22 +51,19 @@ function fetchStopListByRouteId(route_id) {
                                         parent_station = v3;
                                     }
                                 });
-                                //console.log(parent_station_name + " " + parent_station);
                                 results.displayNames.push(parent_station_name);
                                 results.logicalNames.push(parent_station);
                             }
                         }
                     });
                 }
-                //return false; //break the loop, only need to get stops in one direction
             }
         });
-        console.log(results);
+        myGlobalVariable = results;
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
-    console.log(res);
-    return res;
+    return myGlobalVariable;
 }
 
 function populateStopData(element_id) {
