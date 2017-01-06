@@ -63,13 +63,16 @@ function fetchStopListByRouteId(route_id) {
 }
 
 function populateStopData(element_id) {
-    var route_id = element_id.split("_")[1];
-    fetchStopListByRouteId(route_id); //results in document.getElementById("hiddenOutput").innerHTML
-    /*
     var i = 0;
-    console.log(stopList);
-    for (i = 0; i < 100; i++) {
-        console.log(stopList.displayNames[i]);
+    var displayName;
+    var logicalName;
+    var route_id = element_id.split("_")[1];
+    var output = document.getElementById("output");
+    fetchStopListByRouteId(route_id); //results in document.getElementById("hiddenOutput").innerHTML
+    var stopList = document.getElementById("hiddenOutput").innerHTML.split(",");
+    for (i = 0; i < (stopList.length); i++) {
+        displayName = stopList[i].split("*")[0];
+        logicalName = stopList[i].split("*")[1];
+        output.innerHTML += displayName + " " + logicalName + "<br/>";
     }
-    */
 }

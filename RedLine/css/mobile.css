@@ -6,6 +6,6 @@ body {
     color: red;
 }
 
-#hiddenOutput {
+#hiddenOutput, #output {
     color: white;
 }
