@@ -63,6 +63,8 @@ function fetchStopListByRouteId(route_id) {
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
+    results.displayNames.push("testname");
+    results.logicalNames.push("teststation");
     console.log(results);
     return results;
 }
@@ -70,5 +72,9 @@ function fetchStopListByRouteId(route_id) {
 function populateStopData(element_id) {
     var route_id = element_id.split("_")[1];
     var stopList = fetchStopListByRouteId(route_id);
+    var i = 0;
     console.log(stopList);
+    for (i = 0; i < 100; i++) {
+        console.log(stopList.displayNames[i]);
+    }
 }
