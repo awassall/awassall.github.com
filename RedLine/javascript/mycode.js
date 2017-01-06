@@ -28,7 +28,7 @@ function fetchStopListByRouteId(route_id) {
     var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=" + apiKey + "&route=" + route_id + "&format=json";
     var i = 0;
     var j = 0;
-    var dir = "";
+    //var dir = "";
     var results = new Object();
     var parent_station_name = "";
     var parent_station = "";
@@ -38,11 +38,13 @@ function fetchStopListByRouteId(route_id) {
             if (k1 == "direction") {
                 for (i = 0; i < (v1.length); i++) {
                     $.each(v1[i], function(k2,v2) {
+                        /*
                         if (k2 == "direction_name") {
                             dir = v2;
                             results[dir] = new Object();
                             //resSize = results.push([v2,[]]);
                         }
+                        */
                         if (k2 == "stop") {
                             for (j = 0; j < (v2.length); j++) {
                                 //station = [];
@@ -57,11 +59,12 @@ function fetchStopListByRouteId(route_id) {
                                     }
                                 });
                                 //station.push([parent_station_name,parent_station]);
-                                results[dir][parent_station_name] = parent_station;
+                                results[parent_station_name] = parent_station;
                             }
                         }
                     });
                 }
+                return false; //break the loop, only need to get stops in one direction
             }
         });
     }).fail(function() {
