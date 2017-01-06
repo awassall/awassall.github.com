@@ -33,7 +33,7 @@ function fetchSubwayByStop(stop_display_name) {
 function drawDataToPage(res) {
     var i = 0;
     for (i = 0; i < (res.length); i++) {
-        fetchStopData();
+        //fetchStopData();
     }
     var dc = document.getElementById("datacontainer");
     dc.innerHTML = res;
