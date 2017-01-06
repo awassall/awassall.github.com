@@ -34,6 +34,7 @@ function fetchStopListByRouteId(route_id) {
     var parent_station = "";
     //var station = [];
     var jqxhr = $.getJSON(url).done(function(data) {
+        console.log(data);
         $.each(data, function(k1,v1) {
             if (k1 == "direction") {
                 for (i = 0; i < (v1.length); i++) {
