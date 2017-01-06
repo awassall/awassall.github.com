@@ -30,9 +30,7 @@ function fetchStopListByRouteId(route_id) {
     var jqxhr = $.getJSON(url).done(function(data) {
         var i = 0;
         var j = 0;
-        var results = new Object();
-        results.displayNames = new Array();
-        results.logicalNames = new Array();
+        var results = new Array();
         var parent_station_name = "";
         var parent_station = "";
         $.each(data, function(k1,v1) {
@@ -51,27 +49,27 @@ function fetchStopListByRouteId(route_id) {
                                         parent_station = v3;
                                     }
                                 });
-                                results.displayNames.push(parent_station_name);
-                                results.logicalNames.push(parent_station);
+                                results.push(parent_station_name + "*" + parent_station);
                             }
                         }
                     });
                 }
             }
         });
-        myGlobalVariable = results;
+        document.getElementById("hiddenOutput").innerHTML = results;
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
-    return myGlobalVariable;
 }
 
 function populateStopData(element_id) {
     var route_id = element_id.split("_")[1];
-    var stopList = fetchStopListByRouteId(route_id);
+    fetchStopListByRouteId(route_id); //results in document.getElementById("hiddenOutput").innerHTML
+    /*
     var i = 0;
     console.log(stopList);
     for (i = 0; i < 100; i++) {
         console.log(stopList.displayNames[i]);
     }
+    */
 }
