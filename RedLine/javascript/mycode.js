@@ -50,6 +50,7 @@ function fetchStopListByRouteId(route_id) {
                                         parent_station = v3;
                                     }
                                 });
+                                console.log(parent_station_name + " " + parent_station)
                                 results.displayNames.push(parent_station_name);
                                 results.logicalNames.push(parent_station);
                             }
