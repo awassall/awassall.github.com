@@ -90,9 +90,8 @@ function drawPage() {
     } else { //loaded
         clearInterval(loadInterval);
     }
-    console.log("here");
 }
 
 function loadData() {
-    loadTimeout = setInterval(drawPage, 1000);
+    loadTimeout = setInterval(drawPage, 400);
 }
