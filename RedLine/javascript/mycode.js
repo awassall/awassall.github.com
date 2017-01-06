@@ -70,13 +70,14 @@ function fetchStopListByRouteId(route_id) {
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopListByRouteId().");
     });
-    console.log(results);
+    //console.log(results);
     return results;
 }
 
 function populateStopData(element_id) {
     var route_id = element_id.split("_")[1];
     var stopList = fetchStopListByRouteId(route_id);
+    console.log(stopList);
     $.each(stopList, function(displayName,logicalName) {
         console.log("Display: " + displayName + ", Logical: " + logicalName);
     });
