@@ -73,7 +73,10 @@ function fetchStopListByRouteId(route_id) {
     });
     console.log(results);
     console.log(Object.keys(results));
-    return results;
+    var obj = {key1: "value1", key2: "value2"};
+    console.log(obj);
+    console.log(Object.keys(obj));
+    return obj;
 }
 
 function populateStopData(element_id) {
