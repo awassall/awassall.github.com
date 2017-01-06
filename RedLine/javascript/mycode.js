@@ -41,7 +41,7 @@ function drawDataToPage(res) {
 }
 
 function fetchStopListByRouteId(route_id) {
-    var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=" + apiKey + "&route=" + route_id + "&format=json";
+    var url = "http://realtime.mbta.com/developer/api/v2/stopsbyroutezzz?api_key=" + apiKey + "&route=" + route_id + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
         var i = 0;
         var j = 0;
