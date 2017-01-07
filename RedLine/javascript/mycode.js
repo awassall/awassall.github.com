@@ -29,8 +29,10 @@ function drawDataToPage(res) {
         var row = dt.insertRow(-1);
         row.setAttribute("class","row" + (i%2));
         var cell_stop_data = row.insertCell(0);
+        cell_stop_data.setAttribute("class","cell1");
         cell_stop_data.innerHTML = "Loading...";
         var cell_stop_name = row.insertCell(0);
+        cell_stop_name.setAttribute("class","cell0");
         cell_stop_name.innerHTML = (res[i]).split("*")[0];
         //fetchStopData((res[i]).split("*")[1]);
     }

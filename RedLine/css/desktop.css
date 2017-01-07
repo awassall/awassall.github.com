@@ -72,3 +72,7 @@ html, body {
     background-color: rgb(153,153,153);
     width: 100%;
 }
+
+.cell0,.cell1 {
+    width: 50%;
+}
