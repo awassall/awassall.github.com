@@ -34,15 +34,17 @@ function drawDataToPage(res) {
     var dthrc_name = dthr.insertCell(0);
     dthrc_name.innerHTML = "NAME";
     var temp_stop_array = new Array();
+    var lastindex = 1;
     for (i = 0; i < (res.length); i++) {
         var stop_name = (res[i]).split("*")[0];
         if ($.inArray(stop_name,temp_stop_array) >= 0) { //skip duplicates
             continue;
         } else { //add to temp array for checking against on subsequent iterations
             temp_stop_array.push(stop_name);
+            lastindex += 1;
         }
         var row = dt.insertRow(-1);
-        row.setAttribute("class","row" + (i%2));
+        row.setAttribute("class","row" + (lastindex%2));
         var cell_stop_data_s = row.insertCell(0);
         cell_stop_data_s.setAttribute("class","cell2");
         cell_stop_data_s.setAttribute("id",stop_name + "_S");
