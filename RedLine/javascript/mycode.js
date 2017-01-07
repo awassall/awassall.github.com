@@ -38,6 +38,8 @@ function drawDataToPage(res) {
         var stop_name = (res[i]).split("*")[0];
         if ($.inArray(stop_name,temp_stop_array) >= 0) { //skip duplicates
             continue;
+        } else { //add to temp array for checking against on subsequent iterations
+            temp_stop_array.push(stop_name);
         }
         var row = dt.insertRow(-1);
         row.setAttribute("class","row" + (i%2));
