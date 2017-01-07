@@ -33,8 +33,10 @@ function drawDataToPage(res) {
         cell_stop_name.innerHTML = (res[i]).split("*")[0];
         //fetchStopData((res[i]).split("*")[1]);
     }
+    /*
     var dc = document.getElementById("datacontainer");
     dc.innerHTML = res;
+    */
     document.getElementById("loadStatus").innerHTML = "1";
 }
 
