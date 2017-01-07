@@ -65,6 +65,9 @@ html, body {
     width: 100%;
 }
 
-.cell0,.cell1 {
-    width: 50%;
+.cell0 {
+    width: 34%;
+}
+.cell1,.cell2 {
+    width: 33%;
 }

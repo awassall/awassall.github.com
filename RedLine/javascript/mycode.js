@@ -36,9 +36,12 @@ function drawDataToPage(res) {
     for (i = 0; i < (res.length); i++) {
         var row = dt.insertRow(-1);
         row.setAttribute("class","row" + (i%2));
-        var cell_stop_data = row.insertCell(0);
-        cell_stop_data.setAttribute("class","cell1");
-        cell_stop_data.innerHTML = "Loading...";
+        var cell_stop_data_s = row.insertCell(0);
+        cell_stop_data_s.setAttribute("class","cell2");
+        cell_stop_data_s.innerHTML = "Loading...";
+        var cell_stop_data_n = row.insertCell(0);
+        cell_stop_data_n.setAttribute("class","cell1");
+        cell_stop_data_n.innerHTML = "Loading...";
         var cell_stop_name = row.insertCell(0);
         cell_stop_name.setAttribute("class","cell0");
         cell_stop_name.innerHTML = (res[i]).split("*")[0];
