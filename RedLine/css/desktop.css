@@ -48,6 +48,8 @@ html, body {
 
 #datacontainer {
     color: white;
+    width: 100%;
+    font-size: 200%;
 }
 
 .hideMe {
@@ -59,8 +61,10 @@ html, body {
 
 .row0 {
     background-color: rgb(51,51,51);
+    width: 100%;
 }
 
 .row1 {
     background-color: rgb(153,153,153);
+    width: 100%;
 }
