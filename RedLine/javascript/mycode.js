@@ -25,6 +25,14 @@ function fetchStopData(stop_logical_name) {
 function drawDataToPage(res) {
     var i = 0;
     var dt = document.getElementById("datatable");
+    var dth = dt.createTHead();
+    var dthr = dth.insertRow(0);
+    var dthrc_s = dthr.insertCell(0);
+    dthrc_s.innerHTML = "S";
+    var dthrc_n = dthr.insertCell(0);
+    dthrc_n.innerHTML = "N";
+    var dthrc_name = dthr.insertCell(0);
+    dthrc_name.innerHTML = "NAME";
     for (i = 0; i < (res.length); i++) {
         var row = dt.insertRow(-1);
         row.setAttribute("class","row" + (i%2));
