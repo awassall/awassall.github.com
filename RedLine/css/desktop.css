@@ -52,6 +52,10 @@ html, body {
     font-size: 200%;
 }
 
+#datatable {
+    width: 100%;
+}
+
 .hideMe {
     display: none;
 }
