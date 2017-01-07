@@ -4,14 +4,9 @@ var loadInterval;
 
 function failWithError(error_text) {
     document.getElementById("loadStatus").innerHTML = error_text;
-    //alert("ERROR: " + error_text);
 }
 
 function fetchStopData(stop_logical_name) {
-    var stop_logical_name = stopDisplayToLogical(stop_display_name);
-    if (stop_logical_name == "") {
-        return "ERROR: Could not identify a stop with name " + stop_display_name + ".";
-    }
     $.ajax({
         url: "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=place-" + stop_logical_name + "&format=json",
         dataType: "jsonp",
@@ -19,7 +14,6 @@ function fetchStopData(stop_logical_name) {
             alert(data);
         }
     });
-    return "Success";
 }
  
 function drawDataToPage(res) {
@@ -58,10 +52,6 @@ function drawDataToPage(res) {
         cell_stop_name.innerHTML = stop_name;
         //fetchStopData((res[i]).split("*")[1]);
     }
-    /*
-    var dc = document.getElementById("datacontainer");
-    dc.innerHTML = res;
-    */
     document.getElementById("loadStatus").innerHTML = "1";
 }
 
@@ -100,24 +90,6 @@ function fetchStopListByRouteId(route_id) {
     }).fail(function() {
         failWithError("$.getJSON() failed for fetchStopListByRouteId().");
     });
-}
-
-function populateStopData(element_id) {
-    var i = 0;
-    var displayName;
-    var logicalName;
-    var route_id = element_id.split("_")[1];
-    //var output = document.getElementById("output");
-    /* THIS DOESNT WORK BECAUSE IN ORDER TO ENSURE SYNCHRONOUS I NEED TO PUT THIS LOGIC IN THE CALLBACK */
-    fetchStopListByRouteId(route_id); //results in document.getElementById("hiddenOutput").innerHTML
-    /*
-    var stopList = document.getElementById("hiddenOutput").innerHTML.split(",");
-    for (i = 0; i < (stopList.length); i++) {
-        displayName = stopList[i].split("*")[0];
-        logicalName = stopList[i].split("*")[1];
-        output.innerHTML += displayName + " " + logicalName + "<br/>";
-    }
-    */
 }
 
 function drawPage() {
