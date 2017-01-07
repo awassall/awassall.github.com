@@ -34,17 +34,20 @@ function drawDataToPage(res) {
     var dthrc_name = dthr.insertCell(0);
     dthrc_name.innerHTML = "NAME";
     for (i = 0; i < (res.length); i++) {
+        var stop_name = (res[i]).split("*")[0];
         var row = dt.insertRow(-1);
         row.setAttribute("class","row" + (i%2));
         var cell_stop_data_s = row.insertCell(0);
         cell_stop_data_s.setAttribute("class","cell2");
+        cell_stop_data_s.setAttribute("id",stop_name + "_S");
         cell_stop_data_s.innerHTML = "Loading...";
         var cell_stop_data_n = row.insertCell(0);
         cell_stop_data_n.setAttribute("class","cell1");
+        cell_stop_data_n.setAttribute("id",stop_name + "_N");
         cell_stop_data_n.innerHTML = "Loading...";
         var cell_stop_name = row.insertCell(0);
         cell_stop_name.setAttribute("class","cell0");
-        cell_stop_name.innerHTML = (res[i]).split("*")[0];
+        cell_stop_name.innerHTML = stop_name;
         //fetchStopData((res[i]).split("*")[1]);
     }
     /*
