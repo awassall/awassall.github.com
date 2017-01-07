@@ -33,8 +33,12 @@ function drawDataToPage(res) {
     dthrc_n.innerHTML = "N";
     var dthrc_name = dthr.insertCell(0);
     dthrc_name.innerHTML = "NAME";
+    var temp_stop_array = new Array();
     for (i = 0; i < (res.length); i++) {
         var stop_name = (res[i]).split("*")[0];
+        if ($.inArray(stop_name,temp_stop_array) >= 0) { //skip duplicates
+            continue;
+        }
         var row = dt.insertRow(-1);
         row.setAttribute("class","row" + (i%2));
         var cell_stop_data_s = row.insertCell(0);
