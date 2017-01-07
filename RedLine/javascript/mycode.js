@@ -7,15 +7,7 @@ function failWithError(error_text) {
     //alert("ERROR: " + error_text);
 }
 
-function stopDisplayToLogical(stop_display_name) {
-    var stop_logical_name = "";
-    if (stop_display_name == "Davis") {
-
-    }
-    return stop_logical_name;
-}
-
-function fetchSubwayByStop(stop_display_name) {
+function fetchStopData(stop_logical_name) {
     var stop_logical_name = stopDisplayToLogical(stop_display_name);
     if (stop_logical_name == "") {
         return "ERROR: Could not identify a stop with name " + stop_display_name + ".";
@@ -32,8 +24,14 @@ function fetchSubwayByStop(stop_display_name) {
  
 function drawDataToPage(res) {
     var i = 0;
+    var dt = document.getElementById("datatable");
     for (i = 0; i < (res.length); i++) {
-        //fetchStopData();
+        var row = dt.insertRow(-1);
+        var cell_stop_data = row.insertCell(0);
+        cell_stop_data.innerHTML = "data goes here";
+        var cell_stop_name = row.insertCell(0);
+        cell_stop_name.innerHTML = (res[i]).split("*")[0];
+        //fetchStopData((res[i]).split("*")[1]);
     }
     var dc = document.getElementById("datacontainer");
     dc.innerHTML = res;
