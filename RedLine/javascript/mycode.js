@@ -15,7 +15,8 @@ function fetchStopData(stop_logical_name) {
         }
     });
 }
- 
+
+/*
 function drawDataToPage(res) {
     var i = 0;
     var dt = document.getElementById("datatable");
@@ -47,6 +48,30 @@ function drawDataToPage(res) {
         cell_stop_data_n.setAttribute("class","cell1");
         cell_stop_data_n.setAttribute("id",stop_name + "_N");
         cell_stop_data_n.innerHTML = "Loading...";
+        var cell_stop_name = row.insertCell(0);
+        cell_stop_name.setAttribute("class","cell0");
+        cell_stop_name.innerHTML = stop_name;
+        //fetchStopData((res[i]).split("*")[1]);
+    }
+    document.getElementById("loadStatus").innerHTML = "1";
+}
+*/
+
+function drawDataToPage(res) {
+    var i = 0;
+    var dt = document.getElementById("datatable");
+    var temp_stop_array = new Array();
+    var lastindex = 1;
+    for (i = 0; i < (res.length); i++) {
+        var stop_name = (res[i]).split("*")[0];
+        if ($.inArray(stop_name,temp_stop_array) >= 0) { //skip duplicates
+            continue;
+        } else { //add to temp array for checking against on subsequent iterations
+            temp_stop_array.push(stop_name);
+            lastindex += 1;
+        }
+        var row = dt.insertRow(-1);
+        row.setAttribute("class","row" + (lastindex%2));
         var cell_stop_name = row.insertCell(0);
         cell_stop_name.setAttribute("class","cell0");
         cell_stop_name.innerHTML = stop_name;
