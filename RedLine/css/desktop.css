@@ -71,3 +71,9 @@ html, body {
 .cell1,.cell2 {
     width: 33%;
 }
+
+#header {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
