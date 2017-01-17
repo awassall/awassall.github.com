@@ -63,7 +63,10 @@ function drawDataToPage(res) {
     var temp_stop_array = new Array();
     var lastindex = 1;
     for (i = 0; i < (res.length); i++) {
-        var stop_name = (res[i]).split("*")[0];
+        var stop_name = (res[i]).split("*")[0]; //this is the display name of the stop
+        if (stop_name.length <= 0) { //name should not be NULL
+            continue; //should never get here in practice...
+        }
         if ($.inArray(stop_name,temp_stop_array) >= 0) { //skip duplicates
             continue;
         } else { //add to temp array for checking against on subsequent iterations
@@ -74,8 +77,13 @@ function drawDataToPage(res) {
         row.setAttribute("class","row" + (lastindex%2));
         var cell_stop_name = row.insertCell(0);
         cell_stop_name.setAttribute("class","cell0");
+        var parent_station = (res[i]).split("*")[1]; //this is the logical name of the stop
+        if (parent_station.length <= 0) { //parent station should not be NULL
+            cell_stop_name.setAttribute("id","noParentStation");
+        } else {
+            cell_stop_name.setAttribute("id",(stop_name.trim()).replace(/ /g,"_"));
+        }
         cell_stop_name.innerHTML = stop_name;
-        //fetchStopData((res[i]).split("*")[1]);
     }
     document.getElementById("loadStatus").innerHTML = "1";
 }

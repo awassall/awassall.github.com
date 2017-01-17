@@ -72,14 +72,11 @@ html, body {
 
 .cell0:hover {
     background-color: #b30000;
+    cursor: pointer;
 }
 
 #header {
     width: 100%;
-    color: white;
+    color: #ffb3b3;
     text-align: center;
-}
-
-#datadiv {
-
 }
