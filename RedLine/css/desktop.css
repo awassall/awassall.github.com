@@ -66,14 +66,20 @@ html, body {
 }
 
 .cell0 {
-    width: 34%;
+    width: 100%;
+    text-align: center;
 }
-.cell1,.cell2 {
-    width: 33%;
+
+.cell0:hover {
+    background-color: #b30000;
 }
 
 #header {
     width: 100%;
     color: white;
     text-align: center;
+}
+
+#datadiv {
+
 }
