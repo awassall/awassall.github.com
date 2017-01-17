@@ -7,6 +7,8 @@ function failWithError(error_text) {
 }
 
 function fetchStopData(stop_logical_name) {
+    console.log("fetchStopData: " + stop_logical_name);
+    /*
     $.ajax({
         url: "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=place-" + stop_logical_name + "&format=json",
         dataType: "jsonp",
@@ -14,6 +16,7 @@ function fetchStopData(stop_logical_name) {
             alert(data);
         }
     });
+    */
 }
 
 /*
@@ -80,8 +83,10 @@ function drawDataToPage(res) {
         var parent_station = (res[i]).split("*")[1]; //this is the logical name of the stop
         if (parent_station.length <= 0) { //parent station should not be NULL
             cell_stop_name.setAttribute("id","noParentStation");
+            cell_stop_name.onclick = function() { alert("ERROR: Null parent station."); };
         } else {
-            cell_stop_name.setAttribute("id",(stop_name.trim()).replace(/ /g,"_"));
+            cell_stop_name.setAttribute("id",parent_station);
+            cell_stop_name.onclick = function() { fetchStopData(this.id); };
         }
         cell_stop_name.innerHTML = stop_name;
     }
