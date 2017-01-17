@@ -8,15 +8,12 @@ function failWithError(error_text) {
 
 function fetchStopData(stop_logical_name) {
     console.log("fetchStopData: " + stop_logical_name);
-    /*
-    $.ajax({
-        url: "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=place-" + stop_logical_name + "&format=json",
-        dataType: "jsonp",
-        success: function (data) {
-            alert(data);
-        }
+    var url = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=" + stop_logical_name + "&format=json";
+    var jqxhr = $.getJSON(url).done(function(data) {
+        alert(data);
+    }).fail(function() {
+        alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
-    */
 }
 
 /*
