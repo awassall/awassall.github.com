@@ -22,27 +22,55 @@ function fetchStopData(stop_logical_name) {
                 for (i = 0; i < (v1.length); i++) {
                     //console.log(i);
                     $.each(v1[i], function(k2,v2) {
-                        console.log(k2);
-                        console.log(v2);
+                        //console.log(k2);
+                        //console.log(v2);
+                        if (k2 == "mode_name") {
+                            if (v2 == "Subway") {
+                                foundSubway = 1;
+                                return true;
+                            } else {
+                                // not a subway, skip to the next one
+                                return false;
+                            }
+                        }
                         /*
                         if ((k2 == "mode_name") && (v2 == "Subway")) {
+                            // this might be the red line, but it could be any subway line
+                            // we still have to check if it is the red line
                             foundSubway = 1;
-                            breakModeLoop = 1;
+                            //breakModeLoop = 1;
                             return true; //continue
                         }
+                        */
                         if ((k2 == "route") && (foundSubway == 1)) {
+                            foundSubway = 0; //reset to 0
+                            // we found a subway, but is it the red line?
+                            // if it is not, then we will have to keep searching
                             //console.log(v2);
                             for (j = 0; j < (v2.length); j++) {
                                 $.each(v2[i], function(k3,v3) {
+                                    if (k3 == "route_id") {
+                                        if (v3 == "Red") {
+                                            console.log(v2[i]);
+                                            breakRouteLoop = 1;
+                                            breakModeLoop = 1;
+                                        } else {
+                                            return false;
+                                        }
+                                    }
+                                    /*
                                     if ((k3 == "route_id") && (v3 == "Red")) {
                                         foundRoute = 1;
                                         breakRouteLoop = 1;
                                         return true; //continue
                                     }
+                                    */
+                                    /*
                                     if ((k3 == "direction") && (foundRoute == 1)) {
                                         console.log(v3);
                                         return false;
                                     }
+                                    */
                                 });
                                 if (breakRouteLoop == 1) {
                                     break;
@@ -50,7 +78,6 @@ function fetchStopData(stop_logical_name) {
                             }
                             return false; // no need to do further searching, already have the data
                         }
-                        */
                     });
                     if (breakModeLoop == 1) {
                         break;
