@@ -29,7 +29,7 @@ function fetchStopData(stop_logical_name) {
                         }
                         if ((k2 == "route") && (foundSubway == 1)) {
                             //console.log(v2);
-                            for (j = 0; j < (v2.length); j++ {
+                            for (j = 0; j < (v2.length); j++) {
                                 $.each(v2[i], function(k3,v3) {
                                     if ((k3 == "route_id") && (v3 == "Red")) {
                                         foundRoute = 1;
