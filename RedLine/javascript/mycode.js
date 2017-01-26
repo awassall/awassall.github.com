@@ -7,13 +7,21 @@ function failWithError(error_text) {
 }
 
 function fetchStopData(stop_logical_name) {
-    console.log("fetchStopData: " + stop_logical_name);
+    //console.log("fetchStopData: " + stop_logical_name);
     var url = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=" + stop_logical_name + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
         //alert(data);
+        var i = 0;
         $.each(data, function(k1,v1) {
-            console.log(k1);
-            console.log(v1);
+            if (k1 == "mode") {
+                for (i = 0; i < (v1.length); i++) {
+                    console.log(i);
+                    $.each(v1[i], function(k2,v2) {
+                        console.log(k2);
+                        console.log(v2);
+                    });
+                }
+            }
         });
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
