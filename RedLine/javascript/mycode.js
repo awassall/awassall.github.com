@@ -20,16 +20,18 @@ function fetchStopData(stop_logical_name) {
         $.each(data, function(k1,v1) {
             if (k1 == "mode") {
                 for (i = 0; i < (v1.length); i++) {
-                    //console.log(i);
+                    console.log("Mode loop: " + i);
                     $.each(v1[i], function(k2,v2) {
                         //console.log(k2);
                         //console.log(v2);
                         if (k2 == "mode_name") {
                             if (v2 == "Subway") {
                                 foundSubway = 1;
+                                console.log("Found Subway");
                                 return true;
                             } else {
                                 // not a subway, skip to the next one
+                                console.log("Not a subway");
                                 return false;
                             }
                         }
@@ -48,10 +50,12 @@ function fetchStopData(stop_logical_name) {
                             // if it is not, then we will have to keep searching
                             //console.log(v2);
                             for (j = 0; j < (v2.length); j++) {
-                                $.each(v2[i], function(k3,v3) {
+                                console.log("Route #" + j);
+                                console.log(v2[j]);
+                                $.each(v2[j], function(k3,v3) {
                                     if (k3 == "route_id") {
                                         if (v3 == "Red") {
-                                            console.log(v2[i]);
+                                            console.log(v2[j]);
                                             breakRouteLoop = 1;
                                             breakModeLoop = 1;
                                         } else {
