@@ -13,25 +13,27 @@ function fetchStopData(stop_logical_name) {
         //alert(data);
         var i = 0;
         var j = 0;
+        var k = 0;
+        var l = 0;
         var breakModeLoop = 0;
         var breakRouteLoop = 0;
         var foundSubway = 0;
-        var foundRoute = 0;
+        var foundRedLine = 0;
         $.each(data, function(k1,v1) {
             if (k1 == "mode") {
                 for (i = 0; i < (v1.length); i++) {
-                    console.log("Mode loop: " + i);
+                    //console.log("Mode loop: " + i);
                     $.each(v1[i], function(k2,v2) {
                         //console.log(k2);
                         //console.log(v2);
                         if (k2 == "mode_name") {
                             if (v2 == "Subway") {
                                 foundSubway = 1;
-                                console.log("Found Subway");
+                                //console.log("Found Subway");
                                 return true;
                             } else {
                                 // not a subway, skip to the next one
-                                console.log("Not a subway");
+                                //console.log("Not a subway");
                                 return false;
                             }
                         }
@@ -50,16 +52,29 @@ function fetchStopData(stop_logical_name) {
                             // if it is not, then we will have to keep searching
                             //console.log(v2);
                             for (j = 0; j < (v2.length); j++) {
-                                console.log("Route #" + j);
-                                console.log(v2[j]);
+                                //console.log("Route #" + j);
+                                //console.log(v2[j]);
                                 $.each(v2[j], function(k3,v3) {
                                     if (k3 == "route_id") {
                                         if (v3 == "Red") {
-                                            console.log("found the red line");
+                                            //console.log("found the red line");
                                             breakRouteLoop = 1;
                                             breakModeLoop = 1;
+                                            foundRedLine = 1;
                                         } else {
                                             return false;
+                                        }
+                                    }
+                                    if ((k3 == "direction") && (foundRedLine == 1)) {
+                                        for (k = 0; k < 2; k++) {
+                                            console.log(k);
+                                            $.each(v3[k], function(k4,v4) {
+                                                if (k4 == "trip") {
+                                                    for (l = 0; j < (k4.length); l++) {
+                                                        console.log(v4[l]);
+                                                    }
+                                                }
+                                            });
                                         }
                                     }
                                     /*
