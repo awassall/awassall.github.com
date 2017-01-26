@@ -55,7 +55,7 @@ function fetchStopData(stop_logical_name) {
                                 $.each(v2[j], function(k3,v3) {
                                     if (k3 == "route_id") {
                                         if (v3 == "Red") {
-                                            console.log(v2[j]);
+                                            console.log("found the red line");
                                             breakRouteLoop = 1;
                                             breakModeLoop = 1;
                                         } else {
