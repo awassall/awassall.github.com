@@ -10,7 +10,11 @@ function fetchStopData(stop_logical_name) {
     console.log("fetchStopData: " + stop_logical_name);
     var url = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=" + stop_logical_name + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
-        alert(data);
+        //alert(data);
+        $.each(data, function(k1,v1) {
+            console.log(k1);
+            console.log(v1);
+        });
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
