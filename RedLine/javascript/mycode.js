@@ -13,8 +13,10 @@ function fetchStopData(stop_logical_name) {
         //alert(data);
         var i = 0;
         var j = 0;
-        var breakLoop = 0;
+        var breakModeLoop = 0;
+        var breakRouteLoop = 0;
         var foundSubway = 0;
+        var foundRoute = 0;
         $.each(data, function(k1,v1) {
             if (k1 == "mode") {
                 for (i = 0; i < (v1.length); i++) {
@@ -22,23 +24,31 @@ function fetchStopData(stop_logical_name) {
                     $.each(v1[i], function(k2,v2) {
                         if ((k2 == "mode_name") && (v2 == "Subway")) {
                             foundSubway = 1;
-                            breakLoop = 1;
+                            breakModeLoop = 1;
                             return true; //continue
                         }
                         if ((k2 == "route") && (foundSubway == 1)) {
-                            console.log(v2);
-                            console.log(v2.length);
-                            /*
+                            //console.log(v2);
                             for (j = 0; j < (v2.length); j++ {
                                 $.each(v2[i], function(k3,v3) {
-
+                                    if ((k3 == "route_id") && (v3 == "Red")) {
+                                        foundRoute = 1;
+                                        breakRouteLoop = 1;
+                                        return true; //continue
+                                    }
+                                    if ((k3 == "direction") && (foundRoute == 1)) {
+                                        console.log(v3);
+                                        return false;
+                                    }
                                 });
+                                if (breakRouteLoop == 1) {
+                                    break;
+                                }
                             }
-                            */
                             return false; // no need to do further searching, already have the data
                         }
                     });
-                    if (breakLoop == 1) {
+                    if (breakModeLoop == 1) {
                         break;
                     }
                 }
