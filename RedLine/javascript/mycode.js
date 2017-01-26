@@ -24,6 +24,7 @@ function fetchStopData(stop_logical_name) {
                     $.each(v1[i], function(k2,v2) {
                         console.log(k2);
                         console.log(v2);
+                        /*
                         if ((k2 == "mode_name") && (v2 == "Subway")) {
                             foundSubway = 1;
                             breakModeLoop = 1;
@@ -49,6 +50,7 @@ function fetchStopData(stop_logical_name) {
                             }
                             return false; // no need to do further searching, already have the data
                         }
+                        */
                     });
                     if (breakModeLoop == 1) {
                         break;
