@@ -12,14 +12,28 @@ function fetchStopData(stop_logical_name) {
     var jqxhr = $.getJSON(url).done(function(data) {
         //alert(data);
         var i = 0;
+        var breakLoop = 0;
+        var foundSubway = 0;
         $.each(data, function(k1,v1) {
             if (k1 == "mode") {
                 for (i = 0; i < (v1.length); i++) {
                     console.log(i);
                     $.each(v1[i], function(k2,v2) {
-                        console.log(k2);
-                        console.log(v2);
+                        if ((k2 == "mode_name") && (v2 == "Subway")) {
+                            foundSubway = 1;
+                            breakLoop = 1;
+                            return true; //continue
+                        }
+                        if ((k2 == "route") && (foundSubway == 1)) {
+                            console.log(v2);
+                            return false;
+                        }
+                        //console.log(k2);
+                        //console.log(v2);
                     });
+                    if (breakLoop == 1) {
+                        break;
+                    }
                 }
             }
         });
