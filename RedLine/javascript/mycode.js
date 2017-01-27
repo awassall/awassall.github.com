@@ -161,6 +161,7 @@ function fetchStopData(stop_logical_name) {
                 }
                 if (j == (sortedResults.length - 1)) {
                     sortedResults.push(results[i]);
+                    break;
                 }
             }
         }
