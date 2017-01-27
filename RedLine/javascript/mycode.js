@@ -157,7 +157,7 @@ function fetchStopData(stop_logical_name) {
                     //insert here
                     console.log("here1");
                     sortedResults.splice(j,0,results[i]);
-                    continue;
+                    break;
                 }
                 if ((j+1) == (sortedResults.length)) {
                     console.log("here2");
