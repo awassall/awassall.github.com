@@ -128,12 +128,12 @@ function fetchStopData(stop_logical_name) {
             }
         });
         //sort the results
-        //console.log(results);
+        console.log(results);
         var sortedResults = new Array();
         //loop over existing results
         for (i = 0; i < (results.length); i++) {
-            //console.log("i="+i);
-            //console.log(results[i]);
+            console.log("i="+i);
+            console.log(results[i]);
             //console.log(sortedResults);
             /*
             k = i[0];
@@ -146,20 +146,21 @@ function fetchStopData(stop_logical_name) {
             }
             //loop over new results array to see where to put it
             //sortedResults.length is greater than 0
-            //console.log(sortedResults);
+            console.log(sortedResults);
             for (j = 0; j < (sortedResults.length); j++) {
-                //console.log("j="+j);
+                console.log("j="+j);
                 //console.log(results[i][0]);
                 //console.log(results[i][1]);
                 //console.log(sortedResults[j][0]);
                 //console.log(sortedResults[j][1]);
                 if ((results[i][0] <= sortedResults[j][0]) && (results[i][1] <= sortedResults[j][1])) {
                     //insert here
-                    //console.log("here");
+                    console.log("here1");
                     sortedResults.splice(j,0,results[i]);
                     continue;
                 }
-                if (j == (sortedResults.length - 1)) {
+                if ((j+1) == (sortedResults.length)) {
+                    console.log("here2");
                     sortedResults.push(results[i]);
                     break;
                 }
