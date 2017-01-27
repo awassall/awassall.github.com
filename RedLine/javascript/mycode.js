@@ -19,6 +19,10 @@ function fetchStopData(stop_logical_name) {
         var breakRouteLoop = 0;
         var foundSubway = 0;
         var foundRedLine = 0;
+        var tripHeadsign = "";
+        var preAway = 0;
+        var results = new Array();
+        var tripArray = new Array();
         $.each(data, function(k1,v1) {
             if (k1 == "mode") {
                 for (i = 0; i < (v1.length); i++) {
@@ -71,7 +75,22 @@ function fetchStopData(stop_logical_name) {
                                             $.each(v3[k], function(k4,v4) {
                                                 if (k4 == "trip") {
                                                     for (l = 0; l < (k4.length); l++) {
-                                                        console.log(v4[l]);
+                                                        //console.log(v4[l]);
+                                                        tripHeadsign = "";
+                                                        preAway = 0;
+                                                        tripArray = new Array();
+                                                        $.each(v4[l], function(k5,v5) {
+                                                            if (k5 == "trip_headsign") {
+                                                                tripHeadsign = v5;
+                                                            }
+                                                            if (k5 == "pre_away") {
+                                                                preAway = v5;
+                                                            }
+                                                        });
+                                                        tripArray.push(k);
+                                                        tripArray.push(tripHeadsign);
+                                                        tripArray.push(preAway);
+                                                        results.push(tripArray);
                                                     }
                                                 }
                                             });
