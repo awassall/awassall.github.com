@@ -143,7 +143,7 @@ function fetchStopData(stop_logical_name) {
             //loop over new results array to see where to put it
             //sortedResults.length is greater than 0
             for (j = 0; j < (sortedResults.length); j++) {
-                if ((results[i][0] <= sortedResults[j][0]) && (results[i][1] <= sortedResults[j[1])) {
+                if ((results[i][0] <= sortedResults[j][0]) && (results[i][1] <= sortedResults[j][1])) {
                     //insert here
                     sortedResults.splice(j,0,results[i]);
                     continue;
