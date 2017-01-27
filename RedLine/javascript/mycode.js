@@ -127,7 +127,7 @@ function fetchStopData(stop_logical_name) {
                 }
             }
         });
-        drawStopTimesToPage(resultssort());
+        drawStopTimesToPage(results.sort());
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
