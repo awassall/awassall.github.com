@@ -70,7 +70,7 @@ function fetchStopData(stop_logical_name) {
                                             console.log(k);
                                             $.each(v3[k], function(k4,v4) {
                                                 if (k4 == "trip") {
-                                                    for (l = 0; j < (k4.length); l++) {
+                                                    for (l = 0; l < (k4.length); l++) {
                                                         console.log(v4[l]);
                                                     }
                                                 }
