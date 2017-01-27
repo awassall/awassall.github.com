@@ -127,7 +127,33 @@ function fetchStopData(stop_logical_name) {
                 }
             }
         });
-        drawStopTimesToPage(results.sort());
+        //sort the results
+        var sortedResults = new Array();
+        //loop over existing results
+        for (i = 0; i < (results.length); i++) {
+            /*
+            k = i[0];
+            preAway = i[1];
+            tripHeadsign = i[2];
+            */
+            if (sortedResults.length == 0) {
+                sortedResults.push(results[i]);
+                continue;
+            }
+            //loop over new results array to see where to put it
+            //sortedResults.length is greater than 0
+            for (j = 0; j < (sortedResults.length); j++) {
+                if ((results[i][0] <= sortedResults[j][0]) && (results[i][1] <= sortedResults[j[1])) {
+                    //insert here
+                    sortedResults.splice(j,0,results[i]);
+                    continue;
+                }
+                if (j == sortedResults.length) {
+                    sortedResults.push(results[i]);
+                }
+            }
+        }
+        drawStopTimesToPage(sortedResults);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
