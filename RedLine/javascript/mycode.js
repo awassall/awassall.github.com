@@ -6,6 +6,10 @@ function failWithError(error_text) {
     document.getElementById("loadStatus").innerHTML = error_text;
 }
 
+function drawStopTimesToPage(stop_array) {
+    console.log(stop_array);
+}
+
 function fetchStopData(stop_logical_name) {
     //console.log("fetchStopData: " + stop_logical_name);
     var url = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=" + stop_logical_name + "&format=json";
@@ -71,7 +75,7 @@ function fetchStopData(stop_logical_name) {
                                     }
                                     if ((k3 == "direction") && (foundRedLine == 1)) {
                                         for (k = 0; k < 2; k++) {
-                                            console.log(k);
+                                            //console.log(k);
                                             $.each(v3[k], function(k4,v4) {
                                                 if (k4 == "trip") {
                                                     for (l = 0; l < (k4.length); l++) {
@@ -84,12 +88,12 @@ function fetchStopData(stop_logical_name) {
                                                                 tripHeadsign = v5;
                                                             }
                                                             if (k5 == "pre_away") {
-                                                                preAway = v5;
+                                                                preAway = parseInt(v5);
                                                             }
                                                         });
                                                         tripArray.push(k);
-                                                        tripArray.push(tripHeadsign);
                                                         tripArray.push(preAway);
+                                                        tripArray.push(tripHeadsign);
                                                         results.push(tripArray);
                                                     }
                                                 }
@@ -123,7 +127,7 @@ function fetchStopData(stop_logical_name) {
                 }
             }
         });
-        console.log(results);
+        drawStopTimesToPage(resultssort());
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
