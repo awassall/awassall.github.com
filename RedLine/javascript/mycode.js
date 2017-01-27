@@ -123,6 +123,7 @@ function fetchStopData(stop_logical_name) {
                 }
             }
         });
+        console.log(results);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
