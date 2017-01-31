@@ -23,6 +23,9 @@ function drawStopTimesToPage(element_id, stop_array) {
     var dir = 0;
     var olddir = 0;
     var temparray = new Array();
+    var mins = 0;
+    var secs = 0;
+    var time = "";
     var ele = document.getElementById(element_id);
     var span = '<span>' + ele.innerHTML + '</span>';
     var stops = "";
@@ -31,6 +34,7 @@ function drawStopTimesToPage(element_id, stop_array) {
         dir = stop_array[i][0];
         if (i == 0) {
             olddir = dir; //initialize olddir to the first direction we come across
+            //stops = stops + '<br/><br/>' + ''
         } else {
             if (dir != olddir) {
                 olddir = dir;
@@ -42,7 +46,34 @@ function drawStopTimesToPage(element_id, stop_array) {
         } else {
             continue;
         }
-        stops = stops + '<br/>' + stop_array[i][1] + ' ' + stop_array[i][2];
+        mins = Math.floor((stop_array[i][1])/60);
+        secs = (stop_array[i][1])%60;
+        if ((mins == 0) && (secs == 0)) { //arriving now
+            time = "Arriving";
+        } else { //there is some nonzero amount of time remaining until arrival
+            if (mins == 0) { //time remaining is only seconds
+                time = secs + ' second';
+                if (secs != 1) {
+                    time = time + 's';
+                }
+            } else if (secs == 0) { //time remaining is only minutes
+                time = mins + ' minute';
+                if (mins != 1) {
+                    time = time + 's';
+                }
+            } else { //time remaining is in both minutes and seconds
+                time = mins + ' minute';
+                if (mins != 1) {
+                    time = time + 's';
+                }
+                time = time + ' ';
+                time = time + secs + ' second';
+                if (secs != 1) {
+                    time = time + 's';
+                }
+            }
+        }
+        stops = stops + '<br/>' + time + ' ' + stop_array[i][2];
     }
     ele.innerHTML = span + stops;
     console.log(stop_array);
