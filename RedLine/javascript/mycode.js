@@ -6,6 +6,17 @@ function failWithError(error_text) {
     document.getElementById("loadStatus").innerHTML = error_text;
 }
 
+function decideWhatToDo(element_id) {
+    var ele = document.getElementById(element_id);
+    if ((ele.innerHTML).search("<span>") >= 0) {
+        //compress back to just the stop name
+        ele.innerHTML = (ele.innerHTML).split("<span>")[1].split("</span>")[0];
+    } else {
+        //populate with stop data
+        fetchStopData(element_id);
+    }
+}
+
 function drawStopTimesToPage(element_id, stop_array) {
     var i = 0;
     var dircount = 0;
@@ -266,7 +277,7 @@ function drawDataToPage(res) {
             cell_stop_name.onclick = function() { alert("ERROR: Null parent station."); };
         } else {
             cell_stop_name.setAttribute("id",parent_station);
-            cell_stop_name.onclick = function() { fetchStopData(this.id); };
+            cell_stop_name.onclick = function() { decideWhatToDo(this.id); };
         }
         cell_stop_name.innerHTML = stop_name;
     }
