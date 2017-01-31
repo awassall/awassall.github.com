@@ -22,6 +22,7 @@ function drawStopTimesToPage(element_id, stop_array) {
             olddir = dir; //initialize olddir to the first direction we come across
         } else {
             if (dir != olddir) {
+                olddir = dir;
                 dircount = 0; //reset counter
             }
         }
