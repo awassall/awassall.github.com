@@ -52,25 +52,37 @@ function drawStopTimesToPage(element_id, stop_array) {
             time = "Arriving";
         } else { //there is some nonzero amount of time remaining until arrival
             if (mins == 0) { //time remaining is only seconds
+                time = secs + ' sec';
+                /*
                 time = secs + ' second';
                 if (secs != 1) {
                     time = time + 's';
                 }
+                */
             } else if (secs == 0) { //time remaining is only minutes
+                time = mins + ' min';
+                /*
                 time = mins + ' minute';
                 if (mins != 1) {
                     time = time + 's';
                 }
+                */
             } else { //time remaining is in both minutes and seconds
+                time = mins + ' min';
+                /*
                 time = mins + ' minute';
                 if (mins != 1) {
                     time = time + 's';
                 }
+                */
                 time = time + ' ';
+                time = time + secs + ' sec';
+                /*
                 time = time + secs + ' second';
                 if (secs != 1) {
                     time = time + 's';
                 }
+                */
             }
         }
         stops = stops + '<br/>' + time + ' ' + stop_array[i][2];
