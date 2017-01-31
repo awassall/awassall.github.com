@@ -7,9 +7,32 @@ function failWithError(error_text) {
 }
 
 function drawStopTimesToPage(element_id, stop_array) {
+    var i = 0;
+    var dircount = 0;
+    var dir = 0;
+    var olddir = 0;
+    var temparray = new Array();
     var ele = document.getElementById(element_id);
     var span = '<span>' + ele.innerHTML + '</span>';
-    ele.innerHTML = span + '<br/>' + 'test';
+    var stops = "";
+    for (i = 0; i < (stop_array.length); i++) { //only show max of 3 in each direction
+        temparray = stop_array[i];
+        dir = stop_array[i][0];
+        if (i == 0) {
+            olddir = dir; //initialize olddir to the first direction we come across
+        } else {
+            if (dir != olddir) {
+                dircount = 0; //reset counter
+            }
+        }
+        if (dircount < 3) {
+            dircount = dircount + 1;
+        } else {
+            continue;
+        }
+        stops = stops + '<br/>' + stop_array[i][1] + ' ' + stop_array[i][2];
+    }
+    ele.innerHTML = span + stops;
     console.log(stop_array);
 }
 
