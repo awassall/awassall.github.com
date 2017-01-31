@@ -6,7 +6,10 @@ function failWithError(error_text) {
     document.getElementById("loadStatus").innerHTML = error_text;
 }
 
-function drawStopTimesToPage(stop_array) {
+function drawStopTimesToPage(element_id, stop_array) {
+    var ele = document.getElementById(element_id);
+    var span = '<span>' + ele.innerHTML + '</span>';
+    ele.innerHTML = span + '<br/>' + 'test';
     console.log(stop_array);
 }
 
@@ -166,7 +169,7 @@ function fetchStopData(stop_logical_name) {
                 }
             }
         }
-        drawStopTimesToPage(sortedResults);
+        drawStopTimesToPage(stop_logical_name,sortedResults);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
