@@ -26,15 +26,26 @@ function drawStopTimesToPage(element_id, stop_array) {
     var mins = 0;
     var secs = 0;
     var time = "";
+    var stops = "";
     var ele = document.getElementById(element_id);
     var span = '<span>' + ele.innerHTML + '</span>';
-    var stops = "";
+    ele.innerHTML = span;
+    var dirTab = "";
+    var dirTabNameCell = "";
+    var dirTabTimeCell = "";
     for (i = 0; i < (stop_array.length); i++) { //only show max of 3 in each direction
         temparray = stop_array[i];
         dir = stop_array[i][0];
         if (i == 0) {
             olddir = dir; //initialize olddir to the first direction we come across
-            //stops = stops + '<br/><br/>' + ''
+            //initialize the first table
+            //dirTab = document.createElement("table");
+            //MORE WORK NEEDS TO GO HERE
+            //  TABLE START
+            //  HEADER IN ONE COLOR
+            //  ROWS IN ANOTHER COLOR
+            //  TABLE END
+            //  REPEAT FOR ADDITIONAL DIRECTIONS
         } else {
             if (dir != olddir) {
                 olddir = dir;
@@ -61,7 +72,7 @@ function drawStopTimesToPage(element_id, stop_array) {
         }
         stops = stops + '<br/>' + time + ' ' + stop_array[i][2];
     }
-    ele.innerHTML = span + stops;
+    ele.innerHTML = ele.innerHTML + stops;
     console.log(stop_array);
 }
 
