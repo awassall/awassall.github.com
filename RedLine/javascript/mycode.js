@@ -292,16 +292,11 @@ function drawDataToPage(res) {
             temp_stop_array.push(stop_name);
             lastindex += 1;
         }
-        //var row = dt.insertRow(-1);
-        //row.setAttribute("class","row" + (lastindex%2));
-        //var cell_stop_name = row.insertCell(0);
-        //cell_stop_name.setAttribute("class","cell0");
         option = document.createElement("option");
         var parent_station = (res[i]).split("*")[1]; //this is the logical name of the stop
         if (parent_station.length <= 0) { //parent station should not be NULL
             option.setAttribute("id","NULL");
             option.disabled = 1;
-            //cell_stop_name.onclick = function() { alert("ERROR: Null parent station."); };
         } else {
             option.setAttribute("id",parent_station);
             //cell_stop_name.onclick = function() { decideWhatToDo(this.id); };
@@ -310,7 +305,11 @@ function drawDataToPage(res) {
         select.add(option);
     }
     select.onchange = function() {
-        console.log(this.selectedOptions[0].id);
+        if (this.selectedOptions[0].id == "NULL") {
+            alert("Cannot obtain information for the selected station at this time.");
+        } else {
+            console.log(this.selectedOptions[0].id);
+        }
     };
     document.getElementById("loadStatus").innerHTML = "1";
 }
