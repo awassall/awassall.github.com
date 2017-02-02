@@ -300,12 +300,14 @@ function drawDataToPage(res) {
         var parent_station = (res[i]).split("*")[1]; //this is the logical name of the stop
         if (parent_station.length <= 0) { //parent station should not be NULL
             option.setAttribute("id","NULL");
+            option.disabled = 1;
             //cell_stop_name.onclick = function() { alert("ERROR: Null parent station."); };
         } else {
             option.setAttribute("id",parent_station);
             //cell_stop_name.onclick = function() { decideWhatToDo(this.id); };
         }
         option.text = stop_name;
+        select.add(option);
     }
     document.getElementById("loadStatus").innerHTML = "1";
 }
