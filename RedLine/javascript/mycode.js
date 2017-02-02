@@ -28,9 +28,6 @@ function drawStopTimesToPage(stop_array) {
     var time = "";
     var stops = "";
     var div = document.getElementById("stopDataDiv");
-    //var temptable = "";
-    //var span = '<span>' + ele.innerHTML + '</span>';
-    //ele.innerHTML = span;
     var dirTab = "";
     var dirTabHead = "";
     var dirTabRow = "";
@@ -39,24 +36,6 @@ function drawStopTimesToPage(stop_array) {
     for (i = 0; i < (stop_array.length); i++) { //only show max of 3 in each direction
         temparray = stop_array[i];
         dir = stop_array[i][0];
-        /*
-        if (i == 0) {
-            olddir = dir; //initialize olddir to the first direction we come across
-            //initialize the first table
-            //dirTab = document.createElement("table");
-            //MORE WORK NEEDS TO GO HERE
-            //  TABLE START
-            //  HEADER IN ONE COLOR
-            //  ROWS IN ANOTHER COLOR
-            //  TABLE END
-            //  REPEAT FOR ADDITIONAL DIRECTIONS
-        } else {
-            if (dir != olddir) {
-                olddir = dir;
-                dircount = 0; //reset counter
-            }
-        }
-        */
         if (dir != olddir) {
             olddir = dir;
             dircount = 0; //reset counter
@@ -67,11 +46,8 @@ function drawStopTimesToPage(stop_array) {
             }
             dirTab = document.createElement("table");
             dirTabHead = document.createElement("span");
+            dirTabHead.setAttribute("class","dataTableHeader");
             dirTabHead.innerHTML = "Direction " + dir;
-            //dirTabHead = dirTab.createTHead();
-            //dirTabRow = dirTabHead.insertRow(0);
-            //dirTabNameCell = dirTabRow.insertCell(0);
-            //dirTabNameCell.innerHTML = "Direction " + dir;
         }
         if (dircount < 3) {
             dircount = dircount + 1;
@@ -92,11 +68,13 @@ function drawStopTimesToPage(stop_array) {
             }
         }
         dirTabRow = dirTab.insertRow(-1);
+        dirTabRow.setAttribute("class","dataTableRow");
         dirTabNameCell = dirTabRow.insertCell(0);
+        dirTabNameCell.setAttribute("class","dataTableNameCell");
         dirTabTimeCell = dirTabRow.insertCell(1);
+        dirTabTimeCell.setAttribute("class","dataTableTimeCell");
         dirTabNameCell.innerHTML = stop_array[i][2];
         dirTabTimeCell.innerHTML = time;
-        //stops = stops + '<br/>' + time + ' ' + stop_array[i][2];
     }
     //append the last direction
     div.appendChild(dirTabHead);
