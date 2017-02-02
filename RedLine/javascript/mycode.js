@@ -17,6 +17,92 @@ function decideWhatToDo(element_id) {
     }
 }
 
+function drawStopTimesToPage(sortedResults) {
+    var i = 0;
+    var dircount = 0;
+    var dir = 0;
+    var olddir = -1;
+    var temparray = new Array();
+    var mins = 0;
+    var secs = 0;
+    var time = "";
+    var stops = "";
+    var div = document.getElementById("stopDataDiv");
+    //var temptable = "";
+    //var span = '<span>' + ele.innerHTML + '</span>';
+    //ele.innerHTML = span;
+    var dirTab = "";
+    var dirTabHead = "";
+    var dirTabRow = "";
+    var dirTabNameCell = "";
+    var dirTabTimeCell = "";
+    for (i = 0; i < (stop_array.length); i++) { //only show max of 3 in each direction
+        temparray = stop_array[i];
+        dir = stop_array[i][0];
+        /*
+        if (i == 0) {
+            olddir = dir; //initialize olddir to the first direction we come across
+            //initialize the first table
+            //dirTab = document.createElement("table");
+            //MORE WORK NEEDS TO GO HERE
+            //  TABLE START
+            //  HEADER IN ONE COLOR
+            //  ROWS IN ANOTHER COLOR
+            //  TABLE END
+            //  REPEAT FOR ADDITIONAL DIRECTIONS
+        } else {
+            if (dir != olddir) {
+                olddir = dir;
+                dircount = 0; //reset counter
+            }
+        }
+        */
+        if (dir != olddir) {
+            olddir = dir;
+            dircount = 0; //reset counter
+            if (i != 0) {
+                //if this isn't the first datapoint, then we need to post the existing table to the page
+                div.appendChild(dirTab);
+            }
+            dirTab = document.createElement("table");
+            dirTabHead = dirTab.createTHead();
+            dirTabRow = dirTabHead.insertRow(0);
+            dirTabNameCell = dirTabRow.insertCell(0);
+            dirTabNameCell.innerHTML = "Direction " + dir;
+        }
+        if (dircount < 3) {
+            dircount = dircount + 1;
+        } else {
+            continue;
+        }
+        mins = Math.floor((stop_array[i][1])/60);
+        secs = (stop_array[i][1])%60;
+        if ((mins == 0) && (secs == 0)) { //arriving now
+            time = "Arriving";
+        } else { //there is some nonzero amount of time remaining until arrival
+            if (mins == 0) { //time remaining is only seconds
+                time = secs + ' sec';
+            } else if (secs == 0) { //time remaining is only minutes
+                time = mins + ' min';
+            } else { //time remaining is in both minutes and seconds
+                time = mins + ' min' + ' ' + secs + ' sec';
+            }
+        }
+        dirTabRow = dirTab.insertRow(-1);
+        dirTabNameCell = dirTabRow.insertCell(0);
+        dirTabTimeCell = dirTabRow.insertCell(1);
+        dirTabNameCell.innerHTML = stop_array[i][2];
+        dirTabTimeCell.innerHTML = time;
+        //stops = stops + '<br/>' + time + ' ' + stop_array[i][2];
+    }
+    //append the last direction
+    div.appendChild(dirTab);
+    //ele.innerHTML = ele.innerHTML + stops;
+    console.log(stop_array);
+}
+
+// OLD TABLE IMPLEMENTATION
+/*
 function drawStopTimesToPage(element_id, stop_array) {
     var i = 0;
     var dircount = 0;
@@ -75,6 +161,7 @@ function drawStopTimesToPage(element_id, stop_array) {
     ele.innerHTML = ele.innerHTML + stops;
     console.log(stop_array);
 }
+*/
 
 function fetchStopData(stop_logical_name) {
     //console.log("fetchStopData: " + stop_logical_name);
@@ -232,7 +319,8 @@ function fetchStopData(stop_logical_name) {
                 }
             }
         }
-        drawStopTimesToPage(stop_logical_name,sortedResults);
+        //drawStopTimesToPage(stop_logical_name,sortedResults);
+        drawStopTimesToPage(sortedResults);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
@@ -308,7 +396,7 @@ function drawDataToPage(res) {
         if (this.selectedOptions[0].id == "NULL") {
             alert("Cannot obtain information for the selected station at this time.");
         } else {
-            console.log(this.selectedOptions[0].id);
+            fetchStopData(this.selectedOptions[0].id);
         }
     };
     document.getElementById("loadStatus").innerHTML = "1";
