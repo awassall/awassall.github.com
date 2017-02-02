@@ -45,9 +45,16 @@ function drawStopTimesToPage(stop_array) {
                 div.appendChild(dirTab);
             }
             dirTab = document.createElement("table");
+            dirTab.setAttribute("class","dataTableRoot");
             dirTabHead = document.createElement("span");
             dirTabHead.setAttribute("class","dataTableHeader");
-            dirTabHead.innerHTML = "Direction " + dir;
+            if (dir == 0) {
+                dirTabHead.innerHTML = "Southbound";
+            } else if (dir == 1) {
+                dirTabHead.innerHTML = "Northbound";
+            } else {
+                dirTabHead.innerHTML = "Direction " + dir;
+            }
         }
         if (dircount < 3) {
             dircount = dircount + 1;
