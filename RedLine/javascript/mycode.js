@@ -45,21 +45,19 @@ function drawStopTimesToPage(stop_array) {
             dircount = 0; //reset counter
             if (i != 0) {
                 //if this isn't the first datapoint, then we need to post the existing table to the page
-                dirspan = document.createElement("div");
-                dirspan.setAttribute("class","dirspan" + (numdirs%2));
+                //dirspan = document.createElement("div");
+                //dirspan.setAttribute("class","dirspan" + (numdirs%2));
                 numdirs = numdirs + 1;
-                dirspan.appendChild(dirTabHead);
-                dirspan.appendChild(dirTab);
-                div.appendChild(dirspan);
-                /*
+                //dirspan.appendChild(dirTabHead);
+                //dirspan.appendChild(dirTab);
+                //div.appendChild(dirspan);
                 div.appendChild(dirTabHead);
                 div.appendChild(dirTab);
-                */
             }
             dirTab = document.createElement("table");
             dirTab.setAttribute("class","dataTableRoot");
             dirTabHead = document.createElement("span");
-            dirTabHead.setAttribute("class","dataTableHeader");
+            dirTabHead.setAttribute("class","dataTableHeader dirspan" + (numdirs%2));
             if (dir == 0) {
                 dirTabHead.innerHTML = "Southbound";
             } else if (dir == 1) {
@@ -96,15 +94,13 @@ function drawStopTimesToPage(stop_array) {
         dirTabTimeCell.innerHTML = time;
     }
     //append the last direction
-    dirspan = document.createElement("div");
-    dirspan.setAttribute("class","dirspan" + (numdirs%2));
-    dirspan.appendChild(dirTabHead);
-    dirspan.appendChild(dirTab);
-    div.appendChild(dirspan);
-    /*
+    //dirspan = document.createElement("div");
+    //dirspan.setAttribute("class","dirspan" + (numdirs%2));
+    //dirspan.appendChild(dirTabHead);
+    //dirspan.appendChild(dirTab);
+    //div.appendChild(dirspan);
     div.appendChild(dirTabHead);
     div.appendChild(dirTab);
-    */
     console.log(stop_array);
 }
 
