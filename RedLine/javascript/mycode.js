@@ -238,47 +238,8 @@ function fetchStopData(stop_logical_name) {
     });
 }
 
+// THIS IS THE INITIAL TABLE IMPLEMENTATION
 /*
-function drawDataToPage(res) {
-    var i = 0;
-    var dt = document.getElementById("datatable");
-    var dth = dt.createTHead();
-    var dthr = dth.insertRow(0);
-    var dthrc_s = dthr.insertCell(0);
-    dthrc_s.innerHTML = "S";
-    var dthrc_n = dthr.insertCell(0);
-    dthrc_n.innerHTML = "N";
-    var dthrc_name = dthr.insertCell(0);
-    dthrc_name.innerHTML = "NAME";
-    var temp_stop_array = new Array();
-    var lastindex = 1;
-    for (i = 0; i < (res.length); i++) {
-        var stop_name = (res[i]).split("*")[0];
-        if ($.inArray(stop_name,temp_stop_array) >= 0) { //skip duplicates
-            continue;
-        } else { //add to temp array for checking against on subsequent iterations
-            temp_stop_array.push(stop_name);
-            lastindex += 1;
-        }
-        var row = dt.insertRow(-1);
-        row.setAttribute("class","row" + (lastindex%2));
-        var cell_stop_data_s = row.insertCell(0);
-        cell_stop_data_s.setAttribute("class","cell2");
-        cell_stop_data_s.setAttribute("id",stop_name + "_S");
-        cell_stop_data_s.innerHTML = "Loading...";
-        var cell_stop_data_n = row.insertCell(0);
-        cell_stop_data_n.setAttribute("class","cell1");
-        cell_stop_data_n.setAttribute("id",stop_name + "_N");
-        cell_stop_data_n.innerHTML = "Loading...";
-        var cell_stop_name = row.insertCell(0);
-        cell_stop_name.setAttribute("class","cell0");
-        cell_stop_name.innerHTML = stop_name;
-        //fetchStopData((res[i]).split("*")[1]);
-    }
-    document.getElementById("loadStatus").innerHTML = "1";
-}
-*/
-
 function drawDataToPage(res) {
     var i = 0;
     var dt = document.getElementById("datatable");
@@ -308,6 +269,43 @@ function drawDataToPage(res) {
             cell_stop_name.onclick = function() { decideWhatToDo(this.id); };
         }
         cell_stop_name.innerHTML = stop_name;
+    }
+    document.getElementById("loadStatus").innerHTML = "1";
+}
+*/
+
+// THIS IS THE SELECT LIST IMPLEMENTATION
+function drawDataToPage(res) {
+    var i = 0;
+    var select = document.getElementById("stopSelect");
+    var option = "";
+    var temp_stop_array = new Array();
+    var lastindex = 1;
+    for (i = 0; i < (res.length); i++) {
+        var stop_name = (res[i]).split("*")[0]; //this is the display name of the stop
+        if (stop_name.length <= 0) { //name should not be NULL
+            continue; //should never get here in practice...
+        }
+        if ($.inArray(stop_name,temp_stop_array) >= 0) { //skip duplicates
+            continue;
+        } else { //add to temp array for checking against on subsequent iterations
+            temp_stop_array.push(stop_name);
+            lastindex += 1;
+        }
+        //var row = dt.insertRow(-1);
+        //row.setAttribute("class","row" + (lastindex%2));
+        //var cell_stop_name = row.insertCell(0);
+        //cell_stop_name.setAttribute("class","cell0");
+        option = document.createElement("option");
+        var parent_station = (res[i]).split("*")[1]; //this is the logical name of the stop
+        if (parent_station.length <= 0) { //parent station should not be NULL
+            option.setAttribute("id","NULL");
+            //cell_stop_name.onclick = function() { alert("ERROR: Null parent station."); };
+        } else {
+            option.setAttribute("id",parent_station);
+            //cell_stop_name.onclick = function() { decideWhatToDo(this.id); };
+        }
+        option.text = stop_name;
     }
     document.getElementById("loadStatus").innerHTML = "1";
 }
