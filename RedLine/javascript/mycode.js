@@ -17,7 +17,7 @@ function decideWhatToDo(element_id) {
     }
 }
 
-function drawStopTimesToPage(sortedResults) {
+function drawStopTimesToPage(stop_array) {
     var i = 0;
     var dircount = 0;
     var dir = 0;
