@@ -97,7 +97,6 @@ function drawStopTimesToPage(stop_array) {
     }
     //append the last direction
     div.appendChild(dirTab);
-    //ele.innerHTML = ele.innerHTML + stops;
     console.log(stop_array);
 }
 
