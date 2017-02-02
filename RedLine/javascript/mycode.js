@@ -62,13 +62,16 @@ function drawStopTimesToPage(stop_array) {
             dircount = 0; //reset counter
             if (i != 0) {
                 //if this isn't the first datapoint, then we need to post the existing table to the page
+                div.appendChild(dirTabHead);
                 div.appendChild(dirTab);
             }
             dirTab = document.createElement("table");
-            dirTabHead = dirTab.createTHead();
-            dirTabRow = dirTabHead.insertRow(0);
-            dirTabNameCell = dirTabRow.insertCell(0);
-            dirTabNameCell.innerHTML = "Direction " + dir;
+            dirTabHead = document.createElement("span");
+            dirTabHead.innerHTML = "Direction " + dir;
+            //dirTabHead = dirTab.createTHead();
+            //dirTabRow = dirTabHead.insertRow(0);
+            //dirTabNameCell = dirTabRow.insertCell(0);
+            //dirTabNameCell.innerHTML = "Direction " + dir;
         }
         if (dircount < 3) {
             dircount = dircount + 1;
@@ -96,6 +99,7 @@ function drawStopTimesToPage(stop_array) {
         //stops = stops + '<br/>' + time + ' ' + stop_array[i][2];
     }
     //append the last direction
+    div.appendChild(dirTabHead);
     div.appendChild(dirTab);
     console.log(stop_array);
 }
