@@ -96,12 +96,5 @@ select:active, select:hover {
 
 .dataTableHeader {
     width: 100%;
-}
-
-.dirspan0 {
     background-color: #808080;
-}
-
-.dirspan1 {
-    background-color: #404040;
 }
