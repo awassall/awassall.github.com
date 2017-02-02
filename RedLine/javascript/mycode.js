@@ -309,6 +309,9 @@ function drawDataToPage(res) {
         option.text = stop_name;
         select.add(option);
     }
+    select.onchange = function() {
+        console.log(this.selectedOptions[0].id);
+    };
     document.getElementById("loadStatus").innerHTML = "1";
 }
 
