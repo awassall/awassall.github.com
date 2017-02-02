@@ -93,3 +93,11 @@ select:active, select:hover {
     border-width: 0;
     outline: none;
 }
+
+.dirspan0 {
+    background-color: #808080;
+}
+
+.dirspan1 {
+    background-color: #404040;
+}
