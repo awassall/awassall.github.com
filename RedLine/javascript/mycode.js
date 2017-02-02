@@ -56,7 +56,7 @@ function drawStopTimesToPage(stop_array) {
             }
             dirTab = document.createElement("table");
             dirTab.setAttribute("class","dataTableRoot");
-            dirTabHead = document.createElement("span");
+            dirTabHead = document.createElement("div");
             dirTabHead.setAttribute("class","dataTableHeader dirspan" + (numdirs%2));
             if (dir == 0) {
                 dirTabHead.innerHTML = "Southbound";
