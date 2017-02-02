@@ -29,6 +29,7 @@ function drawStopTimesToPage(stop_array) {
     var stops = "";
     var div = document.getElementById("stopDataDiv");
     var numdirs = 0;
+    var dirspan = "";
     //clear div contents
     div.innerHTML = "";
     var dirTab = "";
@@ -44,8 +45,16 @@ function drawStopTimesToPage(stop_array) {
             dircount = 0; //reset counter
             if (i != 0) {
                 //if this isn't the first datapoint, then we need to post the existing table to the page
+                dirspan = document.createElement("span");
+                dirspan.setAttribute("class","dirspan" + (numdirs%2));
+                numdirs = numdirs + 1;
+                dirspan.appendChild(dirTabHead);
+                dirspan.appendChild(dirTab);
+                div.appendChild(dirspan);
+                /*
                 div.appendChild(dirTabHead);
                 div.appendChild(dirTab);
+                */
             }
             dirTab = document.createElement("table");
             dirTab.setAttribute("class","dataTableRoot");
@@ -87,8 +96,15 @@ function drawStopTimesToPage(stop_array) {
         dirTabTimeCell.innerHTML = time;
     }
     //append the last direction
+    dirspan = document.createElement("span");
+    dirspan.setAttribute("class","dirspan" + (numdirs%2));
+    dirspan.appendChild(dirTabHead);
+    dirspan.appendChild(dirTab);
+    div.appendChild(dirspan);
+    /*
     div.appendChild(dirTabHead);
     div.appendChild(dirTab);
+    */
     console.log(stop_array);
 }
 
