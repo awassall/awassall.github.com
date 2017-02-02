@@ -91,4 +91,5 @@ select:active, select:hover {
     background-color: #404040;
     color: #ffb3b3;
     border-width: 0;
+    outline: none;
 }
