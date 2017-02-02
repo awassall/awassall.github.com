@@ -28,6 +28,7 @@ function drawStopTimesToPage(stop_array) {
     var time = "";
     var stops = "";
     var div = document.getElementById("stopDataDiv");
+    var numdirs = 0;
     //clear div contents
     div.innerHTML = "";
     var dirTab = "";

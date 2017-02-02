@@ -80,3 +80,15 @@ html, body {
     color: #ffb3b3;
     text-align: center;
 }
+
+select:active, select:hover {
+    outline: none;
+}
+
+#stopSelect {
+    width: 100%;
+    font-size: 100%;
+    background-color: #404040;
+    color: #ffb3b3;
+    border-width: 0;
+}
