@@ -45,7 +45,7 @@ function drawStopTimesToPage(stop_array) {
             dircount = 0; //reset counter
             if (i != 0) {
                 //if this isn't the first datapoint, then we need to post the existing table to the page
-                dirspan = document.createElement("span");
+                dirspan = document.createElement("div");
                 dirspan.setAttribute("class","dirspan" + (numdirs%2));
                 numdirs = numdirs + 1;
                 dirspan.appendChild(dirTabHead);
@@ -96,7 +96,7 @@ function drawStopTimesToPage(stop_array) {
         dirTabTimeCell.innerHTML = time;
     }
     //append the last direction
-    dirspan = document.createElement("span");
+    dirspan = document.createElement("div");
     dirspan.setAttribute("class","dirspan" + (numdirs%2));
     dirspan.appendChild(dirTabHead);
     dirspan.appendChild(dirTab);
