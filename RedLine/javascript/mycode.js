@@ -1,12 +1,13 @@
 //GLOBAL VARIABLES
 var apiKey = "wX9NwuHnZU2ToO7GmGR9uw";
 var loadInterval;
+var refreshTimer;
 
 function failWithError(error_text) {
     document.getElementById("loadStatus").innerHTML = error_text;
 }
 
-function drawStopTimesToPage(stop_array) {
+function drawStopTimesToPage(stop_array,stop_logical_name) {
     var i = 0;
     var dircount = 0;
     var dir = 0;
@@ -77,7 +78,9 @@ function drawStopTimesToPage(stop_array) {
     //append the last direction
     div.appendChild(dirTabHead);
     div.appendChild(dirTab);
-    console.log(stop_array);
+    //console.log(stop_array);
+    //kick off the refresh timer
+    refreshTimer = setTimeout(fetchStopData(stop_logical_name),15000);
 }
 
 function fetchStopData(stop_logical_name) {
@@ -183,7 +186,7 @@ function fetchStopData(stop_logical_name) {
                 }
             }
         }
-        drawStopTimesToPage(sortedResults);
+        drawStopTimesToPage(sortedResults,stop_logical_name);
     }).fail(function() {
         alert("ERROR: $.getJSON() failed for fetchStopData().");
     });
