@@ -80,6 +80,7 @@ function drawStopTimesToPage(stop_array,stop_logical_name) {
     div.appendChild(dirTab);
     //console.log(stop_array);
     //kick off the refresh timer
+    console.log("here");
     refreshTimer = setTimeout(fetchStopData(stop_logical_name),15000);
 }
 
