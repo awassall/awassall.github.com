@@ -80,7 +80,7 @@ function drawStopTimesToPage(stop_array,stop_logical_name) {
     div.appendChild(dirTab);
     //console.log(stop_array);
     //kick off the refresh timer
-    console.log("here");
+    //console.log("here");
     refreshTimer = setTimeout(function(){ fetchStopData(stop_logical_name); },15000);
 }
 
@@ -223,6 +223,8 @@ function drawDataToPage(res) {
         select.add(option);
     }
     select.onchange = function() {
+        //clear any ongoing refresh timer
+        clearTimeout(refreshTimer);
         if (this.selectedOptions[0].id == "NULL") {
             alert("Cannot obtain information for the selected station at this time.");
         } else {
