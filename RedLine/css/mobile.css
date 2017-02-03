@@ -53,9 +53,10 @@ html, body {
 
 #header {
     width: 100%;
-    color: #ffb3b3;
+    color: #ff1a1a;
     text-align: center;
     font-size: 150%;
+    font-weight: normal;
 }
 
 select:active, select:hover {
