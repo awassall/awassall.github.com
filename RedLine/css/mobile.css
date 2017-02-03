@@ -57,7 +57,7 @@ html, body {
     text-align: center;
     font-size: 200%;
     font-weight: normal;
-    margin-top: 0;
+    margin-top: 10;
 }
 
 select:active, select:hover {
