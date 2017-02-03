@@ -44,35 +44,11 @@ html, body {
     font-size: 200%;
 }
 
-#datatable {
-    width: 100%;
-}
-
 .hideMe {
     display: none;
 }
 
 .showMe {
-}
-
-.row0 {
-    background-color: rgb(51,51,51);
-    width: 100%;
-}
-
-.row1 {
-    background-color: rgb(153,153,153);
-    width: 100%;
-}
-
-.cell0 {
-    width: 100%;
-    text-align: center;
-}
-
-.cell0:hover {
-    background-color: #b30000;
-    cursor: pointer;
 }
 
 #header {

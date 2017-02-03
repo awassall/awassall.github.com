@@ -222,6 +222,9 @@ function drawDataToPage(res) {
         if (this.selectedOptions[0].id == "NULL") {
             alert("Cannot obtain information for the selected station at this time.");
         } else {
+            //clear div contents immediately to avoid momentary confusion
+            document.getElementById("stopDataDiv").innerHTML = "";
+            //fetch new data
             fetchStopData(this.selectedOptions[0].id);
         }
     };
