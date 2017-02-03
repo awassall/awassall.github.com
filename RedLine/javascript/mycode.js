@@ -85,7 +85,7 @@ function drawStopTimesToPage(stop_array,stop_logical_name) {
 }
 
 function fetchStopData(stop_logical_name) {
-    console.log("fetch data called");
+    //console.log("fetch data called");
     var url = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + apiKey + "&stop=" + stop_logical_name + "&format=json";
     var jqxhr = $.getJSON(url).done(function(data) {
         var i = 0;
