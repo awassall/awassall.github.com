@@ -44,10 +44,6 @@ html, body {
     font-size: 200%;
 }
 
-#datatable {
-    width: 100%;
-}
-
 .hideMe {
     display: none;
 }
@@ -55,19 +51,26 @@ html, body {
 .showMe {
 }
 
-.row0 {
-    background-color: rgb(51,51,51);
+#header {
     width: 100%;
+    color: #ffb3b3;
+    text-align: center;
 }
 
-.row1 {
-    background-color: rgb(153,153,153);
-    width: 100%;
+select:active, select:hover {
+    outline: none;
 }
 
-.cell0 {
-    width: 34%;
+#stopSelect {
+    width: 100%;
+    font-size: 100%;
+    background-color: #404040;
+    color: #ffb3b3;
+    border-width: 0;
+    outline: none;
 }
-.cell1,.cell2 {
-    width: 33%;
+
+.dataTableHeader {
+    width: 100%;
+    background-color: #808080;
 }
