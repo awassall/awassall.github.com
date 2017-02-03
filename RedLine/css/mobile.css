@@ -76,3 +76,12 @@ select:active, select:hover {
     background-color: #808080;
     font-size:200%;
 }
+
+.dataTableRoot {
+    width: 100%;
+    font-size: 150%;
+}
+
+.dataTableNameCell {
+    width: 40%;
+}
