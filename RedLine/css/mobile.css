@@ -41,7 +41,7 @@ html, body {
 #datacontainer {
     color: white;
     width: 100%;
-    font-size: 200%;
+    font-size: 100%;
 }
 
 .hideMe {
@@ -55,6 +55,7 @@ html, body {
     width: 100%;
     color: #ffb3b3;
     text-align: center;
+    font-size: 80%;
 }
 
 select:active, select:hover {
@@ -73,4 +74,5 @@ select:active, select:hover {
 .dataTableHeader {
     width: 100%;
     background-color: #808080;
+    font-size:200%;
 }
