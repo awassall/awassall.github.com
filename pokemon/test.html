@@ -12,7 +12,12 @@
 $.getJSON("pokemonlist.json", function(json) {
 	console.log(json); // this will show the info it in firebug console
 	$.each(json, function(k,v) {
-		document.write(k + " " + v);
+		$.each(k, function(k1,v1) {
+			if (k1 == "url") {
+				document.write(k + " " + v1);
+			}
+		});
+		//document.write(k + " " + v);
 		//document.write(v);
 	});
 	//var obj = jQuery.parseJSON(json);
