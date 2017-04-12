@@ -12,15 +12,19 @@
 $.getJSON("pokemonlist.json", function(json) {
 	var div = document.getElementById("container");
 	var anchor = "";
+	var i = 0;
 	//console.log(json); // this will show the info it in firebug console
 	$.each(json, function(k,v) {
 		console.log(k + " " + v.url);
 		anchor = document.createElement("a");
 		anchor.href = v.url;
 		anchor.innerHTML = k;
-		anchor.download = k + ".png";
+		anchor.download = k;
 		div.appendChild(anchor);
 	});
+	for (i=0; i < (div.children.length); i++) {
+		//do stuff
+	}
 });
 </script>
 <div id="container"></div>
