@@ -11,7 +11,11 @@
 <script type="text/javascript">
 $.getJSON("pokemonlist.json", function(json) {
 	console.log(json); // this will show the info it in firebug console
-	document.write(json.id1);
+	$.each(json, function(k,v) {
+		document.write(k + " " + v);
+		//document.write(v);
+	});
+	//var obj = jQuery.parseJSON(json);
 });
 </script>
 </body>
