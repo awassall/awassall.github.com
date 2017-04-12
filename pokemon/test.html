@@ -9,21 +9,20 @@
 
 <body>
 <script type="text/javascript">
+var div = document.getElementById("container");
+var anchor = "";
 $.getJSON("pokemonlist.json", function(json) {
-	console.log(json); // this will show the info it in firebug console
+	//console.log(json); // this will show the info it in firebug console
 	$.each(json, function(k,v) {
 		document.write(k + " " + v.url + "\r\n");
-		/*
-		$.each(k, function(k1,v1) {
-			document.write(k + " " + k1 + " " + v1 + " \n");
-		});
-		*/
-		//document.write(k + " " + v);
-		//document.write(v);
+		anchor = document.createElement("a");
+		anchor.src = v.url;
+		anchor.innerHTML = k;
+		div.appendChild(anchor);
 	});
-	//var obj = jQuery.parseJSON(json);
 });
 </script>
+<div id="container"></div>
 </body>
 
 </html>
