@@ -9,10 +9,19 @@
 
 <body>
 <script type="text/javascript">
+function downloadStuff() {
+	var i = 0;
+	var div = document.getElementById("container");
+	for (i=0; i < (div.children.length); i++) {
+		div.children[i].click();
+	}
+}
+</script>
+<script type="text/javascript">
 $.getJSON("pokemonlist.json", function(json) {
 	var div = document.getElementById("container");
 	var anchor = "";
-	var i = 0;
+	//var i = 0;
 	//console.log(json); // this will show the info it in firebug console
 	$.each(json, function(k,v) {
 		console.log(k + " " + v.url);
@@ -22,12 +31,15 @@ $.getJSON("pokemonlist.json", function(json) {
 		anchor.download = k;
 		div.appendChild(anchor);
 	});
+	/*
 	for (i=0; i < (div.children.length); i++) {
 		div.children[i].click();
 	}
+	*/
 });
 </script>
 <div id="container"></div>
+<button id="downloadStuff" onclick="downloadStuff()">download</button>
 </body>
 
 </html>
