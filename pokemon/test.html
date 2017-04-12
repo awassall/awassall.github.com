@@ -18,6 +18,7 @@ $.getJSON("pokemonlist.json", function(json) {
 		anchor = document.createElement("a");
 		anchor.href = v.url;
 		anchor.innerHTML = k;
+		anchor.download = k + ".png";
 		div.appendChild(anchor);
 	});
 });
