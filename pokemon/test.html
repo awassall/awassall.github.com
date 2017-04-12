@@ -9,12 +9,9 @@
 
 <body>
 <script type="text/javascript">
-var i = 1;
-for (i=1; i<=251; i++) {
-	document.write(i);
-}
 $.getJSON("pokemonlist.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
+	console.log(json); // this will show the info it in firebug console
+	document.write(json.id1);
 });
 </script>
 </body>
