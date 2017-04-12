@@ -9,9 +9,9 @@
 
 <body>
 <script type="text/javascript">
-var div = document.getElementById("container");
-var anchor = "";
 $.getJSON("pokemonlist.json", function(json) {
+	var div = document.getElementById("container");
+	var anchor = "";
 	//console.log(json); // this will show the info it in firebug console
 	$.each(json, function(k,v) {
 		document.write(k + " " + v.url + "\r\n");
