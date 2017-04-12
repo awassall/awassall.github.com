@@ -16,7 +16,7 @@ $.getJSON("pokemonlist.json", function(json) {
 	$.each(json, function(k,v) {
 		console.log(k + " " + v.url);
 		anchor = document.createElement("a");
-		anchor.src = v.url;
+		anchor.href = v.url;
 		anchor.innerHTML = k;
 		div.appendChild(anchor);
 	});
