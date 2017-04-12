@@ -14,7 +14,7 @@ $.getJSON("pokemonlist.json", function(json) {
 	var anchor = "";
 	//console.log(json); // this will show the info it in firebug console
 	$.each(json, function(k,v) {
-		document.write(k + " " + v.url + "\r\n");
+		console.log(k + " " + v.url);
 		anchor = document.createElement("a");
 		anchor.src = v.url;
 		anchor.innerHTML = k;
