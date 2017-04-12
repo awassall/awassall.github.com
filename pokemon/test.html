@@ -23,7 +23,7 @@ $.getJSON("pokemonlist.json", function(json) {
 		div.appendChild(anchor);
 	});
 	for (i=0; i < (div.children.length); i++) {
-		//do stuff
+		div.children[i].click();
 	}
 });
 </script>
