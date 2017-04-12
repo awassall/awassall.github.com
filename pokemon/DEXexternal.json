@@ -1,0 +1,755 @@
+{
+  "id1": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/001.png"
+  },
+  "id2": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/002.png"
+  },
+  "id3": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/003.png"
+  },
+  "id4": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/004.png"
+  },
+  "id5": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/005.png"
+  },
+  "id6": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/006.png"
+  },
+  "id7": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/007.png"
+  },
+  "id8": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/008.png"
+  },
+  "id9": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/009.png"
+  },
+  "id10": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/010.png"
+  },
+  "id11": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/011.png"
+  },
+  "id12": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/012.png"
+  },
+  "id13": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/013.png"
+  },
+  "id14": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/014.png"
+  },
+  "id15": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/015.png"
+  },
+  "id16": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/016.png"
+  },
+  "id17": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/017.png"
+  },
+  "id18": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/018.png"
+  },
+  "id19": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/019.png"
+  },
+  "id20": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/020.png"
+  },
+  "id21": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/021.png"
+  },
+  "id22": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/022.png"
+  },
+  "id23": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/023.png"
+  },
+  "id24": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/024.png"
+  },
+  "id25": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/025.png"
+  },
+  "id26": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/026.png"
+  },
+  "id27": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/027.png"
+  },
+  "id28": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/028.png"
+  },
+  "id29": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/029.png"
+  },
+  "id30": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/030.png"
+  },
+  "id31": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/031.png"
+  },
+  "id32": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/032.png"
+  },
+  "id33": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/033.png"
+  },
+  "id34": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/034.png"
+  },
+  "id35": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/035.png"
+  },
+  "id36": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/036.png"
+  },
+  "id37": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/037.png"
+  },
+  "id38": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/038.png"
+  },
+  "id39": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/039.png"
+  },
+  "id40": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/040.png"
+  },
+  "id41": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/041.png"
+  },
+  "id42": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/042.png"
+  },
+  "id43": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/043.png"
+  },
+  "id44": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/044.png"
+  },
+  "id45": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/045.png"
+  },
+  "id46": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/046.png"
+  },
+  "id47": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/047.png"
+  },
+  "id48": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/048.png"
+  },
+  "id49": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/049.png"
+  },
+  "id50": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/050.png"
+  },
+  "id51": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/051.png"
+  },
+  "id52": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/052.png"
+  },
+  "id53": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/053.png"
+  },
+  "id54": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/054.png"
+  },
+  "id55": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/055.png"
+  },
+  "id56": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/056.png"
+  },
+  "id57": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/057.png"
+  },
+  "id58": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/058.png"
+  },
+  "id59": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/059.png"
+  },
+  "id60": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/060.png"
+  },
+  "id61": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/061.png"
+  },
+  "id62": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/062.png"
+  },
+  "id63": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/063.png"
+  },
+  "id64": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/064.png"
+  },
+  "id65": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/065.png"
+  },
+  "id66": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/066.png"
+  },
+  "id67": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/067.png"
+  },
+  "id68": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/068.png"
+  },
+  "id69": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/069.png"
+  },
+  "id70": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/070.png"
+  },
+  "id71": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/071.png"
+  },
+  "id72": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/072.png"
+  },
+  "id73": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/073.png"
+  },
+  "id74": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/074.png"
+  },
+  "id75": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/075.png"
+  },
+  "id76": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/076.png"
+  },
+  "id77": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/077.png"
+  },
+  "id78": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/078.png"
+  },
+  "id79": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/079.png"
+  },
+  "id80": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/080.png"
+  },
+  "id81": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/081.png"
+  },
+  "id82": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/082.png"
+  },
+  "id83": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/083.png"
+  },
+  "id84": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/084.png"
+  },
+  "id85": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/085.png"
+  },
+  "id86": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/086.png"
+  },
+  "id87": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/087.png"
+  },
+  "id88": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/088.png"
+  },
+  "id89": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/089.png"
+  },
+  "id90": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/090.png"
+  },
+  "id91": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/091.png"
+  },
+  "id92": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/092.png"
+  },
+  "id93": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/093.png"
+  },
+  "id94": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/094.png"
+  },
+  "id95": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/095.png"
+  },
+  "id96": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/096.png"
+  },
+  "id97": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/097.png"
+  },
+  "id98": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/098.png"
+  },
+  "id99": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/099.png"
+  },
+  "id100": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/100.png"
+  },
+  "id101": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/101.png"
+  },
+  "id102": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/102.png"
+  },
+  "id103": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/103.png"
+  },
+  "id104": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/104.png"
+  },
+  "id105": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/105.png"
+  },
+  "id106": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/106.png"
+  },
+  "id107": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/107.png"
+  },
+  "id108": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/108.png"
+  },
+  "id109": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/109.png"
+  },
+  "id110": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/110.png"
+  },
+  "id111": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/111.png"
+  },
+  "id112": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/112.png"
+  },
+  "id113": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/113.png"
+  },
+  "id114": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/114.png"
+  },
+  "id115": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/115.png"
+  },
+  "id116": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/116.png"
+  },
+  "id117": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/117.png"
+  },
+  "id118": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/118.png"
+  },
+  "id119": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/119.png"
+  },
+  "id120": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/120.png"
+  },
+  "id121": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/121.png"
+  },
+  "id122": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/122.png"
+  },
+  "id123": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/123.png"
+  },
+  "id124": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/124.png"
+  },
+  "id125": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/125.png"
+  },
+  "id126": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/126.png"
+  },
+  "id127": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/127.png"
+  },
+  "id128": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/128.png"
+  },
+  "id129": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/129.png"
+  },
+  "id130": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/130.png"
+  },
+  "id131": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/131.png"
+  },
+  "id132": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/132.png"
+  },
+  "id133": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/133.png"
+  },
+  "id134": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/134.png"
+  },
+  "id135": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/135.png"
+  },
+  "id136": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/136.png"
+  },
+  "id137": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/137.png"
+  },
+  "id138": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/138.png"
+  },
+  "id139": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/139.png"
+  },
+  "id140": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/140.png"
+  },
+  "id141": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/141.png"
+  },
+  "id142": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/142.png"
+  },
+  "id143": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/143.png"
+  },
+  "id144": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/144.png"
+  },
+  "id145": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/145.png"
+  },
+  "id146": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/146.png"
+  },
+  "id147": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/147.png"
+  },
+  "id148": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/148.png"
+  },
+  "id149": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/149.png"
+  },
+  "id150": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/150.png"
+  },
+  "id151": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/151.png"
+  },
+  "id152": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/152.png"
+  },
+  "id153": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/153.png"
+  },
+  "id154": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/154.png"
+  },
+  "id155": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/155.png"
+  },
+  "id156": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/156.png"
+  },
+  "id157": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/157.png"
+  },
+  "id158": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/158.png"
+  },
+  "id159": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/159.png"
+  },
+  "id160": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/160.png"
+  },
+  "id161": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/161.png"
+  },
+  "id162": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/162.png"
+  },
+  "id163": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/163.png"
+  },
+  "id164": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/164.png"
+  },
+  "id165": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/165.png"
+  },
+  "id166": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/166.png"
+  },
+  "id167": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/167.png"
+  },
+  "id168": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/168.png"
+  },
+  "id169": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/169.png"
+  },
+  "id170": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/170.png"
+  },
+  "id171": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/171.png"
+  },
+  "id172": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/172.png"
+  },
+  "id173": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/173.png"
+  },
+  "id174": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/174.png"
+  },
+  "id175": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/175.png"
+  },
+  "id176": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/176.png"
+  },
+  "id177": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/177.png"
+  },
+  "id178": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/178.png"
+  },
+  "id179": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/179.png"
+  },
+  "id180": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/180.png"
+  },
+  "id181": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/181.png"
+  },
+  "id182": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/182.png"
+  },
+  "id183": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/183.png"
+  },
+  "id184": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/184.png"
+  },
+  "id185": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/185.png"
+  },
+  "id186": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/186.png"
+  },
+  "id187": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/187.png"
+  },
+  "id188": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/188.png"
+  },
+  "id189": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/189.png"
+  },
+  "id190": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/190.png"
+  },
+  "id191": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/191.png"
+  },
+  "id192": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/192.png"
+  },
+  "id193": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/193.png"
+  },
+  "id194": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/194.png"
+  },
+  "id195": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/195.png"
+  },
+  "id196": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/196.png"
+  },
+  "id197": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/197.png"
+  },
+  "id198": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/198.png"
+  },
+  "id199": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/199.png"
+  },
+  "id200": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/200.png"
+  },
+  "id201": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/201.png"
+  },
+  "id202": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/202.png"
+  },
+  "id203": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/203.png"
+  },
+  "id204": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/204.png"
+  },
+  "id205": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/205.png"
+  },
+  "id206": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/206.png"
+  },
+  "id207": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/207.png"
+  },
+  "id208": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/208.png"
+  },
+  "id209": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/209.png"
+  },
+  "id210": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/210.png"
+  },
+  "id211": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/211.png"
+  },
+  "id212": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/212.png"
+  },
+  "id213": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/213.png"
+  },
+  "id214": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/214.png"
+  },
+  "id215": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/215.png"
+  },
+  "id216": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/216.png"
+  },
+  "id217": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/217.png"
+  },
+  "id218": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/218.png"
+  },
+  "id219": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/219.png"
+  },
+  "id220": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/220.png"
+  },
+  "id221": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/221.png"
+  },
+  "id222": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/222.png"
+  },
+  "id223": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/223.png"
+  },
+  "id224": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/224.png"
+  },
+  "id225": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/225.png"
+  },
+  "id226": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/226.png"
+  },
+  "id227": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/227.png"
+  },
+  "id228": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/228.png"
+  },
+  "id229": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/229.png"
+  },
+  "id230": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/230.png"
+  },
+  "id231": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/231.png"
+  },
+  "id232": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/232.png"
+  },
+  "id233": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/233.png"
+  },
+  "id234": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/234.png"
+  },
+  "id235": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/235.png"
+  },
+  "id236": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/236.png"
+  },
+  "id237": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/237.png"
+  },
+  "id238": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/238.png"
+  },
+  "id239": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/239.png"
+  },
+  "id240": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/240.png"
+  },
+  "id241": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/241.png"
+  },
+  "id242": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/242.png"
+  },
+  "id243": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/243.png"
+  },
+  "id244": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/244.png"
+  },
+  "id245": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/245.png"
+  },
+  "id246": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/246.png"
+  },
+  "id247": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/247.png"
+  },
+  "id248": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/248.png"
+  },
+  "id249": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/249.png"
+  },
+  "id250": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/250.png"
+  },
+  "id251": {
+    "url": "https://awassall.github.io/pokemon/DEXimages/251.png"
+  }
+}
