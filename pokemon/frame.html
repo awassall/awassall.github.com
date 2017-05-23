@@ -8,7 +8,8 @@
 <script type="text/javascript">
 function runOnLoad() {
   console.log("running runOnLoad");
-  document.getElementById('targetFrame').contentWindow.setLocals();
+  localStorage.setItem('customIconJSON',"https://awassall.github.io/pokemon/ExternalNumbered.json");
+  localStorage.setItem('icon246',"https://awassall.github.io/pokemon/rubysapphire/246.png");
 }
 </script>
 </head>
@@ -16,13 +17,6 @@ function runOnLoad() {
 <body onload="runOnLoad()">
 test
 <iframe id="targetFrame" src="http://www.bostonpogomap.com/faq.html" width="400" height="400">
-<script type="text/javascript">
-function setLocals() {
-  console.log("running setLocals");
-  localStorage.setItem('customIconJSON',"https://awassall.github.io/pokemon/ExternalNumbered.json");
-  localStorage.setItem('icon246',"https://awassall.github.io/pokemon/rubysapphire/246.png");
-}
-</script>
 </iframe>
 </body>
 </html>
