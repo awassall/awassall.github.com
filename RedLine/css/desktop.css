@@ -67,9 +67,9 @@ select:active, select:hover {
 
 #stopSelect {
     width: 100%;
-    font-size: 100%;
+    font-size: 200%;
     background-color: #404040;
-    color: black;
+    color: #ffe6e6;
     border-width: 0;
     outline: none;
 }
@@ -77,7 +77,7 @@ select:active, select:hover {
 .dataTableHeader {
     width: 100%;
     background-color: #808080;
-    font-size:200%;
+    font-size: 200%;
 }
 
 .dataTableRoot {
