@@ -69,7 +69,7 @@ select:active, select:hover {
     width: 100%;
     font-size: 200%;
     background-color: #404040;
-    color: #ffe6e6;
+    color: #ff8080;
     border-width: 0;
     outline: none;
 }
