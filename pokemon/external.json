@@ -1,755 +1,1160 @@
 {
   "id1": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/bulbasaur.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/1.png"
   },
   "id2": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ivysaur.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/2.png"
   },
   "id3": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/venusaur.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/3.png"
   },
   "id4": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/charmander.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/4.png"
   },
   "id5": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/charmeleon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/5.png"
   },
   "id6": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/charizard.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/6.png"
   },
   "id7": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/squirtle.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/7.png"
   },
   "id8": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/wartortle.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/8.png"
   },
   "id9": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/blastoise.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/9.png"
   },
   "id10": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/caterpie.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/10.png"
   },
   "id11": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/metapod.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/11.png"
   },
   "id12": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/butterfree.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/12.png"
   },
   "id13": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/weedle.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/13.png"
   },
   "id14": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/kakuna.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/14.png"
   },
   "id15": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/beedrill.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/15.png"
   },
   "id16": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pidgey.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/16.png"
   },
   "id17": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pidgeotto.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/17.png"
   },
   "id18": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pidgeot.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/18.png"
   },
   "id19": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/rattata.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/19.png"
   },
   "id20": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/raticate.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/20.png"
   },
   "id21": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/spearow.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/21.png"
   },
   "id22": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/fearow.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/22.png"
   },
   "id23": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ekans.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/23.png"
   },
   "id24": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/arbok.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/24.png"
   },
   "id25": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pikachu.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/25.png"
   },
   "id26": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/raichu.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/26.png"
   },
   "id27": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/sandshrew.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/27.png"
   },
   "id28": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/sandslash.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/28.png"
   },
   "id29": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/nidoran-f.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/29.png"
   },
   "id30": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/nidorina.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/30.png"
   },
   "id31": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/nidoqueen.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/31.png"
   },
   "id32": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/nidoran-m.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/32.png"
   },
   "id33": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/nidorino.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/33.png"
   },
   "id34": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/nidoking.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/34.png"
   },
   "id35": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/clefairy.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/35.png"
   },
   "id36": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/clefable.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/36.png"
   },
   "id37": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/vulpix.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/37.png"
   },
   "id38": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ninetales.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/38.png"
   },
   "id39": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/jigglypuff.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/39.png"
   },
   "id40": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/wigglytuff.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/40.png"
   },
   "id41": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/zubat.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/41.png"
   },
   "id42": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/golbat.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/42.png"
   },
   "id43": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/oddish.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/43.png"
   },
   "id44": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/gloom.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/44.png"
   },
   "id45": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/vileplume.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/45.png"
   },
   "id46": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/paras.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/46.png"
   },
   "id47": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/parasect.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/47.png"
   },
   "id48": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/venonat.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/48.png"
   },
   "id49": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/venomoth.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/49.png"
   },
   "id50": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/diglett.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/50.png"
   },
   "id51": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/dugtrio.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/51.png"
   },
   "id52": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/meowth.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/52.png"
   },
   "id53": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/persian.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/53.png"
   },
   "id54": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/psyduck.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/54.png"
   },
   "id55": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/golduck.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/55.png"
   },
   "id56": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/mankey.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/56.png"
   },
   "id57": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/primeape.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/57.png"
   },
   "id58": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/growlithe.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/58.png"
   },
   "id59": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/arcanine.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/59.png"
   },
   "id60": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/poliwag.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/60.png"
   },
   "id61": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/poliwhirl.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/61.png"
   },
   "id62": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/poliwrath.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/62.png"
   },
   "id63": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/abra.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/63.png"
   },
   "id64": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/kadabra.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/64.png"
   },
   "id65": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/alakazam.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/65.png"
   },
   "id66": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/machop.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/66.png"
   },
   "id67": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/machoke.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/67.png"
   },
   "id68": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/machamp.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/68.png"
   },
   "id69": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/bellsprout.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/69.png"
   },
   "id70": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/weepinbell.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/70.png"
   },
   "id71": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/victreebel.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/71.png"
   },
   "id72": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/tentacool.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/72.png"
   },
   "id73": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/tentacruel.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/73.png"
   },
   "id74": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/geodude.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/74.png"
   },
   "id75": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/graveler.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/75.png"
   },
   "id76": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/golem.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/76.png"
   },
   "id77": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ponyta.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/77.png"
   },
   "id78": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/rapidash.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/78.png"
   },
   "id79": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/slowpoke.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/79.png"
   },
   "id80": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/slowbro.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/80.png"
   },
   "id81": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/magnemite.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/81.png"
   },
   "id82": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/magneton.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/82.png"
   },
   "id83": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/farfetchd.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/83.png"
   },
   "id84": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/doduo.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/84.png"
   },
   "id85": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/dodrio.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/85.png"
   },
   "id86": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/seel.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/86.png"
   },
   "id87": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/dewgong.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/87.png"
   },
   "id88": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/grimer.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/88.png"
   },
   "id89": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/muk.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/89.png"
   },
   "id90": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/shellder.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/90.png"
   },
   "id91": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/cloyster.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/91.png"
   },
   "id92": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/gastly.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/92.png"
   },
   "id93": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/haunter.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/93.png"
   },
   "id94": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/gengar.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/94.png"
   },
   "id95": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/onix.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/95.png"
   },
   "id96": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/drowzee.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/96.png"
   },
   "id97": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/hypno.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/97.png"
   },
   "id98": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/krabby.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/98.png"
   },
   "id99": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/kingler.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/99.png"
   },
   "id100": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/voltorb.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/100.png"
   },
   "id101": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/electrode.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/101.png"
   },
   "id102": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/exeggcute.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/102.png"
   },
   "id103": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/exeggutor.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/103.png"
   },
   "id104": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/cubone.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/104.png"
   },
   "id105": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/marowak.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/105.png"
   },
   "id106": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/hitmonlee.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/106.png"
   },
   "id107": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/hitmonchan.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/107.png"
   },
   "id108": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/lickitung.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/108.png"
   },
   "id109": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/koffing.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/109.png"
   },
   "id110": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/weezing.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/110.png"
   },
   "id111": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/rhyhorn.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/111.png"
   },
   "id112": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/rhydon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/112.png"
   },
   "id113": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/chansey.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/113.png"
   },
   "id114": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/tangela.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/114.png"
   },
   "id115": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/kangaskhan.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/115.png"
   },
   "id116": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/horsea.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/116.png"
   },
   "id117": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/seadra.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/117.png"
   },
   "id118": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/goldeen.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/118.png"
   },
   "id119": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/seaking.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/119.png"
   },
   "id120": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/staryu.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/120.png"
   },
   "id121": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/starmie.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/121.png"
   },
   "id122": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/mr-mime.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/122.png"
   },
   "id123": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/scyther.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/123.png"
   },
   "id124": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/jynx.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/124.png"
   },
   "id125": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/electabuzz.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/125.png"
   },
   "id126": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/magmar.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/126.png"
   },
   "id127": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pinsir.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/127.png"
   },
   "id128": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/tauros.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/128.png"
   },
   "id129": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/magikarp.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/129.png"
   },
   "id130": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/gyarados.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/130.png"
   },
   "id131": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/lapras.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/131.png"
   },
   "id132": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ditto.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/132.png"
   },
   "id133": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/eevee.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/133.png"
   },
   "id134": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/vaporeon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/134.png"
   },
   "id135": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/jolteon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/135.png"
   },
   "id136": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/flareon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/136.png"
   },
   "id137": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/porygon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/137.png"
   },
   "id138": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/omanyte.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/138.png"
   },
   "id139": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/omastar.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/139.png"
   },
   "id140": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/kabuto.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/140.png"
   },
   "id141": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/kabutops.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/141.png"
   },
   "id142": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/aerodactyl.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/142.png"
   },
   "id143": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/snorlax.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/143.png"
   },
   "id144": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/articuno.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/144.png"
   },
   "id145": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/zapdos.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/145.png"
   },
   "id146": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/moltres.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/146.png"
   },
   "id147": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/dratini.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/147.png"
   },
   "id148": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/dragonair.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/148.png"
   },
   "id149": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/dragonite.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/149.png"
   },
   "id150": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/mewtwo.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/150.png"
   },
   "id151": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/mew.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/151.png"
   },
   "id152": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/chikorita.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/152.png"
   },
   "id153": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/bayleef.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/153.png"
   },
   "id154": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/meganium.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/154.png"
   },
   "id155": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/cyndaquil.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/155.png"
   },
   "id156": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/quilava.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/156.png"
   },
   "id157": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/typhlosion.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/157.png"
   },
   "id158": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/totodile.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/158.png"
   },
   "id159": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/croconaw.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/159.png"
   },
   "id160": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/feraligatr.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/160.png"
   },
   "id161": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/sentret.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/161.png"
   },
   "id162": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/furret.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/162.png"
   },
   "id163": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/hoothoot.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/163.png"
   },
   "id164": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/noctowl.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/164.png"
   },
   "id165": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ledyba.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/165.png"
   },
   "id166": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ledian.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/166.png"
   },
   "id167": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/spinarak.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/167.png"
   },
   "id168": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ariados.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/168.png"
   },
   "id169": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/crobat.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/169.png"
   },
   "id170": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/chinchou.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/170.png"
   },
   "id171": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/lanturn.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/171.png"
   },
   "id172": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pichu.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/172.png"
   },
   "id173": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/cleffa.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/173.png"
   },
   "id174": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/igglybuff.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/174.png"
   },
   "id175": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/togepi.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/175.png"
   },
   "id176": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/togetic.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/176.png"
   },
   "id177": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/natu.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/177.png"
   },
   "id178": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/xatu.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/178.png"
   },
   "id179": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/mareep.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/179.png"
   },
   "id180": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/flaaffy.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/180.png"
   },
   "id181": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ampharos.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/181.png"
   },
   "id182": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/bellossom.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/182.png"
   },
   "id183": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/marill.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/183.png"
   },
   "id184": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/azumarill.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/184.png"
   },
   "id185": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/sudowoodo.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/185.png"
   },
   "id186": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/politoed.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/186.png"
   },
   "id187": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/hoppip.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/187.png"
   },
   "id188": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/skiploom.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/188.png"
   },
   "id189": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/jumpluff.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/189.png"
   },
   "id190": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/aipom.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/190.png"
   },
   "id191": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/sunkern.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/191.png"
   },
   "id192": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/sunflora.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/192.png"
   },
   "id193": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/yanma.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/193.png"
   },
   "id194": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/wooper.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/194.png"
   },
   "id195": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/quagsire.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/195.png"
   },
   "id196": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/espeon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/196.png"
   },
   "id197": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/umbreon.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/197.png"
   },
   "id198": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/murkrow.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/198.png"
   },
   "id199": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/slowking.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/199.png"
   },
   "id200": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/misdreavus.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/200.png"
   },
   "id201": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/unown.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/201.png"
   },
   "id202": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/wobbuffet.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/202.png"
   },
   "id203": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/girafarig.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/203.png"
   },
   "id204": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pineco.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/204.png"
   },
   "id205": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/forretress.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/205.png"
   },
   "id206": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/dunsparce.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/206.png"
   },
   "id207": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/gligar.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/207.png"
   },
   "id208": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/steelix.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/208.png"
   },
   "id209": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/snubbull.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/209.png"
   },
   "id210": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/granbull.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/210.png"
   },
   "id211": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/qwilfish.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/211.png"
   },
   "id212": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/scizor.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/212.png"
   },
   "id213": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/shuckle.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/213.png"
   },
   "id214": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/heracross.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/214.png"
   },
   "id215": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/sneasel.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/215.png"
   },
   "id216": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/teddiursa.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/216.png"
   },
   "id217": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ursaring.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/217.png"
   },
   "id218": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/slugma.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/218.png"
   },
   "id219": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/magcargo.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/219.png"
   },
   "id220": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/swinub.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/220.png"
   },
   "id221": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/piloswine.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/221.png"
   },
   "id222": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/corsola.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/222.png"
   },
   "id223": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/remoraid.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/223.png"
   },
   "id224": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/octillery.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/224.png"
   },
   "id225": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/delibird.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/225.png"
   },
   "id226": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/mantine.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/226.png"
   },
   "id227": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/skarmory.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/227.png"
   },
   "id228": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/houndour.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/228.png"
   },
   "id229": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/houndoom.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/229.png"
   },
   "id230": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/kingdra.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/230.png"
   },
   "id231": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/phanpy.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/231.png"
   },
   "id232": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/donphan.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/232.png"
   },
   "id233": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/porygon2.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/233.png"
   },
   "id234": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/stantler.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/234.png"
   },
   "id235": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/smeargle.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/235.png"
   },
   "id236": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/tyrogue.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/236.png"
   },
   "id237": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/hitmontop.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/237.png"
   },
   "id238": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/smoochum.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/238.png"
   },
   "id239": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/elekid.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/239.png"
   },
   "id240": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/magby.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/240.png"
   },
   "id241": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/miltank.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/241.png"
   },
   "id242": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/blissey.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/242.png"
   },
   "id243": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/raikou.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/243.png"
   },
   "id244": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/entei.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/244.png"
   },
   "id245": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/suicune.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/245.png"
   },
   "id246": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/larvitar.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/246.png"
   },
   "id247": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/pupitar.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/247.png"
   },
   "id248": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/tyranitar.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/248.png"
   },
   "id249": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/lugia.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/249.png"
   },
   "id250": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/ho-oh.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/250.png"
   },
   "id251": {
-    "url": "https://awassall.github.io/pokemon/rubysapphire/celebi.png"
+    "url": "https://awassall.github.io/pokemon/rubysapphire/251.png"
+  },
+  "id252": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/252.png"
+  },
+  "id253": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/253.png"
+  },
+  "id254": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/254.png"
+  },
+  "id255": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/255.png"
+  },
+  "id256": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/256.png"
+  },
+  "id257": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/257.png"
+  },
+  "id258": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/258.png"
+  },
+  "id259": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/259.png"
+  },
+  "id260": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/260.png"
+  },
+  "id261": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/261.png"
+  },
+  "id262": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/262.png"
+  },
+  "id263": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/263.png"
+  },
+  "id264": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/264.png"
+  },
+  "id265": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/265.png"
+  },
+  "id266": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/266.png"
+  },
+  "id267": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/267.png"
+  },
+  "id268": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/268.png"
+  },
+  "id269": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/269.png"
+  },
+  "id270": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/270.png"
+  },
+  "id271": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/271.png"
+  },
+  "id272": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/272.png"
+  },
+  "id273": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/273.png"
+  },
+  "id274": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/274.png"
+  },
+  "id275": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/275.png"
+  },
+  "id276": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/276.png"
+  },
+  "id277": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/277.png"
+  },
+  "id278": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/278.png"
+  },
+  "id279": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/279.png"
+  },
+  "id280": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/280.png"
+  },
+  "id281": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/281.png"
+  },
+  "id282": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/282.png"
+  },
+  "id283": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/283.png"
+  },
+  "id284": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/284.png"
+  },
+  "id285": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/285.png"
+  },
+  "id286": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/286.png"
+  },
+  "id287": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/287.png"
+  },
+  "id288": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/288.png"
+  },
+  "id289": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/289.png"
+  },
+  "id290": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/290.png"
+  },
+  "id291": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/291.png"
+  },
+  "id292": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/292.png"
+  },
+  "id293": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/293.png"
+  },
+  "id294": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/294.png"
+  },
+  "id295": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/295.png"
+  },
+  "id296": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/296.png"
+  },
+  "id297": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/297.png"
+  },
+  "id298": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/298.png"
+  },
+  "id299": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/299.png"
+  },
+  "id300": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/300.png"
+  },
+  "id301": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/301.png"
+  },
+  "id302": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/302.png"
+  },
+  "id303": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/303.png"
+  },
+  "id304": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/304.png"
+  },
+  "id305": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/305.png"
+  },
+  "id306": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/306.png"
+  },
+  "id307": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/307.png"
+  },
+  "id308": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/308.png"
+  },
+  "id309": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/309.png"
+  },
+  "id310": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/310.png"
+  },
+  "id311": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/311.png"
+  },
+  "id312": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/312.png"
+  },
+  "id313": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/313.png"
+  },
+  "id314": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/314.png"
+  },
+  "id315": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/315.png"
+  },
+  "id316": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/316.png"
+  },
+  "id317": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/317.png"
+  },
+  "id318": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/318.png"
+  },
+  "id319": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/319.png"
+  },
+  "id320": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/320.png"
+  },
+  "id321": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/321.png"
+  },
+  "id322": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/322.png"
+  },
+  "id323": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/323.png"
+  },
+  "id324": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/324.png"
+  },
+  "id325": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/325.png"
+  },
+  "id326": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/326.png"
+  },
+  "id327": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/327.png"
+  },
+  "id328": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/328.png"
+  },
+  "id329": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/329.png"
+  },
+  "id330": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/330.png"
+  },
+  "id331": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/331.png"
+  },
+  "id332": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/332.png"
+  },
+  "id333": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/333.png"
+  },
+  "id334": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/334.png"
+  },
+  "id335": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/335.png"
+  },
+  "id336": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/336.png"
+  },
+  "id337": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/337.png"
+  },
+  "id338": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/338.png"
+  },
+  "id339": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/339.png"
+  },
+  "id340": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/340.png"
+  },
+  "id341": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/341.png"
+  },
+  "id342": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/342.png"
+  },
+  "id343": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/343.png"
+  },
+  "id344": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/344.png"
+  },
+  "id345": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/345.png"
+  },
+  "id346": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/346.png"
+  },
+  "id347": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/347.png"
+  },
+  "id348": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/348.png"
+  },
+  "id349": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/349.png"
+  },
+  "id350": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/350.png"
+  },
+  "id351": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/351.png"
+  },
+  "id352": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/352.png"
+  },
+  "id353": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/353.png"
+  },
+  "id354": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/354.png"
+  },
+  "id355": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/355.png"
+  },
+  "id356": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/356.png"
+  },
+  "id357": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/357.png"
+  },
+  "id358": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/358.png"
+  },
+  "id359": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/359.png"
+  },
+  "id360": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/360.png"
+  },
+  "id361": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/361.png"
+  },
+  "id362": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/362.png"
+  },
+  "id363": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/363.png"
+  },
+  "id364": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/364.png"
+  },
+  "id365": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/365.png"
+  },
+  "id366": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/366.png"
+  },
+  "id367": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/367.png"
+  },
+  "id368": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/368.png"
+  },
+  "id369": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/369.png"
+  },
+  "id370": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/370.png"
+  },
+  "id371": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/371.png"
+  },
+  "id372": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/372.png"
+  },
+  "id373": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/373.png"
+  },
+  "id374": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/374.png"
+  },
+  "id375": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/375.png"
+  },
+  "id376": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/376.png"
+  },
+  "id377": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/377.png"
+  },
+  "id378": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/378.png"
+  },
+  "id379": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/379.png"
+  },
+  "id380": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/380.png"
+  },
+  "id381": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/381.png"
+  },
+  "id382": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/382.png"
+  },
+  "id383": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/383.png"
+  },
+  "id384": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/384.png"
+  },
+  "id385": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/385.png"
+  },
+  "id386": {
+    "url": "https://awassall.github.io/pokemon/rubysapphire/386.png"
   }
 }
