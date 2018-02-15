@@ -12,13 +12,20 @@
     font-family: Verdana;
   }
   button {
-    width:100%;
+    width: 50%;
   }
   div {
-    width:100%;
+    width: 100%;
   }
   .buttoncontainer {
-    width:50%;
+    width: 30%;
+  }
+  #textcontainer {
+    width: 100%;
+    text-align: center;
+  }
+  .paddingcontainer {
+    width: 20%;
   }
 </style>
 </head>
@@ -27,12 +34,14 @@
   <div id="container">
     <div id="textcontainer">
       <h1>Will you be my valentine?</h1>
+      <div class="paddingcontainer"></div>
       <div class="buttoncontainer">
         <button id="yesButton">Yes</button>
       </div>
-      <div>
+      <div class="buttoncontainer">
         <button id="noButton">No</button>
       </div>
+      <div class="paddingcontainer"></div>
     </div>
     <div id="imagecontainer">
       <img src="./images/snoopy.gif"/>
