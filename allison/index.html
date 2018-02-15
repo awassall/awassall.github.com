@@ -12,9 +12,13 @@
     font-family: Verdana;
   }
   button {
+    width:100%;
   }
   div {
     width:100%;
+  }
+  .buttoncontainer {
+    width:50%;
   }
 </style>
 </head>
@@ -23,7 +27,12 @@
   <div id="container">
     <div id="textcontainer">
       <h1>Will you be my valentine?</h1>
-      <button id="yesButton">Yes</button><button id="noButton">No</button>
+      <div class="buttoncontainer">
+        <button id="yesButton">Yes</button>
+      </div>
+      <div>
+        <button id="noButton">No</button>
+      </div>
     </div>
     <div id="imagecontainer">
       <img src="./images/snoopy.gif"/>
