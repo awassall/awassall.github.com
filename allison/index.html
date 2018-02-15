@@ -11,21 +11,24 @@
   h1 {
     font-family: Verdana;
   }
-  button {
-    width: 50%;
-  }
   div {
     width: 100%;
-  }
-  .buttoncontainer {
-    width: 30%;
   }
   #textcontainer {
     width: 100%;
     text-align: center;
   }
-  .paddingcontainer {
+  table, tr {
+    width: 100%;
+  }
+  #cell2, #cell3 {
+    width: 30%;
+  }
+  #cell1, #cell4 {
     width: 20%;
+  }
+  button {
+    width: 100%;
   }
 </style>
 </head>
@@ -34,14 +37,18 @@
   <div id="container">
     <div id="textcontainer">
       <h1>Will you be my valentine?</h1>
-      <div class="paddingcontainer"></div>
-      <div class="buttoncontainer">
-        <button id="yesButton">Yes</button>
-      </div>
-      <div class="buttoncontainer">
-        <button id="noButton">No</button>
-      </div>
-      <div class="paddingcontainer"></div>
+      <table id="mytable">
+        <tr>
+          <td id="cell1"></td>
+          <td id="cell2">
+            <button id="yesButton">Yes</button>
+          </td>
+          <td id="cell3">
+            <button id="noButton">No</button>
+          </td>
+          <td id="cell4"></td>
+        </tr>
+      </table>
     </div>
     <div id="imagecontainer">
       <img src="./images/snoopy.gif"/>
