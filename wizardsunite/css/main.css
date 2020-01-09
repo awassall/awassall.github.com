@@ -23,3 +23,8 @@ a:hover {
 .CFImage {
   height: 50vh;
 }
+
+.CFImageH1 {
+  width: 100%;
+  text-align: center;
+}
