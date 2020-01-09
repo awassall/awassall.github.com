@@ -4,13 +4,12 @@ function CFImages_init() {
 }
 
 function CFImagesButtonClick(element) {
-  //var buttonID = element.id;
   var id = (element.id).replace('button-','');
-  //var tableID = 'table-' + id;
-  //var id = 'table-' + name.replace(/ /g,'-');
   document.getElementById('table-'+id).setAttribute("class","CFImagesTable");
+  document.getElementById('button-'+id).setAttribute("class","CFImagesButton CFImagesButtonSelected");
   if ((selectedItem != "") && (selectedItem != id)) {
     document.getElementById('table-'+selectedItem).setAttribute("class","CFImagesTable hidden");
+    document.getElementById('button-'+selectedItem).setAttribute("class","CFImagesButton");
   }
   selectedItem = id; /* update the global variable */
   return;
