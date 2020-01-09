@@ -47,6 +47,10 @@ a:hover {
   outline: none;
 }
 
+.CFImagesButtonSelected {
+  background-color: #ffde8c;
+}
+
 .hidden {
   display: none;
 }
