@@ -19,3 +19,7 @@ a:hover {
 .CFImagesTR {
   width: 100%;
 }
+
+.CFImage {
+  height: 50vh;
+}
