@@ -4,13 +4,13 @@ function CFImages_init() {
 }
 
 function CFImagesButtonClick(element) {
-  var buttonID = element.id;
-  var id = buttonID.replace('button-','');
-  var tableID = 'table-' + id;
+  //var buttonID = element.id;
+  var id = (element.id).replace('button-','');
+  //var tableID = 'table-' + id;
   //var id = 'table-' + name.replace(/ /g,'-');
-  document.getElementById(tableID).setAttribute("class","CFImagesTable");
+  document.getElementById('table-'+id).setAttribute("class","CFImagesTable");
   if ((selectedItem != "") && (selectedItem != id)) {
-    document.getElementById('table-'+id).setAttribute("class","CFImagesTable hidden");
+    document.getElementById('table-'+selectedItem).setAttribute("class","CFImagesTable hidden");
   }
   selectedItem = id; /* update the global variable */
   return;
