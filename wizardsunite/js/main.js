@@ -7,7 +7,7 @@ function CFImagesButtonClick(element) {
   var name = element.innerHTML;
   var id = 'table-' + name.replace(/ /g,'-');
   document.getElementById(id).setAttribute("class","CFImagesTable");
-  if (selectedItem != "") {
+  if ((selectedItem != "") && (selectedItem != id)) {
     document.getElementById(selectedItem).setAttribute("class","CFImagesTable hidden");
   }
   selectedItem = id; /* update the global variable */
