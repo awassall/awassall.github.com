@@ -1,5 +1,13 @@
 html {
-  background-color: grey;
-  color: white;
+  background-color: #e6e6e6;
+  color: #363636;
   font-family: 'Raleway', 'Lato', sans-serif;
+}
+
+a {
+  color: #65ba9c;
+}
+
+a:hover {
+  color: #ab3879;
 }
