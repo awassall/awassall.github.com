@@ -39,6 +39,7 @@ a:hover {
 
 .CFImagesButton {
   width: 100%;
+  height: 100%;
   border: 1px solid #363636;
   text-align: center;
   cursor: pointer;
