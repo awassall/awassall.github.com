@@ -38,3 +38,7 @@ a:hover {
   text-align: center;
   border: 1px solid #363636;
 }
+
+.CFImagesH2 table tr td:hover {
+  cursor: pointer;
+}
