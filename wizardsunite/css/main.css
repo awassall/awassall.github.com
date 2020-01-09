@@ -11,3 +11,11 @@ a {
 a:hover {
   color: #ab3879;
 }
+
+.CFImagesTable {
+  width: 100%;
+}
+
+.CFImagesTR {
+  width: 100%;
+}
