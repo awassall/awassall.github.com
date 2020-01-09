@@ -45,6 +45,7 @@ a:hover {
   text-align: center;
   cursor: pointer;
   outline: none;
+  font-size: 2em;
 }
 
 .CFImagesButtonSelected {
