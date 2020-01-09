@@ -28,3 +28,12 @@ a:hover {
   width: 100%;
   text-align: center;
 }
+
+.CFImagesH2, .CFImages table, .CFImages table tr {
+  width: 100%;
+}
+
+.CFImagesH2 table tr td {
+  width: 20%;
+  text-align: center;
+}
