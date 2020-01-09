@@ -6,7 +6,10 @@ function CFImages_init() {
 function CFImagesButtonClick(element) {
   var name = element.innerHTML;
   var id = 'table-' + name.replace(/ /g,'-');
-  var tableElement = document.getElementById(id);
-  tableElement.setAttribute("class","test");
+  document.getElementById(id).setAttribute("class","CFImagesTable showMe");
+  if (selectedItem != "") {
+    document.getElementById(selectedItem).setAttribute("class","CFImagesTable");
+  }
+  selectedItem = id; /* update the global variable */
   return;
 }
