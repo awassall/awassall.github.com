@@ -36,4 +36,5 @@ a:hover {
 .CFImagesH2 table tr td {
   width: 20%;
   text-align: center;
+  border: 1px solid #363636;
 }
