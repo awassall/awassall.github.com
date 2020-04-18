@@ -16,12 +16,6 @@ function doSearchBugs() {
   /* prepare search output table */
   var SearchOutputTable = document.getElementById("SearchOutputTable");
   SearchOutputTable.innerHTML = ""; // empty the table of any previous search
-  header = SearchOutputTable.createTHead()
-  row = header.insertRow();
-  for (field of ["Name","Price","Location","Hours","Months"]) {
-    cell = row.insertCell();
-    cell.innerHTML = field;
-  }
   
   /* run the query */
   for (var i=0; i<ListLength; i++) {
@@ -47,6 +41,14 @@ function doSearchBugs() {
     // MONTHS
     cell = row.insertCell();
     cell.innerHTML = months;
+  }
+  
+  /* add table headers */
+  header = SearchOutputTable.createTHead()
+  row = header.insertRow();
+  for (field of ["Name","Price","Location","Hours","Months"]) {
+    cell = row.insertCell();
+    cell.innerHTML = field;
   }
   
   /* finished */
