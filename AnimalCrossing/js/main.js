@@ -90,6 +90,7 @@ function doSearchBugs() {
         cellText = monthStart + ", ";
       }
       cellText = cellText.substr(0,cellText.length-2);  // remove trailing ", "
+      cell.innerHTML = cellText;
     } // end ELSE
   } // end of FOR loop
   
