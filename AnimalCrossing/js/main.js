@@ -7,8 +7,8 @@ function doSearchBugs() {
   var price = "";
   var location = "";
   var hours = "", hourStart = "", hourEnd = "", hourSuffix = "";
-  var months = "";
-  var header = "", row = "", cell = "";
+  var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
+  var header = "", row = "", cell = "", cellText = "";
   var field = "";
   
   /* prepare search output table */
@@ -40,24 +40,58 @@ function doSearchBugs() {
       cell.innerHTML = "All day";
     } else {
       hourStart = parseInt(hours[0]);
-      console.log("hourStart: "+hourStart);
       if (hourStart<12) { hourSuffix = "am"; }
       else { hourSuffix = "pm"; }
       hourStart = (((hourStart + 11) % 12) + 1);
-      console.log("hourStart: "+hourStart);
-      cell.innerHTML = hourStart + hourSuffix;
+      cellText = hourStart + hourSuffix;
       hourEnd = parseInt(hours[hours.length-1]);
-      console.log("hourEnd: "+hourEnd);
       if (hourEnd<12) { hourSuffix = "am"; }
       else { hourSuffix = "pm"; }
       hourEnd = (((hourEnd + 11) % 12) + 1);
-      console.log("hourEnd: "+hourEnd);
-      cell.innerHTML += " - " + hourEnd + hourSuffix;
+      cellText += " - " + hourEnd + hourSuffix;
+      cell.innerHTML = cellText;  // store it
     }
     // MONTHS
     cell = row.insertCell();
-    cell.innerHTML = months;
-  }
+    months = months.split(",");
+    if (months.length == 12) {  // all year
+      cell.innerHTML = "All year";
+    } else {
+      // this is more complicated than hours, because there can be multiple (disconnected) date ranges
+      // but we know they're always in order, so that helps
+      cellText = "";
+      monthStart = monthLast = parseInt(months[0]);
+      for (var m=1; m<months.length; m++) {
+        monthCurrent = parseInt(months[m]);
+        if (m == (months.length-1)) { //this is the last month in the whole set
+          if (monthCurrent == (monthLast+1)) {  // this ends an ongoing range
+            cellText += monthStart + "-" + monthCurrent + ", ";
+          } else {  // it's a standalone month
+            cellText += monthCurrent + ", ";
+          }
+        } else {  // there are still more entries ahead of this one
+          if (monthCurrent == (monthLast+1)) {  // still part of the same range
+            monthLast = monthCurrent; // reset monthLast
+            continue;
+          }
+          else {
+            // we hit the end of this range, time to log it
+            if (monthStart == monthLast) {  // it was just 1 month
+              cellText += monthStart + ", ";
+            } else {  // it was a range of months
+              cellText += monthStart + "-" + monthLast + ", ";
+            }
+            // set the stage for the next range
+            monthStart = monthLast = monthCurrent;
+          }
+        } // end ELSE
+      } // end FOR
+      if (cellText == "") { // there was only 1 month
+        cellText = monthStart + ", ";
+      }
+      cellText = cellText.substr(0,cellText.length-2);  // remove trailing ", "
+    } // end ELSE
+  } // end of FOR loop
   
   /* add table headers */
   header = SearchOutputTable.createTHead()
