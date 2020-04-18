@@ -39,14 +39,14 @@ function doSearchBugs() {
     if (hours.length == 24) { // whole day
       cell.innerHTML = "All day";
     } else {
-      hourStart = hours[0];
+      hourStart = parseInt(hours[0]);
       console.log("hourStart: "+hourStart);
       if (hourStart<12) { hourSuffix = "am"; }
       else { hourSuffix = "pm"; }
       hourStart = (((hourStart + 11) % 12) + 1);
       console.log("hourStart: "+hourStart);
       cell.innerHTML = hourStart + hourSuffix;
-      hourEnd = hours[hours.length-1];
+      hourEnd = parseInt(hours[hours.length-1]);
       console.log("hourEnd: "+hourEnd);
       if (hourEnd<12) { hourSuffix = "am"; }
       else { hourSuffix = "pm"; }
