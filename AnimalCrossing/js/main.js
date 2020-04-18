@@ -6,11 +6,9 @@ function doSearchBugs() {
   var name = "";
   var price = "";
   var location = "";
-  var hours = "";
+  var hours = "", hourStart = "", hourEnd = "", hourSuffix = "";
   var months = "";
-  var header = "";
-  var row = "";
-  var cell = "";
+  var header = "", row = "", cell = "";
   var field = "";
   
   /* prepare search output table */
@@ -37,7 +35,31 @@ function doSearchBugs() {
     cell.innerHTML = location;
     // HOURS
     cell = row.insertCell();
-    cell.innerHTML = hours;
+    hours = hours.split(",");
+    if (hours.length == 24) { // whole day
+      cell.innerHTML = "All day";
+    } else {
+      hourStart = hours[0];
+      if (hourStart<12) { // am
+        hourSuffix = "am";
+        if (hourStart == 0) { hourStart = "12"; } // 0 => 12am
+      } else {  // pm
+        hourSuffix = "pm";
+        hourStart = hourStart-12;
+        if (hourStart == 0) { hourStart = "12"; } // 0 => 12pm
+      }
+      cell.innerHTML = hourStart + hourSuffix;
+      hourEnd = hours[hours.length-1];
+      if (hourEnd<12) { // am
+        hourSuffix = "am";
+        if (hourEnd == 0) { hourEnd = "12"; } // 0 => 12am
+      } else {  // pm
+        hourSuffix = "pm";
+        hourEnd = hourEnd-12;
+        if (hourEnd == 0) { hourEnd = "12"; } // 0 => 12pm
+      }
+      cell.innerHTML = " - " + hourEnd + hourSuffix;
+    }
     // MONTHS
     cell = row.insertCell();
     cell.innerHTML = months;
