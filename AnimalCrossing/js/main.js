@@ -11,9 +11,22 @@ function doSearchBugs() {
   
   /* prepare search output table */
   var SearchOutputTable = document.getElementById("SearchOutputTable");
-  SearchOutputTable.innerHTML = ""; // empty the table of any previous search
+  var header = "";
   var row = "";
   var cell = "";
+  SearchOutputTable.innerHTML = ""; // empty the table of any previous search
+  header = SearchOutputTable.createTHead()
+  row = header.insertRow();
+  cell = header.insertCell();
+  cell.innerHTML = "Name";
+  cell = header.insertCell();
+  cell.innerHTML = "Price";
+  cell = header.insertCell();
+  cell.innerHTML = "Location";
+  cell = header.insertCell();
+  cell.innerHTML = "Hours";
+  cell = header.insertCell();
+  cell.innerHTML = "Months";
   
   /* run the query */
   for (var i=0; i<ListLength; i++) {
