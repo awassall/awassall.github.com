@@ -8,25 +8,20 @@ function doSearchBugs() {
   var location = "";
   var hours = "";
   var months = "";
-  
-  /* prepare search output table */
-  var SearchOutputTable = document.getElementById("SearchOutputTable");
   var header = "";
   var row = "";
   var cell = "";
+  var field = "";
+  
+  /* prepare search output table */
+  var SearchOutputTable = document.getElementById("SearchOutputTable");
   SearchOutputTable.innerHTML = ""; // empty the table of any previous search
   header = SearchOutputTable.createTHead()
   row = header.insertRow();
-  cell = header.insertCell();
-  cell.innerHTML = "Name";
-  cell = header.insertCell();
-  cell.innerHTML = "Price";
-  cell = header.insertCell();
-  cell.innerHTML = "Location";
-  cell = header.insertCell();
-  cell.innerHTML = "Hours";
-  cell = header.insertCell();
-  cell.innerHTML = "Months";
+  for (field of ["Name","Price","Location","Hours","Months"]) {
+    cell = row.insertCell();
+    cell.innerHTML = field;
+  }
   
   /* run the query */
   for (var i=0; i<ListLength; i++) {
