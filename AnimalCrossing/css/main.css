@@ -1,3 +1,19 @@
 .hidden {
   display: none;
 }
+
+#SearchOutputDiv {
+  width: 100%;
+}
+
+#SearchOutputTable {
+  width: 100%;
+}
+
+#SearchOutputTable tr {
+  width: 100%;
+}
+
+#SearchOutputTable tr td {
+  width: 20%;
+}
