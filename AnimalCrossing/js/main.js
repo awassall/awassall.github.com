@@ -64,13 +64,13 @@ function doSearchBugs() {
       for (var m=1; m<months.length; m++) {
         monthCurrent = parseInt(months[m]);
         if (m == (months.length-1)) { //this is the last month in the whole set
-          if (monthCurrent == (monthLast+1))||((monthLast-monthCurrent) == 11) {  // this ends an ongoing range
+          if ((monthCurrent == (monthLast+1)) || ((monthLast-monthCurrent) == 11)) {  // this ends an ongoing range
             cellText += monthStart + "-" + monthCurrent + ", ";
           } else {  // it's a standalone month
             cellText += monthCurrent + ", ";
           }
         } else {  // there are still more entries ahead of this one
-          if (monthCurrent == (monthLast+1))||((monthLast-monthCurrent) == 11) {  // still part of the same range
+          if ((monthCurrent == (monthLast+1)) || ((monthLast-monthCurrent) == 11)) {  // still part of the same range
             monthLast = monthCurrent; // reset monthLast
             continue;
           }
