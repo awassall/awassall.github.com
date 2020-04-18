@@ -10,7 +10,8 @@ function doSearchBugs() {
   var months = "";
   
   /* prepare search output table */
-  var SearchOutputTable = document.getElementById("SearchOutputTable").innerHTML = ""; // empty the table of any previous search
+  var SearchOutputTable = document.getElementById("SearchOutputTable");
+  SearchOutputTable.innerHTML = ""; // empty the table of any previous search
   var row = "";
   var cell = "";
   
