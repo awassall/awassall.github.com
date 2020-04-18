@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+#SearchOutputTable thead {
+  font-weight: bold;
+}
+
 #SearchOutputTable tr {
   width: 100%;
 }
