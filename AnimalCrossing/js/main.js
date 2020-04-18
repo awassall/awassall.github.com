@@ -65,9 +65,9 @@ function doSearchBugs() {
         monthCurrent = parseInt(months[m]);
         if (m == (months.length-1)) { //this is the last month in the whole set
           if ((monthCurrent == (monthLast+1)) || ((monthLast-monthCurrent) == 11)) {  // this ends an ongoing range
-            cellText += monthStart + "-" + monthCurrent + ", ";
+            cellText += intToMonth(monthStart) + "-" + intToMonth(monthCurrent) + ", ";
           } else {  // it's a standalone month
-            cellText += monthCurrent + ", ";
+            cellText += intToMonth(monthCurrent) + ", ";
           }
         } else {  // there are still more entries ahead of this one
           if ((monthCurrent == (monthLast+1)) || ((monthLast-monthCurrent) == 11)) {  // still part of the same range
@@ -77,9 +77,9 @@ function doSearchBugs() {
           else {
             // we hit the end of this range, time to log it
             if (monthStart == monthLast) {  // it was just 1 month
-              cellText += monthStart + ", ";
+              cellText += intToMonth(monthStart) + ", ";
             } else {  // it was a range of months
-              cellText += monthStart + "-" + monthLast + ", ";
+              cellText += intToMonth(monthStart) + "-" + intToMonth(monthLast) + ", ";
             }
             // set the stage for the next range
             monthStart = monthLast = monthCurrent;
@@ -87,7 +87,7 @@ function doSearchBugs() {
         } // end ELSE
       } // end FOR
       if (cellText == "") { // there was only 1 month
-        cellText = monthStart + ", ";
+        cellText = intToMonth(monthStart) + ", ";
       }
       cellText = cellText.substr(0,cellText.length-2);  // remove trailing ", "
       cell.innerHTML = cellText;
@@ -104,4 +104,50 @@ function doSearchBugs() {
   
   /* finished */
   return;
+}
+
+function intToMonth(int) {
+  var month = "";
+  switch (int) {
+    case 0:
+      month = "January";
+      break;
+    case 1:
+      month = "February";
+      break;
+    case 2:
+      month = "March";
+      break;
+    case 3:
+      month = "April";
+      break;
+    case 4:
+      month = "May";
+      break;
+    case 5:
+      month = "June";
+      break;
+    case 6:
+      month = "July";
+      break;
+    case 7:
+      month = "August";
+      break;
+    case 8:
+      month = "September";
+      break;
+    case 9:
+      month = "October";
+      break;
+    case 10:
+      month = "November";
+      break;
+    case 11:
+      month = "December";
+      break;
+    default:
+      month = "Unknown";
+      break;
+  }
+  return month;
 }
