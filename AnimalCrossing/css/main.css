@@ -1,3 +1,7 @@
+html {
+  font-family: 'Raleway', 'Lato', sans-serif;
+}
+
 .hidden {
   display: none;
 }
