@@ -40,25 +40,15 @@ function doSearchBugs() {
       cell.innerHTML = "All day";
     } else {
       hourStart = hours[0];
-      if (hourStart<12) { // am
-        hourSuffix = "am";
-        if (hourStart == 0) { hourStart = "12"; } // 0 => 12am
-      } else {  // pm
-        hourSuffix = "pm";
-        hourStart = hourStart-12;
-        if (hourStart == 0) { hourStart = "12"; } // 0 => 12pm
-      }
+      if (hourStart<12) { hourSuffix = "am"; }
+      else { hourSuffix = "pm"; }
+      hourStart = ((hourStart + 11) % 12 + 1);
       cell.innerHTML = hourStart + hourSuffix;
       hourEnd = hours[hours.length-1];
-      if (hourEnd<12) { // am
-        hourSuffix = "am";
-        if (hourEnd == 0) { hourEnd = "12"; } // 0 => 12am
-      } else {  // pm
-        hourSuffix = "pm";
-        hourEnd = hourEnd-12;
-        if (hourEnd == 0) { hourEnd = "12"; } // 0 => 12pm
-      }
-      cell.innerHTML = " - " + hourEnd + hourSuffix;
+      if (hourEnd<12) { hourSuffix = "am"; }
+      else { hourSuffix = "pm"; }
+      hourEnd = ((hourEnd + 11) % 12 + 1);
+      cell.innerHTML += " - " + hourEnd + hourSuffix;
     }
     // MONTHS
     cell = row.insertCell();
