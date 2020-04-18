@@ -40,14 +40,18 @@ function doSearchBugs() {
       cell.innerHTML = "All day";
     } else {
       hourStart = hours[0];
+      console.log("hourStart: "+hourStart);
       if (hourStart<12) { hourSuffix = "am"; }
       else { hourSuffix = "pm"; }
       hourStart = ((hourStart + 11) % 12 + 1);
+      console.log("hourStart: "+hourStart);
       cell.innerHTML = hourStart + hourSuffix;
       hourEnd = hours[hours.length-1];
+      console.log("hourEnd: "+hourEnd);
       if (hourEnd<12) { hourSuffix = "am"; }
       else { hourSuffix = "pm"; }
       hourEnd = ((hourEnd + 11) % 12 + 1);
+      console.log("hourEnd: "+hourEnd);
       cell.innerHTML += " - " + hourEnd + hourSuffix;
     }
     // MONTHS
