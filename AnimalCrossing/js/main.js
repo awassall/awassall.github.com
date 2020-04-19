@@ -51,15 +51,19 @@ function doSearchBugs() {
       cell.appendChild(checkbox);
       // NAME
       cell = row.insertCell();
+      cell.setAttribute("class","TableFieldCell");
       cell.innerHTML = name;
       // PRICE
       cell = row.insertCell();
+      cell.setAttribute("class","TableFieldCell");
       cell.innerHTML = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       // LOCATION
       cell = row.insertCell();
+      cell.setAttribute("class","TableFieldCell");
       cell.innerHTML = location;
       // HOURS
       cell = row.insertCell();
+      cell.setAttribute("class","TableFieldCell");
       hours = hours.split(",");
       if (hours.length == 24) { // whole day
         cell.innerHTML = "All day";
@@ -78,6 +82,7 @@ function doSearchBugs() {
       }
       // MONTHS
       cell = row.insertCell();
+      cell.setAttribute("class","TableFieldCell");
       if (months.length == 12) {  // all year
         cell.innerHTML = "All year";
       } else {
