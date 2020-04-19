@@ -26,6 +26,6 @@ html {
   width: 18%;
 }
 
-.TableCheckboxCell {
+#SearchOutputTable tr td.TableCheckboxCell {
   width: 10%;
 }
