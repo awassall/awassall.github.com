@@ -29,3 +29,7 @@ html {
 .TableCheckboxCell {
   width: 5%;
 }
+
+.RowDisplayCaught {
+  color: grey;
+}
