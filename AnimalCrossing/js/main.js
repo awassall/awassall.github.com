@@ -29,7 +29,7 @@ function doSearchBugs() {
     cell.innerHTML = name;
     // PRICE
     cell = row.insertCell();
-    cell.innerHTML = price;
+    cell.innerHTML = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     // LOCATION
     cell = row.insertCell();
     cell.innerHTML = location;
