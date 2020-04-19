@@ -10,12 +10,14 @@ function doSearchBugs() {
   var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
   var header = "", row = "", cell = "", cellText = "";
   var field = "";
+  var hemisphere = "";
   
   /* see what we're searching for */
   console.log("Search criteria:");
   console.log(getRadioValue("CritterCategory"));
   console.log(getRadioValue("Availability"));
   console.log(getRadioValue("Hemisphere"));
+  hemisphere = getRadioValue("Hemisphere"); // "NorthHemisphere" or "SouthHemisphere"
   
   /* prepare search output table */
   var SearchOutputTable = document.getElementById("SearchOutputTable");
@@ -28,7 +30,8 @@ function doSearchBugs() {
     price = bug[1];
     location = bug[2];
     hours = bug[3];
-    months = bug[4];
+    if (hemisphere == "NorthHemisphere") { months = bug[4]; } // northern hemisphere
+    else { months = bug[5]; } // southern hemisphere
     row = SearchOutputTable.insertRow();  // append new row at the bottom
     // NAME
     cell = row.insertCell();
