@@ -98,8 +98,9 @@ function doSearchBugs() {
           if (h == (hours.length-1)) { //this is the last hour in the whole set
             if ((hourCurrent == (hourLast+1)) || ((hourLast-hourCurrent) == 23)) {  // this ends an ongoing range
               cellText += intToHour(hourStart) + "-" + intToHour(hourCurrent) + ", ";
-            } else {  // it's a standalone hour
-              cellText += intToHour(hourCurrent) + ", ";
+            } else {  // it's a standalone hour, which also means the previous range ended too
+              cellText += intToHour(hourStart) + "-" + intToHour(hourLast) + ", ";  // previous range
+              cellText += intToHour(hourCurrent) + ", ";  // standalone
             }
           } else {  // there are still more entries ahead of this one
             if ((hourCurrent == (hourLast+1)) || ((hourLast-hourCurrent) == 23)) {  // still part of the same range
@@ -139,8 +140,9 @@ function doSearchBugs() {
           if (m == (months.length-1)) { //this is the last month in the whole set
             if ((monthCurrent == (monthLast+1)) || ((monthLast-monthCurrent) == 11)) {  // this ends an ongoing range
               cellText += intToMonth(monthStart) + "-" + intToMonth(monthCurrent) + ", ";
-            } else {  // it's a standalone month
-              cellText += intToMonth(monthCurrent) + ", ";
+            } else {  // it's a standalone month, which also means the previous range ended too
+              cellText += intToMonth(monthStart) + "-" + intToMonth(monthLast) + ", ";  // previous range
+              cellText += intToMonth(monthCurrent) + ", ";  // standalone
             }
           } else {  // there are still more entries ahead of this one
             if ((monthCurrent == (monthLast+1)) || ((monthLast-monthCurrent) == 11)) {  // still part of the same range
