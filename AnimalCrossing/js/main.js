@@ -8,16 +8,14 @@ function doSearchBugs() {
   var location = "";
   var hours = "", hourStart = "", hourEnd = "", hourSuffix = "";
   var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
+  var monthIRL = (new Date().getMonth()).toString();
   var header = "", row = "", cell = "", cellText = "";
   var field = "", c = "";
-  var searchCritter = "", searchHemisphere = "";
+  var searchCritter = "", searchAvailability = "", searchHemisphere = "";
   
   /* see what we're searching for */
-  console.log("Search criteria:");
-  console.log(getRadioValue("CritterCategory"));
   searchCritter = getRadioValue("CritterCategory");
-  console.log(getRadioValue("Availability"));
-  console.log(getRadioValue("Hemisphere"));
+  searchAvailability = getRadioValue("Availability");
   searchHemisphere = getRadioValue("Hemisphere"); // "NorthHemisphere" or "SouthHemisphere"
   
   /* prepare search output table */
@@ -38,6 +36,12 @@ function doSearchBugs() {
       hours = critter[3];
       if (searchHemisphere == "NorthHemisphere") { months = critter[4]; } // northern hemisphere
       else { months = critter[5]; } // southern hemisphere
+      // decide if we're going to skip it based on availability
+      months = months.split(",");
+      if (searchAvailability == "CurrentAvailable") { // only show those currently available based on month
+        if (months.indexOf(monthIRL) == -1) { continue; } // not available this month
+      }
+      // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
       // NAME
       cell = row.insertCell();
@@ -68,7 +72,6 @@ function doSearchBugs() {
       }
       // MONTHS
       cell = row.insertCell();
-      months = months.split(",");
       if (months.length == 12) {  // all year
         cell.innerHTML = "All year";
       } else {
