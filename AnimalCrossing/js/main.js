@@ -19,7 +19,7 @@ function doSearchBugs() {
   searchCritter = getRadioValue("CritterCategory"); // "BugsOnly", "FishOnly", or "BugsAndFish"
   searchAvailability = getRadioValue("Availability"); // "CurrentAvailable" or "AllAvailable"
   searchHemisphere = getRadioValue("Hemisphere"); // "NorthHemisphere" or "SouthHemisphere"
-  searchCaught = getRadioValue("Caught"); // "Yes", "No", or "Both"
+  searchCaught = getRadioValue("Caught"); // "CaughtYes", "CaughtNo", or "CaughtBoth"
   
   /* prepare search output table */
   var SearchOutputTable = document.getElementById("SearchOutputTable");
@@ -47,8 +47,8 @@ function doSearchBugs() {
       }
       // decide if we're going to skip it based on caught/uncaught
       caught = checkCaught(id);
-      if ((caught == true)&&(searchCaught == "No")) { continue; } // skip because it's caught, and user chose uncaught only
-      if ((caught == false)&&(searchCaught == "Yes")) { continue; } // skip because it's uncaught, and user chose caught only
+      if ((caught == true)&&(searchCaught == "CaughtNo")) { continue; } // skip because it's caught, and user chose uncaught only
+      if ((caught == false)&&(searchCaught == "CaughtYes")) { continue; } // skip because it's uncaught, and user chose caught only
       // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
       row.setAttribute("id",id);
