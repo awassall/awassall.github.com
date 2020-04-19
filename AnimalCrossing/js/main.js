@@ -6,7 +6,7 @@ function doSearchBugs() {
   var name = "";
   var price = "";
   var location = "";
-  var hours = "", hourStart = "", hourEnd = "", hourSuffix = "";
+  var hours = "", hourStart = "", hourLast = "", hourCurrent = "", hourSuffix = "";
   var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
   var monthIRL = (new Date().getMonth()).toString();
   var header = "", row = "", cell = "", cellText = "", checkbox = "";
@@ -86,14 +86,49 @@ function doSearchBugs() {
         hourEnd = (((hourEnd + 11) % 12) + 1);
         cellText += " - " + hourEnd + hourSuffix;
         cell.innerHTML = cellText;  // store it
-      }
+      } else {
+        // similar to months, there can be multiple (disconnected) hour ranges
+        // but we know they're always in order, so that helps
+        cellText = "";
+        hourStart = hourLast = parseInt(hours[0]);
+        for (var h=1; h<hours.length; h++) {
+          hourCurrent = parseInt(hours[h]);
+          if (h == (hours.length-1)) { //this is the last hour in the whole set
+            if ((hourCurrent == (hourLast+1)) || ((hourLast-hourCurrent) == 23)) {  // this ends an ongoing range
+              cellText += intToHour(hourStart) + "-" + intToHour(hourCurrent) + ", ";
+            } else {  // it's a standalone hour
+              cellText += intToHour(hourCurrent) + ", ";
+            }
+          } else {  // there are still more entries ahead of this one
+            if ((hourCurrent == (hourLast+1)) || ((hourLast-hourCurrent) == 23)) {  // still part of the same range
+              hourLast = hourCurrent; // reset hourLast
+              continue;
+            }
+            else {
+              // we hit the end of this range, time to log it
+              if (hourStart == hourLast) {  // it was just 1 hour
+                cellText += intToHour(hourStart) + ", ";
+              } else {  // it was a range of hours
+                cellText += intToHour(hourStart) + "-" + intToHour(hourLast) + ", ";
+              }
+              // set the stage for the next range
+              hourStart = hourLast = hourCurrent;
+            }
+          } // end ELSE
+        } // end FOR
+        if (cellText == "") { // there was only 1 hour
+          cellText = intToHour(hourStart) + ", ";
+        }
+        cellText = cellText.substr(0,cellText.length-2);  // remove trailing ", "
+        cell.innerHTML = cellText;
+      } // end ELSE for hours
       // MONTHS
       cell = row.insertCell();
       cell.setAttribute("class","TableFieldCell");
       if (months.length == 12) {  // all year
         cell.innerHTML = "All year";
       } else {
-        // this is more complicated than hours, because there can be multiple (disconnected) date ranges
+        // similar to hours, there can be multiple (disconnected) date ranges
         // but we know they're always in order, so that helps
         cellText = "";
         monthStart = monthLast = parseInt(months[0]);
@@ -187,6 +222,16 @@ function intToMonth(int) {
       break;
   }
   return month;
+}
+
+function intToHour(int) {
+  var hour = "";
+  var hourSuffix = "";
+  if (int<12) { hourSuffix = "am"; }
+  else { hourSuffix = "pm"; }
+  int = (((int + 11) % 12) + 1);
+  hour = int + hourSuffix;
+  return hour;
 }
 
 function getRadioValue(name) {
