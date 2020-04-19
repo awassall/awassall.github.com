@@ -43,6 +43,7 @@ function doSearchBugs() {
       }
       // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
+      row.setAttribute("id",nameToID(name));
       // ALREADY CAUGHT CHECKBOX
       cell = row.insertCell();
       cell.setAttribute("class","TableCheckboxCell");
@@ -192,4 +193,10 @@ function getRadioValue(name) {
     }
   }
   return result;
+}
+
+function nameToID(name) {
+  var id = "";
+  id = name.replace(/ /g,"-").replace(/'/g,""); // convert space to "-" and remove "'"
+  return id;
 }
