@@ -23,5 +23,9 @@ html {
 }
 
 #SearchOutputTable tr td {
-  width: 20%;
+  width: 18%;
+}
+
+.TableCheckboxCell {
+  width: 10%;
 }
