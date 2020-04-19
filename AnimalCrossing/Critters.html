@@ -12,11 +12,19 @@
   <body>
     <h1>Critters</h1>
     <div id="SearchOptions">
-      Filters:
-      <input type="checkbox" id="CheckboxBugs" name="CheckboxBugs" value="Bugs"><label for="CheckboxBugs"> Bugs</label>
-      <input type="checkbox" id="CheckboxFish" name="CheckboxFish" value="Fish"><label for="CheckboxFish"> Fish</label>
-      <br>
+      Show:
+      <form>
+        <br>
+        <input type="radio" id="BugsOnly" name="CritterCategory" value="Bugs">
+        <input type="radio" id="FishOnly" name="CritterCategory" value="Fish">
+        <input type="radio" id="BugsAndFish" name="CritterCategory" value="Bugs and Fish" checked>
+        <br>
+        <input type="radio" id="CurrentAvailable" name="Availability" value="Current">
+        <input type="radio" id="AllAvailable" name="Availability" value="All" checked>
+        <br>
+      </form>
       <button id="SearchButton" type="button" onclick="doSearchBugs();">Search</button>
+      <br>
     </div>
     <div id="SearchOutputDiv">
       <table id="SearchOutputTable"></table>
