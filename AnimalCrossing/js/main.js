@@ -44,6 +44,8 @@ function doSearchBugs() {
       // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
       row.setAttribute("id",nameToID(name));
+      if (checkCaught(nameToID(name)) == true) { row.setAttribute("class","RowDisplayCaught"); } // caught
+      else { row.setAttribute("class","RowDisplayUncaught"); } // uncaught
       // ALREADY CAUGHT CHECKBOX
       cell = row.insertCell();
       cell.setAttribute("class","TableCheckboxCell");
@@ -207,8 +209,20 @@ function checkboxOnClickEvent(checkbox) {
   var parentID = parentRow.getAttribute("id");
   if (checkbox.checked) { // this is now marked as caught
     parentRow.setAttribute("class","RowDisplayCaught");
+    localStorage.setItem("CaughtCritters-"+parentID,true);
   } else {  // this was marked as caught, but is being removed
     parentRow.setAttribute("class","RowDisplayUncaught");
+    localStorage.removeItem("CaughtCritters-"+parentID);
   }
   return;
+}
+
+function checkCaught(id) {
+  var caught = false;
+  if (localStorage.GetItem("CaughtCritters-"+id) == null) { // doesn't exist, meaning it's not caught
+    caught = false;
+  } else {  // it must be caught
+    caught = true;
+  }
+  return caught;
 }
