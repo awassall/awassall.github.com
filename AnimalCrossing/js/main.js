@@ -74,7 +74,8 @@ function doSearchBugs() {
       hours = hours.split(",");
       if (hours.length == 24) { // whole day
         cell.innerHTML = "All day";
-      } else {
+      }
+      /*else {
         hourStart = parseInt(hours[0]);
         if (hourStart<12) { hourSuffix = "am"; }
         else { hourSuffix = "pm"; }
@@ -86,7 +87,8 @@ function doSearchBugs() {
         hourEnd = (((hourEnd + 11) % 12) + 1);
         cellText += " - " + hourEnd + hourSuffix;
         cell.innerHTML = cellText;  // store it
-      } else {
+      }*/
+      else {
         // similar to months, there can be multiple (disconnected) hour ranges
         // but we know they're always in order, so that helps
         cellText = "";
