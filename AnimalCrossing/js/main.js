@@ -62,7 +62,7 @@ function doSearchBugs() {
       cell.innerHTML = name;
       // PRICE
       cell = row.insertCell();
-      cell.setAttribute("class","TableFieldCell");
+      cell.setAttribute("class","TableFieldCellPrice");
       cell.innerHTML = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       // LOCATION
       cell = row.insertCell();
