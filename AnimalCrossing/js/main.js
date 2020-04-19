@@ -49,6 +49,7 @@ function doSearchBugs() {
       cell.setAttribute("class","TableCheckboxCell");
       checkbox = document.createElement("input");
       checkbox.setAttribute("type","checkbox");
+      checkbox.setAttribute("onclick","checkboxOnClickEvent(this);");
       cell.appendChild(checkbox);
       // NAME
       cell = row.insertCell();
@@ -199,4 +200,15 @@ function nameToID(name) {
   var id = "";
   id = name.replace(/ /g,"-").replace(/'/g,""); // convert space to "-" and remove "'"
   return id;
+}
+
+function checkboxOnClickEvent(checkbox) {
+  var parentRow = checkbox.parentElement.parentElement;
+  var parentID = parentRow.getAttribute("id");
+  if (checkbox.checked) { // this is now marked as caught
+    parentRow.setAttribute("class","RowDisplayCaught");
+  } else {  // this was marked as caught, but is being removed
+    parentRow.setAttribute("class","RowDisplayUncaught");
+  }
+  return;
 }
