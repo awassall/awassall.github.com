@@ -9,7 +9,7 @@ function doSearchBugs() {
   var hours = "", hourStart = "", hourEnd = "", hourSuffix = "";
   var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
   var monthIRL = (new Date().getMonth()).toString();
-  var header = "", row = "", cell = "", cellText = "";
+  var header = "", row = "", cell = "", cellText = "", checkbox = "";
   var field = "", c = "";
   var searchCritter = "", searchAvailability = "", searchHemisphere = "";
   
@@ -43,6 +43,12 @@ function doSearchBugs() {
       }
       // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
+      // ALREADY CAUGHT CHECKBOX
+      cell = row.insertCell();
+      cell.setAttribute("class","TableCheckboxCell");
+      checkbox = document.createElement("input");
+      checkbox.setAttribute("type","checkbox");
+      cell.appendChild(checkbox);
       // NAME
       cell = row.insertCell();
       cell.innerHTML = name;
@@ -116,7 +122,7 @@ function doSearchBugs() {
   /* add table headers */
   header = SearchOutputTable.createTHead()
   row = header.insertRow();
-  for (field of ["Name","Price","Location","Hours","Months"]) {
+  for (field of ["Caught","Name","Price","Location","Hours","Months"]) {
     cell = row.insertCell();
     cell.innerHTML = field;
   }
