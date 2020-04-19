@@ -12,17 +12,15 @@
   <body>
     <h1>Critters</h1>
     <div id="SearchOptions">
-      Show:
-      <form>
-        <br>
-        <input type="radio" id="BugsOnly" name="CritterCategory" value="Bugs">
-        <input type="radio" id="FishOnly" name="CritterCategory" value="Fish">
-        <input type="radio" id="BugsAndFish" name="CritterCategory" value="Bugs and Fish" checked>
-        <br>
-        <input type="radio" id="CurrentAvailable" name="Availability" value="Current">
-        <input type="radio" id="AllAvailable" name="Availability" value="All" checked>
-        <br>
-      </form>
+      Critter: 
+      <input type="radio" id="BugsOnly" name="CritterCategory" value="BugsOnly"><label for="BugsOnly">Bugs</label>
+      <input type="radio" id="FishOnly" name="CritterCategory" value="FishOnly"><label for="FishOnly">Fish</label>
+      <input type="radio" id="BugsAndFish" name="CritterCategory" value="BugsAndFish" checked><label for="BugsAndFish">Both</label>
+      <br>
+      Availability: 
+      <input type="radio" id="CurrentAvailable" name="Availability" value="CurrentAvailable"><label for="CurrentAvailable">Current</label>
+      <input type="radio" id="AllAvailable" name="Availability" value="AllAvailable" checked><label for="AllAvailable">All</label>
+      <br>
       <button id="SearchButton" type="button" onclick="doSearchBugs();">Search</button>
       <br>
     </div>
