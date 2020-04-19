@@ -6,18 +6,20 @@ function doSearchBugs() {
   var name = "";
   var price = "";
   var location = "";
+  var id = "";
   var hours = "", hourStart = "", hourLast = "", hourCurrent = "";
   var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
   var monthIRL = (new Date().getMonth()).toString();
   var header = "", row = "", cell = "", cellText = "", checkbox = "";
   var field = "", c = "";
-  var searchCritter = "", searchAvailability = "", searchHemisphere = "";
+  var searchCritter = "", searchAvailability = "", searchHemisphere = "", searchCaught = "";
   var caught = "";
   
   /* see what we're searching for */
-  searchCritter = getRadioValue("CritterCategory");
-  searchAvailability = getRadioValue("Availability");
+  searchCritter = getRadioValue("CritterCategory"); // "BugsOnly", "FishOnly", or "BugsAndFish"
+  searchAvailability = getRadioValue("Availability"); // "CurrentAvailable" or "AllAvailable"
   searchHemisphere = getRadioValue("Hemisphere"); // "NorthHemisphere" or "SouthHemisphere"
+  searchCaught = getRadioValue("Caught"); // "Yes", "No", or "Both"
   
   /* prepare search output table */
   var SearchOutputTable = document.getElementById("SearchOutputTable");
@@ -32,6 +34,7 @@ function doSearchBugs() {
     for (var i=0; i<ListLength; i++) {
       critter = (EntireList.children[i].innerHTML).split("*");
       name = critter[0];
+      id = nameToID(name);
       price = critter[1];
       location = critter[2];
       hours = critter[3];
@@ -42,12 +45,15 @@ function doSearchBugs() {
       if (searchAvailability == "CurrentAvailable") { // only show those currently available based on month
         if (months.indexOf(monthIRL) == -1) { continue; } // not available this month
       }
+      // decide if we're going to skip it based on caught/uncaught
+      caught = checkCaught(id);
+      if ((caught == true)&&(searchCaught == "No")) { continue; } // skip because it's caught, and user chose uncaught only
+      if ((caught == false)&&(searchCaught == "Yes")) { continue; } // skip because it's uncaught, and user chose caught only
       // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
-      row.setAttribute("id",nameToID(name));
-      caught = checkCaught(nameToID(name));
-      if (caught == true) { row.setAttribute("class","RowDisplayCaught"); } // caught
-      else { row.setAttribute("class","RowDisplayUncaught"); } // uncaught
+      row.setAttribute("id",id);
+      if (caught == true) { row.setAttribute("class","RowDisplayCaught"); } // caught (displays normal)
+      else { row.setAttribute("class","RowDisplayUncaught"); } // uncaught (displays grey)
       // ALREADY CAUGHT CHECKBOX
       cell = row.insertCell();
       cell.setAttribute("class","TableCheckboxCell");
