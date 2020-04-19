@@ -11,7 +11,13 @@
 
   <body>
     <h1>Critters</h1>
-    <div id="SearchOptions"><button id="SearchButton" type="button" onclick="doSearchBugs();">Search</button></div>
+    <div id="SearchOptions">
+      Filters:
+      <input type="checkbox" id="CheckboxBugs" name="CheckboxBugs" value="Bugs"><label for="CheckboxBugs"> Bugs</label>
+      <input type="checkbox" id="CheckboxFish" name="CheckboxFish" value="Fish"><label for="CheckboxFish"> Fish</label>
+      <br>
+      <button id="SearchButton" type="button" onclick="doSearchBugs();">Search</button>
+    </div>
     <div id="SearchOutputDiv">
       <table id="SearchOutputTable"></table>
     </div>
