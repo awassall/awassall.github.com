@@ -6,7 +6,7 @@ function doSearchBugs() {
   var name = "";
   var price = "";
   var location = "";
-  var hours = "", hourStart = "", hourLast = "", hourCurrent = "", hourSuffix = "";
+  var hours = "", hourStart = "", hourLast = "", hourCurrent = "";
   var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
   var monthIRL = (new Date().getMonth()).toString();
   var header = "", row = "", cell = "", cellText = "", checkbox = "";
