@@ -15,6 +15,7 @@ function doSearchBugs() {
   console.log("Search criteria:");
   console.log(getRadioValue("CritterCategory"));
   console.log(getRadioValue("Availability"));
+  console.log(getRadioValue("Hemisphere"));
   
   /* prepare search output table */
   var SearchOutputTable = document.getElementById("SearchOutputTable");
