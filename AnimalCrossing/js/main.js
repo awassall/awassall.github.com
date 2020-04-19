@@ -11,6 +11,11 @@ function doSearchBugs() {
   var header = "", row = "", cell = "", cellText = "";
   var field = "";
   
+  /* see what we're searching for */
+  console.log("Search criteria:");
+  console.log(getRadioValue("CritterCategory"));
+  console.log(getRadioValue("Availability"));
+  
   /* prepare search output table */
   var SearchOutputTable = document.getElementById("SearchOutputTable");
   SearchOutputTable.innerHTML = ""; // empty the table of any previous search
@@ -150,4 +155,16 @@ function intToMonth(int) {
       break;
   }
   return month;
+}
+
+function getRadioValue(name) {
+  var options = document.getElementsByName(name);
+  var result = "";
+  for (var i=0; i<(options.length); i++) {
+    if (options[i].checked == true) {
+      result = options[i].value;
+      break;
+    }
+  }
+  return result;
 }
