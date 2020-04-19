@@ -219,7 +219,7 @@ function checkboxOnClickEvent(checkbox) {
 
 function checkCaught(id) {
   var caught = false;
-  if (localStorage.GetItem("CaughtCritters-"+id) == null) { // doesn't exist, meaning it's not caught
+  if (localStorage.getItem("CaughtCritters-"+id) == null) { // doesn't exist, meaning it's not caught
     caught = false;
   } else {  // it must be caught
     caught = true;
