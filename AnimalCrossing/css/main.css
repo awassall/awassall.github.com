@@ -22,10 +22,10 @@ html {
   width: 100%;
 }
 
-#SearchOutputTable tr td {
-  width: 18%;
+.TableFieldCell {
+  width: 19%;
 }
 
-#SearchOutputTable tr td.TableCheckboxCell {
-  width: 10%;
+.TableCheckboxCell {
+  width: 5%;
 }
