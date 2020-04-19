@@ -12,6 +12,7 @@ function doSearchBugs() {
   var header = "", row = "", cell = "", cellText = "", checkbox = "";
   var field = "", c = "";
   var searchCritter = "", searchAvailability = "", searchHemisphere = "";
+  var caught = "";
   
   /* see what we're searching for */
   searchCritter = getRadioValue("CritterCategory");
@@ -44,7 +45,8 @@ function doSearchBugs() {
       // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
       row.setAttribute("id",nameToID(name));
-      if (checkCaught(nameToID(name)) == true) { row.setAttribute("class","RowDisplayCaught"); } // caught
+      caught = checkCaught(nameToID(name));
+      if (caught == true) { row.setAttribute("class","RowDisplayCaught"); } // caught
       else { row.setAttribute("class","RowDisplayUncaught"); } // uncaught
       // ALREADY CAUGHT CHECKBOX
       cell = row.insertCell();
@@ -52,6 +54,7 @@ function doSearchBugs() {
       checkbox = document.createElement("input");
       checkbox.setAttribute("type","checkbox");
       checkbox.setAttribute("onclick","checkboxOnClickEvent(this);");
+      if (caught == true) { checkbox.checked = true; }
       cell.appendChild(checkbox);
       // NAME
       cell = row.insertCell();
