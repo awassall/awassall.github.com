@@ -23,11 +23,15 @@ html {
 }
 
 .TableFieldCell {
-  width: 19%;
+  width: 22%;
 }
 
 .TableCheckboxCell {
   width: 5%;
+}
+
+.TableFieldCellPrice {
+  width: 7%;
 }
 
 .RowDisplayCaught {
