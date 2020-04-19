@@ -70,7 +70,7 @@ function doSearchBugs() {
       cell.innerHTML = location;
       // HOURS
       cell = row.insertCell();
-      cell.setAttribute("class","TableFieldCell");
+      cell.setAttribute("class","TableFieldCellHours");
       hours = hours.split(",");
       if (hours.length == 24) { // whole day
         cell.innerHTML = "All day";
