@@ -9,7 +9,10 @@ function doSearchBugs() {
   var id = "";
   var hours = "", hourStart = "", hourLast = "", hourCurrent = "";
   var months = "", monthStart = "", monthEnd = "", monthLast = "", monthCurrent = "";
-  var monthIRL = (new Date().getMonth()).toString();
+  var monthIRL = new Date().getMonth();
+  var monthIRLstring = monthIRL.toString();
+  var lastMonthIRLstring = ((monthIRL+12-1)%12).toString();
+  var nextMonthIRLstring = ((monthIRL+12+1)%12).toString();
   var header = "", row = "", cell = "", cellText = "", checkbox = "";
   var field = "", c = "";
   var searchCritter = "", searchAvailability = "", searchHemisphere = "", searchCaught = "";
@@ -44,7 +47,7 @@ function doSearchBugs() {
       // decide if we're going to skip it based on availability
       months = months.split(",");
       if (searchAvailability == "CurrentAvailable") { // only show those currently available based on month
-        if (months.indexOf(monthIRL) == -1) { continue; } // not available this month
+        if (months.indexOf(monthIRLstring) == -1) { continue; } // not available this month
       }
       // decide if we're going to skip it based on caught/uncaught
       caught = checkCaught(id);
@@ -55,6 +58,8 @@ function doSearchBugs() {
       row.setAttribute("id",id);
       if (caught == true) { addClass(row,"RowDisplayCaught"); } // caught (displays normal)
       else { addClass(row,"RowDisplayUncaught"); } // uncaught (displays grey)
+      if (months.indexOf(lastMonthIRLstring) == -1) { addClass(row,"RowDisplayNew"); }  // new arrival this month
+      if (months.indexOf(nextMonthIRLstring) == -1) { addClass(row,"RowDisplayLeaving"); }  // won't be around next month
       // ALREADY CAUGHT CHECKBOX
       cell = row.insertCell();
       cell.setAttribute("class","TableCheckboxCell");
