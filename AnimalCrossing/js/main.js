@@ -14,6 +14,7 @@ function doSearchBugs() {
   var field = "", c = "";
   var searchCritter = "", searchAvailability = "", searchHemisphere = "", searchCaught = "";
   var caught = "";
+  var newThisMonth = false, leavingThisMonth = false;
   
   /* see what we're searching for */
   searchCritter = getRadioValue("CritterCategory"); // "BugsOnly", "FishOnly", or "BugsAndFish"
@@ -52,8 +53,8 @@ function doSearchBugs() {
       // okay, we aren't skipping it
       row = SearchOutputTable.insertRow();  // append new row at the bottom
       row.setAttribute("id",id);
-      if (caught == true) { row.setAttribute("class","RowDisplayCaught"); } // caught (displays normal)
-      else { row.setAttribute("class","RowDisplayUncaught"); } // uncaught (displays grey)
+      if (caught == true) { addClass(row,"RowDisplayCaught"); } // caught (displays normal)
+      else { addClass(row,"RowDisplayUncaught"); } // uncaught (displays grey)
       // ALREADY CAUGHT CHECKBOX
       cell = row.insertCell();
       cell.setAttribute("class","TableCheckboxCell");
@@ -269,4 +270,16 @@ function checkCaught(id) {
     caught = true;
   }
   return caught;
+}
+
+function addClass(element,className) {
+  var currentClasses = element.getAttribute("class");
+  var newClasses = "";
+  if ((currentClasses == null)||(currentClasses == "")) {
+    newClasses = className;
+  } else {
+    newClasses = currentClasses + ' ' + className;
+  }
+  element.setAttribute("class",newClasses);
+  return;
 }
