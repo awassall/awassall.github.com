@@ -41,3 +41,11 @@ html {
 .RowDisplayCaught {
   color: grey;
 }
+
+.RowDisplayNew {
+  background-color: rgb(209, 255, 221);
+}
+
+.RowDisplayLeaving {
+  background-color: rgb(255, 209, 209);
+}
