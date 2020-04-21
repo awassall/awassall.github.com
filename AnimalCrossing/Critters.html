@@ -9,7 +9,7 @@
     <title>Animal Crossing: New Horizons</title>
   </head>
 
-  <body>
+  <body onload="doSearch();">
     <h1>Critters</h1>
     <div id="SearchOptions">
       Critter: 
@@ -30,7 +30,7 @@
       <input type="radio" id="CaughtNo" name="Caught" value="CaughtNo" checked><label for="CaughtNo">No</label>
       <input type="radio" id="CaughtBoth" name="Caught" value="CaughtBoth"><label for="CaughtBoth">Both</label>
       <br>
-      <button id="SearchButton" type="button" onclick="doSearchBugs();">Search</button>
+      <button id="SearchButton" type="button" onclick="doSearch();">Search</button>
       <br>
     </div>
     <div id="SearchOutputDiv">
