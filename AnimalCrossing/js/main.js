@@ -1,4 +1,4 @@
-function doSearchBugs() {
+function doSearch() {
   /* initialization */
   var EntireList = "";  // the <div> with all the bugs
   var ListLength = "";  // total number of bugs
