@@ -26,6 +26,7 @@ body {
 #topbar-logo-container, #topbar-title-container {
  height: 100%;
  display: inline-block;
+ float: left;
 }
 
 #topbar-logo {
