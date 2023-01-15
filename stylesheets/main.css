@@ -26,7 +26,7 @@ body {
 #topbar-logo {
 	width: 8vh;
 	height: 8vh;
-	object-fit: none;
+	object-fit: contain;
 }
 
 #content {
