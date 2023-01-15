@@ -13,7 +13,12 @@ body {
 	color: #FFFFFF;
 }
 
-a {
-	text-decoration: underline;
-	color: #AAAAAA;
+#topbar {
+	width: 100%;
+	background-color: #212121;
+}
+
+#content {
+	width: 100%;
+	background-color: #181818;
 }
