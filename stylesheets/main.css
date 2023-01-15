@@ -25,7 +25,6 @@ body {
 
 #topbar-logo-container, #topbar-title-container {
  height: 100%;
- line-height: 100%;
  float: left;
 }
 
@@ -36,9 +35,8 @@ body {
 }
 
 #topbar-title {
- vertical-align: middle;
- margin-top: 0px;
- margin-bottom: 0px;
+ height: 100%;
+ line-height: 100%;
 }
 
 #content {
