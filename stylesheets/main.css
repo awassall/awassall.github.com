@@ -25,8 +25,9 @@ body {
 
 #topbar-logo-container, #topbar-title-container {
  height: 100%;
- float: left;
  line-height: 100%;
+ vertical-align: middle;
+ float: left;
 }
 
 #topbar-logo {
