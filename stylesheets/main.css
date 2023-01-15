@@ -37,6 +37,8 @@ body {
 
 #topbar-title {
  vertical-align: middle;
+ margin-top: 0px;
+ margin-bottom: 0px;
 }
 
 #content {
