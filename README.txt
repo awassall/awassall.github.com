@@ -1,1 +1,1 @@
-This is my own personal github page.
+My personal github page.
