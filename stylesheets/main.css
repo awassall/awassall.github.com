@@ -8,28 +8,36 @@ Main color palette:
 */
 
 body {
-	background-color: #181818;
-	font-family: Verdana;
-	color: #FFFFFF;
-	margin: 0px;
-	width: 100vw;
-	height: 100vh;
-	overflow: auto;
+ background-color: #181818;
+ font-family: Verdana;
+ color: #FFFFFF;
+ margin: 0px;
+ width: 100vw;
+ height: 100vh;
+ overflow: auto;
 }
 
 #topbar {
-	width: 100%;
-	height: 10vh;
-	background-color: #212121;
+ width: 100%;
+ height: 10vh;
+ background-color: #212121;
+}
+
+#topbar-logo-container {
+ height: 100%;
+}
+
+#topbar-title-container {
+ height: 100%;
 }
 
 #topbar-logo {
-	width: 9vh;
-	height: 9vh;
-	object-fit: contain;
+ width: 9vh;
+ height: 9vh;
+ object-fit: contain;
 }
 
 #content {
-	width: 100%;
-	background-color: #181818;
+ width: 100%;
+ background-color: #181818;
 }
