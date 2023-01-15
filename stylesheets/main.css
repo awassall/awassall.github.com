@@ -1,24 +1,21 @@
-body {
-	background-color: #f0f8ff;
+/*
+Main color palette:
+    #181818 - background
+    #212121 - menu
+    #3D3D3D - hover
+    #FFFFFF - primary text
+    #AAAAAA - secondary text
+*/
+
+html {
+	 font-family: Verdana;
 }
 
-img {
-	width: 250px;
+body {
+	background-color: #181818;
 }
 
 a {
 	text-decoration: underline;
-	color: blue;
-}
-
-h1 {
-	font-family: Verdana;
-}
-
-h4 {
-	font-family: Verdana;
-}
-
-li ul li {
-	font-style: italic;
+	color: #AAAAAA;
 }
