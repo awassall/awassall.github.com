@@ -23,12 +23,9 @@ body {
  background-color: #212121;
 }
 
-#topbar-logo-container {
+#topbar-logo-container, #topbar-title-container {
  height: 100%;
-}
-
-#topbar-title-container {
- height: 100%;
+ display: inline-block;
 }
 
 #topbar-logo {
