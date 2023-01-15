@@ -22,6 +22,12 @@ body {
 	background-color: #212121;
 }
 
+#topbar-logo {
+	width: 100px;
+	height: 100px;
+	object-fit: none;
+}
+
 #content {
 	width: 100%;
 	background-color: #181818;
