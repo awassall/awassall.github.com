@@ -7,12 +7,10 @@ Main color palette:
     #AAAAAA - secondary text
 */
 
-html {
-	 font-family: Verdana;
-}
-
 body {
 	background-color: #181818;
+	font-family: Verdana;
+	color: #FFFFFF;
 }
 
 a {
