@@ -49,6 +49,7 @@ body {
  float: right;
  padding-top: 2.5vh;
  padding-right: 5vw;
+ position: relative;
 }
 
 #topbar-logo-img {
