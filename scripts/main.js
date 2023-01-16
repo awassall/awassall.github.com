@@ -2,7 +2,14 @@
 
 function toggleMenu()
 {
- // Change menu icon coloring
+ var anchor = document.getElementById("topbar-menu-anchor");
  var menu = document.getElementById("topbar-menu-img");
- menu.style.filter = "invert(0)";
+ // Change menu icon coloring
+ if (menu.className == "menu-hide") {
+  // Show menu
+  menu.style.filter = "invert(0)";
+ } else {
+  // Hide menu
+  menu.style.filter = "invert(1)";
+ }
 }
