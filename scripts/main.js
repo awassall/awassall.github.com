@@ -1,6 +1,6 @@
 /* Main javascript code */
 
-function showMenu()
+function toggleMenu()
 {
  // Change menu icon coloring
  var menu = document.getElementById("topbar-menu-img");
