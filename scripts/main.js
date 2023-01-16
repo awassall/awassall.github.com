@@ -2,13 +2,13 @@
 
 function toggleMenu()
 {
- var anchor = document.getElementById("topbar-menu-anchor");
+ var cover = document.getElementById("topbar-menu-cover");
  // Change menu icon coloring
- if (anchor.className == "menu-hide") {
+ if (cover.className == "menu-hide") {
   // Show menu
-  anchor.className = "menu-show";
+  cover.className = "menu-show";
  } else {
   // Hide menu
-  anchor.className = "menu-hide";
+  cover.className = "menu-hide";
  }
 }
