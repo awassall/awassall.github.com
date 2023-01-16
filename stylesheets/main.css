@@ -64,6 +64,14 @@ body {
  filter: invert(1);
 }
 
+.menu-hide {
+ background-color: inherit;
+}
+
+.menu-show {
+ background-color: #3D3D3D;
+}
+
 #topbar-title {
  font-weight: 600;
  font-size: 1.5em;
