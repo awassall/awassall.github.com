@@ -47,6 +47,7 @@ body {
 #topbar-menu-container {
  height: 100%;
  float: right;
+ padding-top: 1.5vh;
 }
 
 #topbar-logo-img {
@@ -56,8 +57,8 @@ body {
 }
 
 #topbar-menu-img {
- width: 9vh;
- height: 9vh;
+ width: 7vh;
+ height: 7vh;
  object-fit: contain;
  filter: invert(1);
 }
