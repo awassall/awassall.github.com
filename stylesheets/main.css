@@ -57,6 +57,11 @@ body {
  object-fit: contain;
 }
 
+#topbar-menu-anchor {
+ width: 100%;
+ height: 100%;
+}
+
 #topbar-menu-img {
  width: 5vh;
  height: 5vh;
