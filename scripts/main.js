@@ -8,8 +8,10 @@ function toggleMenu()
  if (anchor.className == "menu-hide") {
   // Show menu
   menu.style.filter = "invert(0)";
+  anchor.className = "menu-show";
  } else {
   // Hide menu
   menu.style.filter = "invert(1)";
+  anchor.className = "menu-hide";
  }
 }
