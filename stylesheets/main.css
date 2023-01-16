@@ -34,7 +34,7 @@ body {
  display: table;
 }
 
-#topbar-logo {
+#topbar-logo-img {
  width: 9vh;
  height: 9vh;
  object-fit: contain;
