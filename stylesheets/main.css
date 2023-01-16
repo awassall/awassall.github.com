@@ -49,6 +49,7 @@ body {
  float: right;
  padding-top: 2.5vh;
  padding-right: 5vw;
+ position: relative;
 }
 
 #topbar-logo-img {
@@ -61,13 +62,12 @@ body {
  width: 5vh;
  height: 5vh;
  z-index: 2;
- position: static;
 }
 
 #topbar-menu-box {
  position: absolute;
- top: 0px;
  left: 0px;
+ top: 0px;
 }
 
 #topbar-menu-img {
