@@ -67,7 +67,7 @@ body {
 #topbar-menu-box {
  position: absolute;
  left: 0px;
- top: 0px;
+ top: 2.5vh;
 }
 
 #topbar-menu-img {
