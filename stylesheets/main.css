@@ -57,9 +57,10 @@ body {
  object-fit: contain;
 }
 
-#topbar-menu-anchor {
- width: 100%;
- height: 100%;
+#topbar-menu-cover {
+ width: 5vh;
+ height: 5vh;
+ z-index: 2;
 }
 
 #topbar-menu-img {
@@ -74,7 +75,7 @@ body {
 }
 
 .menu-show {
- background-color: black;
+ background-color: #3D3D3D;
 }
 
 #topbar-title {
