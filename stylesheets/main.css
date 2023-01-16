@@ -61,6 +61,11 @@ body {
  width: 5vh;
  height: 5vh;
  z-index: 2;
+ position: absolute;
+}
+
+#topbar-menu-box {
+ position: absolute;
 }
 
 #topbar-menu-img {
