@@ -44,7 +44,18 @@ body {
  display: table;
 }
 
+#topbar-menu-container {
+ height: 100%;
+ float: right;
+}
+
 #topbar-logo-img {
+ width: 9vh;
+ height: 9vh;
+ object-fit: contain;
+}
+
+#topbar-menu-img {
  width: 9vh;
  height: 9vh;
  object-fit: contain;
