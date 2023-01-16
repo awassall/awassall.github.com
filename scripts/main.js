@@ -9,6 +9,7 @@ function toggleMenu()
   // Show menu
   menu.style.filter = "invert(0)";
   anchor.className = "menu-show";
+  alert("menu now shown");
  } else {
   // Hide menu
   menu.style.filter = "invert(1)";
