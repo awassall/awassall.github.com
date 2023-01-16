@@ -62,7 +62,7 @@ body {
  width: 5vh;
  height: 5vh;
  z-index: 2;
- position: static;
+ position: relative;
 }
 
 #topbar-menu-box {
