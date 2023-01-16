@@ -1,1 +1,1 @@
-Aaron's github page.
+Aaron's GitHub page.
